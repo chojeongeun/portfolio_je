@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+//common
+@import 'common/reset';
+@import 'common/header';
+@import 'common/footer';
+
+//main
+@import 'main/banner';
+@import 'main/news';
+@import 'main/community';
+@import 'main/science';
+@import 'main/goods';
+@import 'main/visual';
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');

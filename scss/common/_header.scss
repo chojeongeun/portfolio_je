@@ -1,0 +1,89 @@
+#header {
+	width: 100%;
+	background-image: url(../../img/pic5.jpg);
+
+	.inner {
+		width: 1180px;
+		height: 85px;
+		margin: 0px auto;
+		// border: 1px solid red;
+		position: relative;
+		border-bottom: 1px solid #ddd;
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		h1 {
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			float: left;
+
+			a {
+				display: block;
+				font: bold 28px/1 'Jost', sans-serif;
+				color: #eee;
+			}
+		}
+		#gnb1 {
+			width: 100%;
+			position: absolute;
+			top: 30px;
+			left: 200px;
+
+			li {
+				float: left;
+				margin-right: 30px;
+				a {
+					font: bold 14px/1 'Poppins', sans-serif;
+					color: #eee;
+				}
+			}
+		}
+
+		#gnb2 {
+			width: 100%;
+			position: absolute;
+			top: 30px;
+			right: 200px;
+
+			li {
+				float: right;
+				margin-right: 30px;
+				a {
+					font: bold 14px/1 'Poppins', sans-serif;
+					color: #eee;
+				}
+			}
+		}
+
+		#util {
+			position: absolute;
+			top: 30px;
+			right: 0px;
+			li {
+				float: right;
+				margin-right: 30px;
+				a {
+					font: 14px/1 'Poppins', sans-serif;
+					color: #eee;
+				}
+			}
+		}
+
+		.btncall {
+			display: block;
+			position: absolute;
+			top: 35px;
+			left: 10px;
+			i {
+				font-size: 18px;
+				color: #eee;
+			}
+		}
+	}
+}
