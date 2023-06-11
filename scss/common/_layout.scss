@@ -1,0 +1,45 @@
+.content {
+	width: 100%;
+
+	.subVisual {
+		width: 100%;
+		height: 250px;
+		background: #555;
+	}
+	.inner {
+		padding: 150px 10vw 100px;
+		min-height: 800px;
+
+		h1 {
+			font: bold 55px/1 'Jost', sans-serif;
+			color: #444;
+			text-align: center;
+			letter-spacing: 3px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.content {
+		.inner {
+			padding: 100px 10vw 80px;
+
+			h1 {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.content {
+		.inner {
+			padding: 80px 40px 60px;
+
+			h1 {
+				font-size: 24px;
+			}
+		}
+	}
+}

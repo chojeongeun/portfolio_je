@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.enviroment {
+	width: 100%;
+	background-color: rgb(229, 229, 229);
+	overflow: hidden;
+	position: relative;
+
+	h1 {
+		font: bold 55px/1 'Jost', sans-serif;
+		color: #444;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	h2 {
+		text-align: center;
+		font: 15px/1 'Jost', sans-serif;
+		color: #555;
+		margin-bottom: 50px;
+	}
+
+	.wrap {
+		opacity: 0;
+		transform: translateY(100px);
+		transition: 1s;
+
+		&.on {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		li {
+			width: calc(100% / 3);
+			height: 500px;
+			float: left;
+			padding: 40px;
+
+			> div {
+				position: relative;
+				width: 100%;
+				height: 450px;
+				background: #fff;
+				padding: 10px;
+				box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+
+				img {
+					width: 100%;
+					height: 300px;
+					padding-bottom: 20px;
+					object-fit: cover;
+					filter: grayscale(1);
+					&:hover {
+						filter: grayscale(0);
+						transition: 0.3s;
+					}
+				}
+
+				p {
+					font: bold 20px/1 'arial';
+					color: #111;
+					margin-bottom: 20px;
+					padding: 10px 0px;
+					border-bottom: 1px solid #555;
+				}
+
+				span {
+					font: 14px/1 'arial';
+					color: #555;
+				}
+
+				i {
+					position: absolute;
+					bottom: 10px;
+					right: 15px;
+					font-size: 18px;
+					color: #555;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.enviroment {
+		.wrap {
+			li {
+				width: calc(100% / 2);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.enviroment {
+		.wrap {
+			li {
+				width: calc(100% / 1);
+			}
+		}
+	}
+}

@@ -64,3 +64,91 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	#goods {
+		width: 100%;
+		padding: 150px 30px;
+		.inner {
+			width: 100%;
+
+			h1 {
+				font: bold 30px/1 'Jost', sans-serif;
+				color: #333;
+				margin-bottom: 30px;
+			}
+
+			ul {
+				li {
+					.date {
+						p:nth-of-type(1) {
+							font: bold 18px/1 'Poppins', sans-serif;
+							color: coral;
+							margin-bottom: 15px;
+						}
+						p:nth-of-type(2) {
+							font: bold 15px/1 'Poppins', sans-serif;
+							color: gray;
+						}
+					}
+
+					.txt {
+						a {
+							font: bold 17px/1 'Poppins', sans-serif;
+							color: #333;
+							text-align: left;
+						}
+
+						p {
+							margin-top: 13px;
+							font: 15px/1 'Poppins', sans-serif;
+							color: #999;
+						}
+					}
+
+					.pic {
+						width: 150px;
+						height: 250px;
+						margin-bottom: 20px;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#goods {
+		.inner {
+			height: 100%;
+			ul {
+				li {
+					flex-wrap: wrap;
+					.date {
+						margin-bottom: 10px;
+						p:nth-of-type(1) {
+							display: inline;
+						}
+						p:nth-of-type(2) {
+							display: inline;
+						}
+					}
+
+					.txt {
+						margin-bottom: 30px;
+					}
+
+					.pic {
+						width: 100%;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}

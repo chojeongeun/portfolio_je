@@ -1,6 +1,6 @@
 #header {
 	width: 100%;
-	background-image: url(../../img/pic5.jpg);
+	background-image: url(../img/pic5.jpg);
 
 	.inner {
 		width: 1180px;
@@ -30,7 +30,6 @@
 			}
 		}
 		#gnb1 {
-			width: 100%;
 			position: absolute;
 			top: 30px;
 			left: 200px;
@@ -46,7 +45,6 @@
 		}
 
 		#gnb2 {
-			width: 100%;
 			position: absolute;
 			top: 30px;
 			right: 200px;
@@ -83,6 +81,28 @@
 			i {
 				font-size: 18px;
 				color: #eee;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#header {
+		width: 100%;
+
+		.inner {
+			width: 100%;
+
+			#gnb1 {
+				display: none;
+			}
+
+			#gnb2 {
+				display: none;
+			}
+
+			#util {
+				display: none;
 			}
 		}
 	}

@@ -17,24 +17,26 @@
 			justify-content: space-between;
 			align-items: center;
 
-			h2 {
-				font: bold 16px/1 'Poppins', sans-serif;
-				color: #333;
-				margin-bottom: 20px;
-			}
-
-			p {
-				font: 12px/1 'Poppins', sans-serif;
-				color: #666;
-			}
-
-			.pic {
-				img {
-					width: 100%;
-					height: 300px;
+			article {
+				.pic {
+					img {
+						width: 100%;
+						height: 300px;
+						margin-bottom: 20px;
+					}
+				}
+				h2 {
+					font: bold 16px/1 'Poppins', sans-serif;
+					color: #333;
 					margin-bottom: 20px;
 				}
+
+				p {
+					font: 12px/1 'Poppins', sans-serif;
+					color: #666;
+				}
 			}
+
 			article:nth-of-type(1) {
 				width: 280px;
 				height: 430px;
@@ -49,6 +51,63 @@
 			article:nth-of-type(3) {
 				width: 580px;
 				height: 430px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#science {
+		width: 100%;
+		padding: 150px 30px 100px;
+		.inner {
+			width: 100%;
+
+			h1 {
+				font: bold 30px/1 'Jost', sans-serif;
+				color: #333;
+				margin-bottom: 30px;
+			}
+
+			.wrap {
+				flex-direction: column;
+
+				article {
+					width: 100%;
+					height: 340px;
+					.pic {
+						width: 100%;
+
+						img {
+							width: 100%;
+							height: 200px;
+							margin-bottom: 20px;
+						}
+					}
+					h2 {
+						font: bold 16px/1 'Poppins', sans-serif;
+						color: #333;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 12px/1 'Poppins', sans-serif;
+						color: #666;
+					}
+				}
+
+				article:nth-of-type(1) {
+					width: 100%;
+					height: 340px;
+				}
+				article:nth-of-type(2) {
+					width: 100%;
+					height: 340px;
+				}
+				article:nth-of-type(3) {
+					width: 100%;
+					height: 340px;
+				}
 			}
 		}
 	}

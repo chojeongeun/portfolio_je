@@ -1,9 +1,13 @@
 @charset 'utf-8';
+$tablet: 999px;
+$mobile: 639px;
 
 //common
 @import 'common/reset';
 @import 'common/header';
 @import 'common/footer';
+@import 'common/layout';
+@import 'common/pop';
 
 //main
 @import 'main/banner';
@@ -12,6 +16,11 @@
 @import 'main/science';
 @import 'main/goods';
 @import 'main/visual';
+
+//sub
+@import 'sub/about';
+@import 'sub/science';
+@import 'sub/enviroment';
 
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
