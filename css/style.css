@@ -1258,7 +1258,7 @@ a {
 }
 .about .inner .wrap {
   width: 100%;
-  padding: 30px;
+  padding: 50px;
 }
 .about .inner .wrap::after {
   content: "";

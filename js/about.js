@@ -2,7 +2,7 @@ const wrap = document.querySelector('.about .wrap');
 
 let tags = '';
 
-fetch('/DB/department.json')
+fetch('DB/department.json')
 	.then((res) => {
 		return res.json();
 	})
