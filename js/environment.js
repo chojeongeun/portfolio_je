@@ -1,4 +1,4 @@
-const wrap = document.querySelector('.enviroment .wrap');
+const wrap = document.querySelector('.environment .wrap');
 const loading = document.querySelector('.enviroment .loading');
 const api_key = 'aa7fe17db9f4fb9505a841ac24c4f798';
 const num = 500;

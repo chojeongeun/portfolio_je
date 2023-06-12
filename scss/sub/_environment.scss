@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-.enviroment {
+.environment {
 	width: 100%;
 	background-color: rgb(229, 229, 229);
 	overflow: hidden;
@@ -87,7 +87,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-	.enviroment {
+	.environment {
 		.wrap {
 			li {
 				width: calc(100% / 2);
@@ -97,7 +97,7 @@
 }
 
 @media screen and (max-width: $mobile) {
-	.enviroment {
+	.environment {
 		.wrap {
 			li {
 				width: calc(100% / 1);
