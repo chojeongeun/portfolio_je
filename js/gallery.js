@@ -1,5 +1,5 @@
-const wrap = document.querySelector('.environment .wrap');
-const loading = document.querySelector('.environment .loading');
+const wrap = document.querySelector('.gallery .wrap');
+const loading = document.querySelector('.gallery .loading');
 const api_key = 'aa7fe17db9f4fb9505a841ac24c4f798';
 const num = 500;
 const myId = '198489373@N07';

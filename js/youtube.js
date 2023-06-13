@@ -1,4 +1,4 @@
-const wrap = document.querySelector('.science .wrap');
+const wrap = document.querySelector('.youtube .wrap');
 
 fetchData();
 
