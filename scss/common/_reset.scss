@@ -13,3 +13,19 @@ ol {
 a {
 	text-decoration: none;
 }
+
+fieldset {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+input,
+label {
+	vertical-align: middle;
+}
+.h {
+	position: absolute;
+	top: -99999px;
+	opacity: 0;
+}
