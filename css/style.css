@@ -9,14 +9,18 @@
   box-sizing: border-box;
 }
 
-li,
 ul,
-ol {
+ol,
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  background: #efefef;
 }
 
 fieldset {
@@ -1603,59 +1607,130 @@ label {
     width: 100%;
   }
 }
-.members form table {
+.members .inner h1 {
+  font: bold 50px/1 "" Jost ", sans-serif";
+  color: #333;
+  margin-bottom: 40px;
+}
+.members .inner .join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.members .inner .join li {
+  font: 16px/1 "맑은고딕";
+  color: #333;
+}
+.members .inner form h2 {
+  font: bold 20px/1 "맑은고딕";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .inner form .agreement {
+  margin-bottom: 50px;
+}
+.members .inner form .agreement textarea {
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 10px;
+  font: 15px/1.8 "Poppins", sans-serif;
+  color: #777;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid #aaa;
+}
+.members .inner form .agreement input {
+  margin-left: 10px;
+}
+.members .inner form .agreement label {
+  font-size: 11px;
+  color: #888;
+}
+.members .inner form table {
   width: 100%;
   border: none;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
-.members form table th,
-.members form table td {
+.members .inner form table th,
+.members .inner form table td {
   border: none;
-  border-bottom: 1px solid #ddd;
   padding: 16px 25px;
+  font: bold 15px/1 "Poppins", sans-serif;
+  color: #555;
 }
-.members form table th {
+.members .inner form table th {
   width: 20%;
 }
-.members form table th input[type=submit],
-.members form table th input[type=reset] {
-  width: 30%;
+.members .inner form table th input[type=submit],
+.members .inner form table th input[type=reset] {
+  width: 20%;
   height: 40px;
   border: 1px solid #333;
   margin: 10px;
-  font: bold 14px/40px "arial";
+  font: bold 14px/40px "Poppins", sans-serif;
   color: #555;
   cursor: pointer;
   transition: 0.5s;
+  border-radius: 50px;
 }
-.members form table th input[type=submit]:hover,
-.members form table th input[type=reset]:hover {
+.members .inner form table th input[type=submit]:hover,
+.members .inner form table th input[type=reset]:hover {
   background: #333;
   color: #fff;
 }
-.members form table td {
-  border-left: 1px solid #aaa;
-}
-.members form table td input[type=text],
-.members form table td input[type=password],
-.members form table td input[type=email],
-.members form table td select,
-.members form table td textarea {
+.members .inner form table td input[type=text],
+.members .inner form table td input[type=password],
+.members .inner form table td input[type=email],
+.members .inner form table td select,
+.members .inner form table td textarea {
   width: 60%;
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.01);
   padding: 10px;
-  border: 1px solid #aaa;
+  border: 1px solid #bbb;
   resize: none;
 }
-.members form table td input[type=checkbox],
-.members form table td input[type=radio] {
+.members .inner form table td input[type=text]:hover,
+.members .inner form table td input[type=password]:hover,
+.members .inner form table td input[type=email]:hover,
+.members .inner form table td select:hover,
+.members .inner form table td textarea:hover {
+  background: rgba(0, 0, 0, 0.09);
+}
+.members .inner form table td input[type=checkbox],
+.members .inner form table td input[type=radio] {
   margin-right: 30px;
 }
-.members form table td p {
+.members .inner form table td p {
   color: hotpink;
   margin-top: 5px;
   font: 11px/1 "맑은 고딕";
+}
+.members .inner form table #comments {
+  font-family: "맑은 고딕";
+}
+
+@media screen and (max-width: 999px) {
+  .members table th {
+    display: none;
+  }
+  .members table th:last-child {
+    display: inline;
+  }
+  .members table td {
+    width: 100%;
+  }
+  .members table td #userid,
+  .members table td #pwd1,
+  .members table td #pwd2,
+  .members table td #email,
+  .members table td #edu,
+  .members table td #comments {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

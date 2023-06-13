@@ -1,61 +1,145 @@
 .members {
-	form {
-		table {
-			width: 100%;
-			border: none;
-			border-top: 2px solid #333;
-			border-bottom: 2px solid #333;
+	.inner {
+		h1 {
+			font: bold 50px/1 '' Jost ', sans-serif';
+			color: #333;
+			margin-bottom: 40px;
+		}
 
-			th,
-			td {
-				border: none;
-				border-bottom: 1px solid #ddd;
-				padding: 16px 25px;
+		.join {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+			margin-bottom: 80px;
+
+			li {
+				font: 16px/1 '맑은고딕';
+				color: #333;
 			}
-			th {
-				width: 20%;
+		}
+		form {
+			h2 {
+				font: bold 20px/1 '맑은고딕';
+				color: #333;
+				margin-bottom: 20px;
+			}
+			.agreement {
+				margin-bottom: 50px;
+				textarea {
+					width: 100%;
+					height: 160px;
+					box-sizing: border-box;
+					padding: 20px;
+					margin-bottom: 10px;
+					font: 15px/1.8 'Poppins', sans-serif;
+					color: #777;
+					background: rgba(0, 0, 0, 0.03);
+					border: 1px solid #aaa;
+				}
 
-				input[type='submit'],
-				input[type='reset'] {
-					width: 30%;
-					height: 40px;
-					border: 1px solid #333;
-					margin: 10px;
-					font: bold 14px/40px 'arial';
+				input {
+					margin-left: 10px;
+				}
+				label {
+					font-size: 11px;
+					color: #888;
+				}
+			}
+
+			table {
+				width: 100%;
+				border: none;
+				border-top: 1px solid #333;
+				border-bottom: 1px solid #333;
+
+				th,
+				td {
+					border: none;
+					// border-bottom: 1px solid #ddd;
+					padding: 16px 25px;
+					font: bold 15px/1 'Poppins', sans-serif;
 					color: #555;
-					cursor: pointer;
-					transition: 0.5s;
+				}
 
-					&:hover {
-						background: #333;
-						color: #fff;
+				th {
+					width: 20%;
+
+					input[type='submit'],
+					input[type='reset'] {
+						width: 20%;
+						height: 40px;
+						border: 1px solid #333;
+						margin: 10px;
+						font: bold 14px/40px 'Poppins', sans-serif;
+						color: #555;
+						cursor: pointer;
+						transition: 0.5s;
+						border-radius: 50px;
+
+						&:hover {
+							background: #333;
+							color: #fff;
+						}
 					}
 				}
+
+				td {
+					// border-left: 1px solid #aaa;
+
+					input[type='text'],
+					input[type='password'],
+					input[type='email'],
+					select,
+					textarea {
+						width: 60%;
+						background: rgba(0, 0, 0, 0.01);
+						padding: 10px;
+						border: 1px solid #bbb;
+						resize: none;
+						&:hover {
+							background: rgba(0, 0, 0, 0.09);
+						}
+					}
+					input[type='checkbox'],
+					input[type='radio'] {
+						margin-right: 30px;
+					}
+
+					p {
+						color: hotpink;
+						margin-top: 5px;
+						font: 11px/1 '맑은 고딕';
+					}
+				}
+
+				#comments {
+					font-family: '맑은 고딕';
+				}
 			}
+		}
+	}
+}
 
+@media screen and (max-width: $tablet) {
+	.members {
+		table {
+			th {
+				display: none;
+				&:last-child {
+					display: inline;
+				}
+			}
 			td {
-				border-left: 1px solid #aaa;
+				width: 100%;
 
-				input[type='text'],
-				input[type='password'],
-				input[type='email'],
-				select,
-				textarea {
-					width: 60%;
-					background: rgba(0, 0, 0, 0.03);
-					padding: 10px;
-					border: 1px solid #aaa;
-					resize: none;
-				}
-				input[type='checkbox'],
-				input[type='radio'] {
-					margin-right: 30px;
-				}
-
-				p {
-					color: hotpink;
-					margin-top: 5px;
-					font: 11px/1 '맑은 고딕';
+				#userid,
+				#pwd1,
+				#pwd2,
+				#email,
+				#edu,
+				#comments {
+					width: 100%;
 				}
 			}
 		}
