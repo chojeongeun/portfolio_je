@@ -1,6 +1,9 @@
 #header {
 	width: 100%;
-	background-image: url(../img/pic5.jpg);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
 
 	.inner {
 		width: 1180px;
@@ -50,7 +53,7 @@
 			right: 200px;
 
 			li {
-				float: right;
+				float: left;
 				margin-right: 30px;
 				a {
 					font: bold 14px/1 'Poppins', sans-serif;
@@ -64,7 +67,7 @@
 			top: 30px;
 			right: 0px;
 			li {
-				float: right;
+				float: left;
 				margin-right: 30px;
 				a {
 					font: 14px/1 'Poppins', sans-serif;

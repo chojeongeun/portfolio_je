@@ -44,7 +44,10 @@ label {
 
 #header {
   width: 100%;
-  background-image: url(../img/pic5.jpg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
 #header .inner {
   width: 1180px;
@@ -89,7 +92,7 @@ label {
   right: 200px;
 }
 #header .inner #gnb2 li {
-  float: right;
+  float: left;
   margin-right: 30px;
 }
 #header .inner #gnb2 li a {
@@ -102,7 +105,7 @@ label {
   right: 0px;
 }
 #header .inner #util li {
-  float: right;
+  float: left;
   margin-right: 30px;
 }
 #header .inner #util li a {
@@ -1149,6 +1152,10 @@ label {
   background-repeat: repeat;
   background-position: 0px 0px;
   background-size: cover;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }
 #visual .inner {
   width: 1180px;
