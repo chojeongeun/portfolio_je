@@ -1,9 +1,36 @@
 #header {
 	width: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 2;
+
+	&.main {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+
+		.inner {
+			border-bottom: 1px solid #ddd;
+
+			h1 {
+				a {
+					color: #fff;
+				}
+			}
+			#gnb1,
+			#gnb2,
+			#util {
+				li {
+					a {
+						color: #fff;
+					}
+				}
+			}
+			.btncall {
+				i {
+					color: #fff;
+				}
+			}
+		}
+	}
 
 	.inner {
 		width: 1180px;
@@ -11,7 +38,7 @@
 		margin: 0px auto;
 		// border: 1px solid red;
 		position: relative;
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid #aaa;
 
 		&::after {
 			content: '';
@@ -29,7 +56,7 @@
 			a {
 				display: block;
 				font: bold 28px/1 'Jost', sans-serif;
-				color: #eee;
+				color: #333;
 			}
 		}
 		#gnb1 {
@@ -42,7 +69,7 @@
 				margin-right: 30px;
 				a {
 					font: bold 14px/1 'Poppins', sans-serif;
-					color: #eee;
+					color: #333;
 				}
 			}
 		}
@@ -57,7 +84,7 @@
 				margin-right: 30px;
 				a {
 					font: bold 14px/1 'Poppins', sans-serif;
-					color: #eee;
+					color: #333;
 				}
 			}
 		}
@@ -71,7 +98,7 @@
 				margin-right: 30px;
 				a {
 					font: 14px/1 'Poppins', sans-serif;
-					color: #eee;
+					color: #333;
 				}
 			}
 		}
@@ -83,7 +110,7 @@
 			left: 10px;
 			i {
 				font-size: 18px;
-				color: #eee;
+				color: #333;
 			}
 		}
 	}
