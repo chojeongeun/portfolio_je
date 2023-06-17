@@ -1,0 +1,13 @@
+.location {
+	.inner {
+		h1 {
+			margin-bottom: 50px;
+		}
+		#map {
+			width: 100%;
+			height: 400px;
+			background: #111;
+			position: relative;
+		}
+	}
+}
