@@ -879,7 +879,7 @@ body {
   }
   #community .inner .wrap article:nth-of-type(1) {
     float: none;
-    width: 100%;
+    width: 55%;
     margin-bottom: 30px;
   }
   #community .inner .wrap article:nth-of-type(1) .pic {
@@ -906,7 +906,7 @@ body {
     margin-bottom: 30px;
   }
   #community .inner .wrap article:nth-of-type(2) .txtBox {
-    width: 100%;
+    width: 55%;
   }
   #community .inner .wrap article:nth-of-type(2) .txtBox h2 {
     font: bold 12px/1 "Jost", sans-serif;
@@ -927,7 +927,7 @@ body {
     width: 100%;
   }
   #community .inner .wrap article:nth-of-type(3) .pic {
-    width: 100%;
+    width: 55%;
   }
   #community .inner .wrap article:nth-of-type(3) h2 {
     font: bold 12px/1 "Jost", sans-serif;
@@ -968,6 +968,7 @@ body {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 #science .inner .wrap article h2 {
   font: bold 16px/1 "Poppins", sans-serif;
@@ -1015,7 +1016,7 @@ body {
     height: 340px;
   }
   #science .inner .wrap article .pic {
-    width: 100%;
+    width: 55%;
   }
   #science .inner .wrap article .pic img {
     width: 100%;
