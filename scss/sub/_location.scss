@@ -1,6 +1,16 @@
 .location {
 	.inner {
 		h1 {
+			font: bold 55px/1 'Jost', sans-serif;
+			color: #444;
+			text-align: center;
+			margin-bottom: 0px;
+		}
+
+		h2 {
+			text-align: center;
+			font: 15px/1 'Jost', sans-serif;
+			color: #555;
 			margin-bottom: 50px;
 		}
 		#map {
@@ -8,22 +18,23 @@
 			height: 400px;
 			background: #111;
 			position: relative;
+			filter: grayscale(40%);
+			transition: filter 0.5s;
+
+			&:hover {
+				filter: saturate(100%);
+			}
 		}
 
 		.txtwrap {
 			width: 100%;
-			&::after {
-				content: '';
-				display: block;
-				clear: both;
-			}
+			display: flex;
 
 			.contact {
 				width: 450px;
 				margin: 30px 0px;
 				padding: 20px;
 				border: 1px solid #aaa;
-				float: left;
 				p {
 					font: bold 30px/1 'jost';
 					color: #555;
@@ -69,7 +80,6 @@
 				width: 600px;
 				margin: 30px 30px;
 				border: 1px solid #aaa;
-				float: left;
 
 				.btn {
 					width: 100%;
@@ -93,14 +103,19 @@
 					li {
 						width: 100%;
 						height: 300px;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						font: bold 30px/1 'arial';
-						color: #555;
+
 						display: none;
 						&.on {
+							display: block;
+						}
+						p {
+							width: 100%;
+							font: 18px/1 'jost';
+							color: #555;
+							padding: 30px;
 							display: flex;
+							justify-content: center;
+							align-items: center;
 						}
 					}
 				}
