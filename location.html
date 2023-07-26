@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/6b1c54714c.js" crossorigin="anonymous"></script>
+  <script defer src="js/faq.js"></script>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e162038e71d7c43498ab7beeffa3aaad"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
@@ -64,18 +65,34 @@
     <div class="inner">
       <h1>LOCATION</h1>
       <div id="map"></div>
-      <article class="contact">
-        <form id="contact-form">
-          <input type="hidden" name="contact_number">
-          <label>Name</label>
-          <input type="text" name="user_name">
-          <label>Email</label>
-          <input type="email" name="user_email">
-          <label>Message</label>
-          <textarea name="message"></textarea>
-          <input type="submit" value="Send">
-        </form>
-      </article>
+      <div class="txtwrap">
+        <article class="contact">
+          <form id="contact-form">
+            <p>CONTACT</p>
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </article>
+
+        <article class="FAQ">
+          <ul class="btn">
+            <li class="on">FAQ1</li>
+            <li>FAQ2</li>
+            <li>FAQ3</li>
+          </ul>
+          <ul class="box">
+            <li class="on">lorem1</li>
+            <li>lorem2</li>
+            <li>lorem3</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 

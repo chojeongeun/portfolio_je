@@ -9,5 +9,102 @@
 			background: #111;
 			position: relative;
 		}
+
+		.txtwrap {
+			width: 100%;
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			.contact {
+				width: 450px;
+				margin: 30px 0px;
+				padding: 20px;
+				border: 1px solid #aaa;
+				float: left;
+				p {
+					font: bold 30px/1 'jost';
+					color: #555;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				input {
+					width: 200px;
+					height: 20px;
+					display: block;
+					margin-top: 10px;
+					margin-bottom: 20px;
+					border: 1px solid #aaa;
+
+					&:last-child {
+						display: block;
+						width: 150px;
+						height: 30px;
+						margin: 0px auto;
+						font: bold 14px/30px 'jost';
+						color: #555;
+						border: 1px solid #aaa;
+						cursor: pointer;
+					}
+				}
+				label {
+					font: bold 14px/1 'Jost';
+					color: #555;
+				}
+
+				textarea {
+					width: 300px;
+					height: 80px;
+					margin-top: 10px;
+					display: block;
+					resize: none;
+					border: 1px solid #aaa;
+					margin-bottom: 20px;
+				}
+			}
+
+			.FAQ {
+				width: 600px;
+				margin: 30px 30px;
+				border: 1px solid #aaa;
+				float: left;
+
+				.btn {
+					width: 100%;
+					li {
+						float: left;
+						width: calc(100% / 3);
+						height: 50px;
+						display: block;
+						font: bold 14px/50px 'Jost';
+						color: #999;
+						background: #333;
+						text-align: center;
+						&.on {
+							background: #efefef;
+							color: #333;
+						}
+					}
+				}
+				.box {
+					width: 100%;
+					li {
+						width: 100%;
+						height: 300px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						font: bold 30px/1 'arial';
+						color: #555;
+						display: none;
+						&.on {
+							display: flex;
+						}
+					}
+				}
+			}
+		}
 	}
 }

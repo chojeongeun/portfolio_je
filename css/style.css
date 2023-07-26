@@ -1818,6 +1818,97 @@ body {
   background: #111;
   position: relative;
 }
+.location .inner .txtwrap {
+  width: 100%;
+}
+.location .inner .txtwrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .inner .txtwrap .contact {
+  width: 450px;
+  margin: 30px 0px;
+  padding: 20px;
+  border: 1px solid #aaa;
+  float: left;
+}
+.location .inner .txtwrap .contact p {
+  font: bold 30px/1 "jost";
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.location .inner .txtwrap .contact input {
+  width: 200px;
+  height: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+}
+.location .inner .txtwrap .contact input:last-child {
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin: 0px auto;
+  font: bold 14px/30px "jost";
+  color: #555;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+.location .inner .txtwrap .contact label {
+  font: bold 14px/1 "Jost";
+  color: #555;
+}
+.location .inner .txtwrap .contact textarea {
+  width: 300px;
+  height: 80px;
+  margin-top: 10px;
+  display: block;
+  resize: none;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+.location .inner .txtwrap .FAQ {
+  width: 600px;
+  margin: 30px 30px;
+  border: 1px solid #aaa;
+  float: left;
+}
+.location .inner .txtwrap .FAQ .btn {
+  width: 100%;
+}
+.location .inner .txtwrap .FAQ .btn li {
+  float: left;
+  width: 33.3333333333%;
+  height: 50px;
+  display: block;
+  font: bold 14px/50px "Jost";
+  color: #999;
+  background: #333;
+  text-align: center;
+}
+.location .inner .txtwrap .FAQ .btn li.on {
+  background: #efefef;
+  color: #333;
+}
+.location .inner .txtwrap .FAQ .box {
+  width: 100%;
+}
+.location .inner .txtwrap .FAQ .box li {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 30px/1 "arial";
+  color: #555;
+  display: none;
+}
+.location .inner .txtwrap .FAQ .box li.on {
+  display: flex;
+}
 
 .scrollBtn {
   position: fixed;
