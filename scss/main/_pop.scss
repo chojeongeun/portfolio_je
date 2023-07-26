@@ -1,0 +1,38 @@
+#pop {
+	width: 320px;
+	height: 200px;
+	background-color: #efefef;
+	border: 1px solid #999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #777;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	display: block;
+	z-index: 2;
+
+	.content {
+		width: 100%;
+		height: 160px;
+		padding: 20px;
+	}
+
+	.bottom {
+		width: 100%;
+		height: 40px;
+		padding: 0px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.wrap {
+			font: 12px/1 '돋움';
+			color: #777;
+			margin-left: 2px;
+		}
+		.btnClose {
+			font: bold 14px/1 'arial';
+			color: #777;
+		}
+	}
+}
