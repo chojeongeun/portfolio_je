@@ -511,6 +511,18 @@ body {
   font: bold 30px/1 "Jost", sans-serif;
   color: #333;
   margin-bottom: 30px;
+  position: relative;
+}
+#news .inner h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 900px;
+  height: 1px;
+  background: #999;
+  margin-bottom: 30px;
 }
 #news .inner .wrap::after {
   content: "";
@@ -771,6 +783,18 @@ body {
   font: bold 30px/1 "Jost", sans-serif;
   color: #333;
   margin-bottom: 30px;
+  position: relative;
+}
+#community .inner h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 800px;
+  height: 1px;
+  background: #999;
+  margin-bottom: 30px;
 }
 #community .inner .wrap::after {
   content: "";
@@ -959,6 +983,18 @@ body {
   font: bold 30px/1 "Jost", sans-serif;
   color: #333;
   margin-bottom: 30px;
+  position: relative;
+}
+#science .inner h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 1000px;
+  height: 1px;
+  background: #999;
+  margin-bottom: 30px;
 }
 #science .inner .wrap {
   display: flex;
@@ -1061,6 +1097,18 @@ body {
 #goods .inner h1 {
   font: bold 30px/1 "Jost", sans-serif;
   color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+#goods .inner h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 1000px;
+  height: 1px;
+  background: #999;
   margin-bottom: 30px;
 }
 #goods .inner ul li {
@@ -1335,8 +1383,9 @@ body {
   margin-left: 2px;
 }
 #pop .bottom .btnClose {
-  font: bold 14px/1 "arial";
+  font: bold 12px/1 "jost";
   color: #777;
+  letter-spacing: 1px;
 }
 
 .about .inner {
