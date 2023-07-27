@@ -1282,34 +1282,56 @@ body {
 }
 #pop {
   width: 320px;
-  height: 200px;
-  background-color: #efefef;
+  height: 250px;
+  background-color: #fff;
   border: 1px solid #999;
+  border-radius: 10px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #777;
+  border: 1px solid #999;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-  display: block;
   z-index: 2;
 }
 #pop .content {
   width: 100%;
-  height: 160px;
+  height: 200px;
   padding: 20px;
+  margin: 0px auto;
+}
+#pop .content .pic {
+  width: 70px;
+  height: 70px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+#pop .content .pic img {
+  width: 100%;
+  height: 100%;
+}
+#pop .content h2 {
+  font: bold 28px/1 "Jost";
+  color: #555;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#pop .content p {
+  font: 15px/1 "Jost";
+  color: #666;
+  text-align: center;
 }
 #pop .bottom {
   width: 100%;
-  height: 40px;
-  padding: 0px 20px;
+  height: 50px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#pop .bottom .wrap {
-  font: 12px/1 "돋움";
-  color: #777;
+#pop .bottom .wrap label {
+  font: 14px/1 "Jost";
+  color: #555;
   margin-left: 2px;
 }
 #pop .bottom .btnClose {
