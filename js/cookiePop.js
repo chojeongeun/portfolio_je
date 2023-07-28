@@ -1,9 +1,8 @@
 const pop = document.querySelector('#pop');
 const ck = pop.querySelector('#ck');
 const btnClose = pop.querySelector('.btnClose');
-const btnShowCookie = document.querySelector('.btnShowCookie');
-const btnDelCookie = document.querySelector('.btnDelCookie');
-//const [btnShowCookie, btnDelCookie] = document.querySelectorAll('button');
+const btnShowCookie = document.querySelector('#util .login');
+const btnDelCookie = document.querySelector('#util .mg');
 
 if (document.cookie.indexOf('today=done') < 0) {
 	pop.style.display = 'block';
