@@ -1937,6 +1937,7 @@ body {
   color: #999;
   background: #333;
   text-align: center;
+  cursor: pointer;
 }
 .location .inner .txtwrap .FAQ .btn li.on {
   background: #efefef;

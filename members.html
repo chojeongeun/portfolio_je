@@ -47,9 +47,9 @@
         <li>02 정보입력</li>
         <li>03 가입완료</li>
       </ul>
-      <form action="result.html" method="get" id="member">
+      <form action="result.html">
         <fieldset>
-          <legend class="h">회원가입 폼 입력항목</legend>
+          <legend class="h">회원가입 입력 양식</legend>
           <h2>회원약관 동의</h2>
           <div class="agreement">
             <textarea>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi suscipit assumenda consectetur mollitia dolores nisi possimus impedit facilis explicabo vitae quae architecto corrupti deserunt, aperiam, non minima aliquid molestias vel necessitatibus quidem obcaecati. Sapiente accusamus nobis neque accusantium deleniti culpa, molestias possimus ea dicta vitae obcaecati libero nihil cumque modi.</textarea>
@@ -60,6 +60,7 @@
           </div>
 
           <table border="1">
+            <caption class="h">회원정보 테이블</caption>
             <h2>기본 정보</h2>
             <tbody>
               <!-- user id -->
@@ -69,6 +70,7 @@
                 </th>
                 <td>
                   <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
+                  <p class="err">아이디를 5글자 이상 입력하세요.</p>
                 </td>
               </tr>
 
@@ -79,6 +81,7 @@
                 </th>
                 <td>
                   <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
+                  <p class="err">비밀번호에 숫자, 문자, 특수문자를 모두 포함하세요.</p>
                 </td>
               </tr>
               <tr>
@@ -86,17 +89,18 @@
                   <label for="pwd2">Re Password</label>
                 </th>
                 <td>
-                  <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재 입력하세요.">
+                  <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요.">
+                  <p class="err">두개의 비밀번호를 같게 입력하세요.</p>
                 </td>
               </tr>
 
-              <!-- email -->
+              <!-- email
               <tr>
                 <th><label for="email">E-mail</label></th>
                 <td>
                   <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요."></input>
                 </td>
-              </tr>
+              </tr> -->
 
               <!-- education -->
               <tr>
@@ -111,6 +115,7 @@
                     <option value="high school">고등학교 졸업</option>
                     <option value="college">대학교 졸업</option>
                   </select>
+                  <p class="err">최종학력을 선택하세요.</p>
                 </td>
               </tr>
 
@@ -125,7 +130,10 @@
 
                   <label for="female">Female</label>
                   <input type="radio" name="gender" id="female" value="female">
+                  <p class="err">성별을 선택해주세요.</p>
+
                 </td>
+
               </tr>
 
               <!-- interests -->
@@ -135,16 +143,17 @@
                 </th>
                 <td>
                   <label for="sports">Sports</label>
-                  <input type="checkbox" name="hobby" id="sports" value="sports">
+                  <input type="checkbox" name="interests" id="sports" value="sports">
 
                   <label for="music">Music</label>
-                  <input type="checkbox" name="hobby" id="music" value="music">
+                  <input type="checkbox" name="interests" id="music" value="music">
 
                   <label for="game">Game</label>
-                  <input type="checkbox" name="hobby" id="game" value="game">
+                  <input type="checkbox" name="interests" id="game" value="game">
 
                   <label for="reading">Reading</label>
-                  <input type="checkbox" name="hobby" id="reading" value="reading">
+                  <input type="checkbox" name="interests" id="reading" value="reading">
+                  <p class="err">취미를 하나 이상 선택하세요.</p>
                 </td>
               </tr>
 
@@ -153,6 +162,7 @@
                 <th><label for="'comments">Comments</label></th>
                 <td>
                   <textarea name="comments" id="comments" cols="30" rows="4" placeholder="남기는 글을 입력하세요."></textarea>
+                  <p class="err">남기는 글을 10글자 이상 입력하세요.</p>
                 </td>
               </tr>
 
