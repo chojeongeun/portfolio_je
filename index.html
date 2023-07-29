@@ -9,9 +9,14 @@
   <script src="https://kit.fontawesome.com/6b1c54714c.js" crossorigin="anonymous"></script>
   <script defer src="js/main.js"></script>
   <script defer src="js/cookiePop.js"></script>
-  <script defer src="js/slider.js"></script>
+  <!-- <script defer src="js/slider.js"></script> -->
   <script src="js/anime.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/swiper.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <title>포트폴리오</title>
+
 </head>
 
 <body>
@@ -53,7 +58,7 @@
 
 
   <figure id="visual">
-    <ul class="panel">
+    <!-- <ul class="panel">
       <li class="p1">
         <div class="inner">
           <p>SCIENCE</p>
@@ -93,8 +98,18 @@
     </button>
     <button class="sliderNext">
       <i class="fas fa-sharp fa-light fa-circle-chevron-right"></i>
-    </button>
-
+    </button> -->
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">1</div>
+        <div class="swiper-slide">2</div>
+        <div class="swiper-slide">3</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
 
   </figure>
