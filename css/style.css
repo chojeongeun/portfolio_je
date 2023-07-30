@@ -2152,71 +2152,72 @@ table {
   color: #555;
   margin-bottom: 50px;
 }
-.community .inner #slider {
-  width: 700px;
+.community .inner #list2 table {
+  width: 1000px;
+  height: 400px;
+  margin: 0px auto;
+  text-align: center;
+  border: none;
+}
+.community .inner #list2 table th {
+  border-bottom: 1px solid #555;
+}
+.community .inner #list2 table td:nth-of-type(2) {
+  text-align: left;
+  padding: 0px 80px;
+}
+.community .inner #slider2 {
+  width: 1000px;
   height: 450px;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   margin: 100px auto;
   position: relative;
   overflow: hidden;
 }
-.community .inner #slider .panel {
+.community .inner #slider2 .panel2 {
   width: 500%;
   height: 100%;
+  margin-left: -100%;
 }
-.community .inner #slider .panel::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.community .inner #slider .panel li {
+.community .inner #slider2 .panel2 li {
   width: 20%;
   height: 100%;
-  float: left;
-  text-align: center;
   padding: 50px;
+  float: left;
 }
-.community .inner #slider .panel li h3 {
-  font: bold 30px/1 "arial";
+.community .inner #slider2 .panel2 li h3 {
+  font: bold 30px/1 "jost";
+  color: #333;
   margin-bottom: 20px;
 }
-.community .inner #slider .panel li p {
-  font: 20px/1 "arial";
+.community .inner #slider2 .panel2 li p {
+  font: 20px/1 "jost";
+  color: #444;
 }
-.community .inner #slider .panel li:nth-of-type(1) {
-  background: #aaa;
+.community .inner #slider2 .panel2 li.p1 {
+  background: pink;
 }
-.community .inner #slider .panel li:nth-of-type(2) {
-  background: #bbb;
+.community .inner #slider2 .panel2 li.p2 {
+  background: lightgreen;
 }
-.community .inner #slider .panel li:nth-of-type(3) {
-  background: #ccc;
+.community .inner #slider2 .panel2 li.p3 {
+  background: orange;
 }
-.community .inner #slider .panel li:nth-of-type(4) {
-  background: #ddd;
+.community .inner #slider2 .panel2 li.p4 {
+  background: lightblue;
 }
-.community .inner #slider .panel li:nth-of-type(5) {
-  background: #999;
+.community .inner #slider2 .panel2 li.p5 {
+  background: lightcoral;
 }
-.community .inner #slider .btn {
+.community .inner #slider2 .prev {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  top: 50%;
+  left: 50px;
 }
-.community .inner #slider .btn li {
-  float: left;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 50%;
-}
-.community .inner #slider .btn li.on {
-  width: 80px;
-  background: #333;
-  border-radius: 30px;
+.community .inner #slider2 .next {
+  position: absolute;
+  top: 50%;
+  right: 50px;
 }
 
 .scrollBtn {
