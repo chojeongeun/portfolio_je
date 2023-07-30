@@ -1850,6 +1850,9 @@ body {
     width: 100%;
   }
 }
+.location .inner {
+  width: 1180px;
+}
 .location .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
   color: #444;
@@ -1875,11 +1878,13 @@ body {
 }
 .location .inner .txtwrap {
   width: 100%;
+  margin-top: 20px;
   display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .location .inner .txtwrap .contact {
-  width: 450px;
-  margin: 30px 0px;
+  width: 50%;
   padding: 20px;
   border: 1px solid #aaa;
 }
@@ -1921,8 +1926,7 @@ body {
   margin-bottom: 20px;
 }
 .location .inner .txtwrap .FAQ {
-  width: 600px;
-  margin: 30px 30px;
+  width: 50%;
   border: 1px solid #aaa;
 }
 .location .inner .txtwrap .FAQ .btn {
