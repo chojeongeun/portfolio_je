@@ -2186,12 +2186,13 @@ table {
   float: left;
 }
 .community .inner #slider2 .panel2 li h3 {
-  font: bold 30px/1 "jost";
+  font: bold 35px/1 "jost";
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .community .inner #slider2 .panel2 li p {
-  font: 20px/1 "jost";
+  font: 20px/1.5 "jost";
   color: #444;
 }
 .community .inner #slider2 .panel2 li.p1 {
@@ -2207,17 +2208,29 @@ table {
   background: lightblue;
 }
 .community .inner #slider2 .panel2 li.p5 {
-  background: lightcoral;
+  background: lavenderblush;
 }
 .community .inner #slider2 .prev {
   position: absolute;
-  top: 50%;
-  left: 50px;
+  bottom: 20%;
+  right: 150px;
+  border: none;
+  background: none;
+}
+.community .inner #slider2 .prev i {
+  font-size: 30px;
+  color: #777;
 }
 .community .inner #slider2 .next {
   position: absolute;
-  top: 50%;
-  right: 50px;
+  bottom: 20%;
+  right: 100px;
+  border: none;
+  background: none;
+}
+.community .inner #slider2 .next i {
+  font-size: 30px;
+  color: #777;
 }
 
 .scrollBtn {

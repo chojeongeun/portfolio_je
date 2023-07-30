@@ -146,19 +146,16 @@
 					height: 100%;
 					padding: 50px;
 					h3 {
-						font: bold 30px/1 'jost';
+						font: bold 35px/1 'jost';
 						color: #333;
-						margin-bottom: 20px;
+						margin-bottom: 50px;
+						text-align: center;
 					}
 					p {
-						font: 20px/1 'jost';
+						font: 20px/1.5 'jost';
 						color: #444;
 					}
-					// font-size: 50px;
-					// display: flex;
-					// justify-content: center;
-					// align-items: center;
-					// color: #fff;
+
 					float: left;
 
 					&.p1 {
@@ -174,20 +171,34 @@
 						background: lightblue;
 					}
 					&.p5 {
-						background: lightcoral;
+						background: lavenderblush;
+					}
+					.prev {
 					}
 				}
 			}
 
 			.prev {
 				position: absolute;
-				top: 50%;
-				left: 50px;
+				bottom: 20%;
+				right: 150px;
+				border: none;
+				background: none;
+				i {
+					font-size: 30px;
+					color: #777;
+				}
 			}
 			.next {
 				position: absolute;
-				top: 50%;
-				right: 50px;
+				bottom: 20%;
+				right: 100px;
+				border: none;
+				background: none;
+				i {
+					font-size: 30px;
+					color: #777;
+				}
 			}
 		}
 	}
