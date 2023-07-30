@@ -1,7 +1,7 @@
 .members {
 	.inner {
 		h1 {
-			font: bold 50px/1 '' Jost ', sans-serif';
+			font: bold 50px/1 ' Jost ';
 			color: #333;
 			margin-bottom: 40px;
 		}
@@ -56,7 +56,6 @@
 				th,
 				td {
 					border: none;
-					// border-bottom: 1px solid #ddd;
 					padding: 16px 25px;
 					font: bold 15px/1 'Poppins', sans-serif;
 					color: #555;
@@ -89,12 +88,11 @@
 
 					input[type='text'],
 					input[type='password'],
-					input[type='email'],
 					select,
 					textarea {
 						width: 60%;
 						background: rgba(0, 0, 0, 0.01);
-						padding: 10px;
+						padding: 5px 8px;
 						border: 1px solid #bbb;
 						resize: none;
 						&:hover {
@@ -106,10 +104,11 @@
 						margin-right: 30px;
 					}
 
-					p {
+					.err {
 						color: hotpink;
 						margin-top: 5px;
 						font: 11px/1 '맑은 고딕';
+						display: none;
 					}
 				}
 
@@ -120,6 +119,60 @@
 		}
 	}
 }
+/*
+table {
+	width: 800px;
+	margin: 100px auto;
+	border: none;
+	border-top: 2px solid #111;
+	border-bottom: 2px solid #111;
+
+	td,
+	th {
+		border: none;
+		padding: 10px 30px;
+		text-align: left;
+	}
+
+	th {
+		width: 30%;
+
+		&:last-child {
+			text-align: center;
+		}
+
+		input {
+			width: 150px;
+			height: 30px;
+			background: #fff;
+			color: #555;
+			border: 1px solid #555;
+			cursor: pointer;
+			margin: 0px 20px;
+		}
+	}
+	td {
+		border-left: 1px solid #bbb;
+
+		input[type='text'],
+		input[type='password'],
+		select,
+		textarea {
+			width: 70%;
+			padding: 5px 8px;
+			background: #f4ffff;
+			border: 1px solid #888;
+			resize: none;
+		}
+		.err {
+			font: 11px/1.5 '돋움';
+			color: hotpink;
+			margin-top: 4px;
+			display: none;
+		}
+	}
+}
+*/
 
 @media screen and (max-width: $tablet) {
 	.members {

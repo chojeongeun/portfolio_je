@@ -60,121 +60,98 @@
           </div>
 
           <table border="1">
-            <caption class="h">회원정보 테이블</caption>
-            <h2>기본 정보</h2>
+            <caption class="h">회원가입 테이블</caption>
             <tbody>
-              <!-- user id -->
+              <!-- 사용자 아이디 -->
               <tr>
-                <th scope="row">
-                  <label for="userid">User ID</label>
-                </th>
+                <th scope="row"><label for="userid">userid</label></th>
                 <td>
                   <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
                   <p class="err">아이디를 5글자 이상 입력하세요.</p>
                 </td>
               </tr>
 
-              <!-- password -->
+              <!-- 비밀번호 -->
               <tr>
-                <th scope="row">
-                  <label for="pwd1">Password</label>
-                </th>
+                <th scope="row"><label for="pwd1">password</label></th>
                 <td>
                   <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
                   <p class="err">비밀번호에 숫자, 문자, 특수문자를 모두 포함하세요.</p>
                 </td>
               </tr>
+
+              <!-- 비밀번호 재입력 -->
               <tr>
-                <th scope="row">
-                  <label for="pwd2">Re Password</label>
-                </th>
+                <th scope="row"><label for="pwd2">re-password</label></th>
                 <td>
                   <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요.">
                   <p class="err">두개의 비밀번호를 같게 입력하세요.</p>
                 </td>
               </tr>
 
-              <!-- email
+              <!-- 성별 선택 -->
               <tr>
-                <th><label for="email">E-mail</label></th>
+                <th scope="row">gender</th>
                 <td>
-                  <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요."></input>
-                </td>
-              </tr> -->
+                  <label for="female">female</label>
+                  <input type="radio" name="gender" value="female" id="female">
 
-              <!-- education -->
+                  <label for="male">male</label>
+                  <input type="radio" name="gender" value="male" id="male">
+                  <p class="err">성별을 선택해주세요.</p>
+                </td>
+              </tr>
+
+              <!-- 관심사 선택 -->
               <tr>
-                <th scrope="row">
-                  <label for="edu">Education</label>
-                </th>
+                <th scope="row">interests</th>
+                <td>
+                  <label for="sports">sports</label>
+                  <input type="checkbox" name="interests" value="sports" id="sports">
+
+                  <label for="music">music</label>
+                  <input type="checkbox" name="interests" value="music" id="music">
+
+                  <label for="reading">reading</label>
+                  <input type="checkbox" name="interests" value="reading" id="reading">
+                  <p class="err">취미를 하나 이상 선택하세요.</p>
+                </td>
+              </tr>
+
+              <!-- 최종학력 선택 -->
+              <tr>
+                <th scope="row"><label for="edu">education</label></th>
                 <td>
                   <select name="edu" id="edu">
-                    <option value="">최종학력을 선택해주세요</option>
-                    <option value="elementary school">초등학교 졸업</option>
-                    <option value="middle school">중학교 졸업</option>
-                    <option value="high school">고등학교 졸업</option>
+                    <option value="">최종학력을 선택하세요.</option>
+                    <option value="elementary-school">초등학교 졸업</option>
+                    <option value="middle-school">중학교 졸업</option>
+                    <option value="high-school">고등학교 졸업</option>
                     <option value="college">대학교 졸업</option>
                   </select>
                   <p class="err">최종학력을 선택하세요.</p>
                 </td>
               </tr>
 
-              <!-- gender -->
+              <!-- 남기는 말 -->
               <tr>
-                <th scope="row">
-                  Gender
-                </th>
+                <th scope="row"><label for="comments">comments</label></th>
                 <td>
-                  <label for="male">Male</label>
-                  <input type="radio" name="gender" id="male" value="male">
-
-                  <label for="female">Female</label>
-                  <input type="radio" name="gender" id="female" value="female">
-                  <p class="err">성별을 선택해주세요.</p>
-
-                </td>
-
-              </tr>
-
-              <!-- interests -->
-              <tr>
-                <th scope="row">
-                  Interests
-                </th>
-                <td>
-                  <label for="sports">Sports</label>
-                  <input type="checkbox" name="interests" id="sports" value="sports">
-
-                  <label for="music">Music</label>
-                  <input type="checkbox" name="interests" id="music" value="music">
-
-                  <label for="game">Game</label>
-                  <input type="checkbox" name="interests" id="game" value="game">
-
-                  <label for="reading">Reading</label>
-                  <input type="checkbox" name="interests" id="reading" value="reading">
-                  <p class="err">취미를 하나 이상 선택하세요.</p>
+                  <textarea name="comments" id="comments" cols="30" rows="3" placeholder="남기는말을 입력하세요"></textarea>
+                  <p class="err">남기는 말을 10글자 이상 입력하세요.</p>
                 </td>
               </tr>
 
-              <!-- comments -->
-              <tr>
-                <th><label for="'comments">Comments</label></th>
-                <td>
-                  <textarea name="comments" id="comments" cols="30" rows="4" placeholder="남기는 글을 입력하세요."></textarea>
-                  <p class="err">남기는 글을 10글자 이상 입력하세요.</p>
-                </td>
-              </tr>
-
-              <!-- button set -->
+              <!-- 버튼셋 -->
               <tr>
                 <th colspan="2">
-                  <input type="reset" value="Cancel">
-                  <input type="submit" value="Submit">
+                  <input type="reset" value="취소">
+                  <input type="submit" value="전송">
                 </th>
               </tr>
             </tbody>
           </table>
+
         </fieldset>
       </form>
     </div>

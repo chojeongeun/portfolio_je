@@ -31,11 +31,6 @@ table {
   border-collapse: collapse;
 }
 
-input,
-label {
-  vertical-align: middle;
-}
-
 .h {
   position: absolute;
   top: -99999px;
@@ -51,7 +46,7 @@ body {
   width: 100%;
 }
 #header.main {
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: 2;
@@ -1227,6 +1222,96 @@ body {
   top: 0px;
   left: 0px;
   z-index: 1;
+  /*
+  .panel {
+  	width: 300%;
+  	height: 100%;
+  	margin-left: -100%;
+
+  	li {
+  		width: calc(100% / 3);
+  		height: 100%;
+  		font-size: 50px;
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		color: #fff;
+  		float: left;
+
+  		.inner {
+  			width: 1180px;
+  			margin: 0px auto;
+
+  			p {
+  				font: 13px/1 'Jost', sans-serif;
+  				color: coral;
+  				margin-bottom: 15px;
+  			}
+  			h1 {
+  				width: 70%;
+  				font: bold 50px/1.3 'Jost', sans-serif;
+  				color: #fff;
+  				margin-bottom: 15px;
+  				transition: 0.5s;
+  			}
+
+  			span {
+  				font: 13px/1 'Jost', sans-serif;
+  				color: #ddd;
+  			}
+
+  			.btn1 {
+  				display: block;
+  				margin-top: 50px;
+  				font: 13px/1 'Jost', sans-serif;
+  				color: #eee;
+  			}
+  		}
+
+  		&.p1 {
+  			background-image: url(../img/pic5.jpg);
+  			background-repeat: repeat;
+  			background-position: 0px 0px;
+  			background-size: cover;
+  		}
+  		&.p2 {
+  			background-image: url(../img/pic4.jpg);
+  			background-repeat: repeat;
+  			background-position: 0px 0px;
+  			background-size: cover;
+  		}
+  		&.p3 {
+  			background-image: url(../img/pic17.jpg);
+  			background-repeat: repeat;
+  			background-position: 0px 0px;
+  			background-size: cover;
+  		}
+  	}
+  }
+
+  .sliderPrev {
+  	position: absolute;
+  	bottom: 20%;
+  	right: 150px;
+  	border: none;
+  	background: none;
+  	i {
+  		font-size: 30px;
+  		color: #eee;
+  	}
+  }
+  .sliderNext {
+  	position: absolute;
+  	bottom: 20%;
+  	right: 100px;
+  	border: none;
+  	background: none;
+  	i {
+  		font-size: 30px;
+  		color: #eee;
+  	}
+  }
+  */
 }
 #visual .swiper {
   width: 100%;
@@ -1235,10 +1320,44 @@ body {
 #visual .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: left;
+}
+#visual .swiper .swiper-slide:nth-child(1n) {
+  background-image: url(../img/pic5.jpg);
+}
+#visual .swiper .swiper-slide:nth-child(2n) {
+  background-image: url(../img/pic4.jpg);
+}
+#visual .swiper .swiper-slide:nth-child(3n) {
+  background-image: url(../img/pic17.jpg);
+}
+#visual .swiper .swiper-slide .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+#visual .swiper .swiper-slide .inner p {
+  font: 13px/1 "Jost", sans-serif;
+  color: coral;
+  margin-bottom: 15px;
+}
+#visual .swiper .swiper-slide .inner h1 {
+  width: 70%;
+  font: bold 50px/1.3 "Jost", sans-serif;
+  color: #fff;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+#visual .swiper .swiper-slide .inner span {
+  font: 13px/1 "Jost", sans-serif;
+  color: #ddd;
+}
+#visual .swiper .swiper-slide .inner .btn1 {
+  display: block;
+  margin-top: 50px;
+  font: 13px/1 "Jost", sans-serif;
+  color: #eee;
 }
 
 @media screen and (max-width: 1180px) {
@@ -1726,7 +1845,7 @@ body {
   }
 }
 .members .inner h1 {
-  font: bold 50px/1 "" Jost ", sans-serif";
+  font: bold 50px/1 " Jost ";
   color: #333;
   margin-bottom: 40px;
 }
@@ -1802,18 +1921,16 @@ body {
 }
 .members .inner form table td input[type=text],
 .members .inner form table td input[type=password],
-.members .inner form table td input[type=email],
 .members .inner form table td select,
 .members .inner form table td textarea {
   width: 60%;
   background: rgba(0, 0, 0, 0.01);
-  padding: 10px;
+  padding: 5px 8px;
   border: 1px solid #bbb;
   resize: none;
 }
 .members .inner form table td input[type=text]:hover,
 .members .inner form table td input[type=password]:hover,
-.members .inner form table td input[type=email]:hover,
 .members .inner form table td select:hover,
 .members .inner form table td textarea:hover {
   background: rgba(0, 0, 0, 0.09);
@@ -1822,15 +1939,70 @@ body {
 .members .inner form table td input[type=radio] {
   margin-right: 30px;
 }
-.members .inner form table td p {
+.members .inner form table td .err {
   color: hotpink;
   margin-top: 5px;
   font: 11px/1 "맑은 고딕";
+  display: none;
 }
 .members .inner form table #comments {
   font-family: "맑은 고딕";
 }
 
+/*
+table {
+	width: 800px;
+	margin: 100px auto;
+	border: none;
+	border-top: 2px solid #111;
+	border-bottom: 2px solid #111;
+
+	td,
+	th {
+		border: none;
+		padding: 10px 30px;
+		text-align: left;
+	}
+
+	th {
+		width: 30%;
+
+		&:last-child {
+			text-align: center;
+		}
+
+		input {
+			width: 150px;
+			height: 30px;
+			background: #fff;
+			color: #555;
+			border: 1px solid #555;
+			cursor: pointer;
+			margin: 0px 20px;
+		}
+	}
+	td {
+		border-left: 1px solid #bbb;
+
+		input[type='text'],
+		input[type='password'],
+		select,
+		textarea {
+			width: 70%;
+			padding: 5px 8px;
+			background: #f4ffff;
+			border: 1px solid #888;
+			resize: none;
+		}
+		.err {
+			font: 11px/1.5 '돋움';
+			color: hotpink;
+			margin-top: 4px;
+			display: none;
+		}
+	}
+}
+*/
 @media screen and (max-width: 1180px) {
   .members table th {
     display: none;
