@@ -31,6 +31,29 @@
 					}
 				}
 			}
+			.bottomNum {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+				margin-top: 30px;
+				li {
+					a {
+						font: normal 15px/1 'arial';
+						color: #999;
+						&.on {
+							color: #111;
+							font-weight: 700;
+						}
+						i {
+							color: #555;
+							margin-left: 20px;
+							margin-right: 20px;
+						}
+					}
+				}
+			}
 		}
 
 		// #list {
@@ -159,21 +182,19 @@
 					float: left;
 
 					&.p1 {
-						background: pink;
+						background: rgb(246, 195, 204);
 					}
 					&.p2 {
-						background: lightgreen;
+						background: rgb(213, 243, 213);
 					}
 					&.p3 {
-						background: orange;
+						background: rgb(239, 219, 183);
 					}
 					&.p4 {
-						background: lightblue;
+						background: rgb(206, 241, 253);
 					}
 					&.p5 {
-						background: lavenderblush;
-					}
-					.prev {
+						background: rgb(240, 196, 237);
 					}
 				}
 			}

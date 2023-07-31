@@ -2166,6 +2166,27 @@ table {
   text-align: left;
   padding: 0px 80px;
 }
+.community .inner #list2 .bottomNum {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.community .inner #list2 .bottomNum li a {
+  font: normal 15px/1 "arial";
+  color: #999;
+}
+.community .inner #list2 .bottomNum li a.on {
+  color: #111;
+  font-weight: 700;
+}
+.community .inner #list2 .bottomNum li a i {
+  color: #555;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .community .inner #slider2 {
   width: 1000px;
   height: 450px;
@@ -2196,19 +2217,19 @@ table {
   color: #444;
 }
 .community .inner #slider2 .panel2 li.p1 {
-  background: pink;
+  background: rgb(246, 195, 204);
 }
 .community .inner #slider2 .panel2 li.p2 {
-  background: lightgreen;
+  background: rgb(213, 243, 213);
 }
 .community .inner #slider2 .panel2 li.p3 {
-  background: orange;
+  background: rgb(239, 219, 183);
 }
 .community .inner #slider2 .panel2 li.p4 {
-  background: lightblue;
+  background: rgb(206, 241, 253);
 }
 .community .inner #slider2 .panel2 li.p5 {
-  background: lavenderblush;
+  background: rgb(240, 196, 237);
 }
 .community .inner #slider2 .prev {
   position: absolute;
