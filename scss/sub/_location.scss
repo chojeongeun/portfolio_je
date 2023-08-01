@@ -1,6 +1,5 @@
 .location {
 	.inner {
-		width: 1180px;
 		h1 {
 			font: bold 55px/1 'Jost', sans-serif;
 			color: #444;
@@ -15,6 +14,7 @@
 			margin-bottom: 50px;
 		}
 		#map {
+			// margin: 0px auto;
 			width: 100%;
 			height: 400px;
 			background: #111;
