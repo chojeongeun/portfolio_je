@@ -1,14 +1,14 @@
 const swiper = new Swiper('.mySwiper', {
 	spaceBetween: 30,
+	// effect: 'fade',
 	slidesPerView: 1,
 	centeredSlides: true,
-	loop: true,
+	loop: false,
 	loopedSlides: 1,
-	// loopAdditionalSlides: 1,
-	// autoplay: {
-	// 	delay: 2500,
-	// 	disableOnInteraction: false,
-	// },
+	keyboard: {
+		enabled: true,
+	},
+
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
