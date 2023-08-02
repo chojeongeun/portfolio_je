@@ -1,5 +1,6 @@
 #header {
 	width: 100%;
+	position: relative;
 
 	&.main {
 		position: absolute;
@@ -101,7 +102,6 @@
 				}
 			}
 		}
-
 		.btncall {
 			display: block;
 			position: absolute;
@@ -111,6 +111,58 @@
 				font-size: 18px;
 				color: #333;
 			}
+		}
+	}
+
+	#mobilePanel {
+		width: 200px;
+		height: 100%;
+		background: #ddd;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 5;
+		// left: -280px;
+		display: none;
+		&.on {
+			display: block;
+			transition: 0.5s;
+		}
+
+		h1 {
+			position: absolute;
+			top: 50px;
+			left: 50%;
+			transform: translateX(-50%);
+			font: bold 27px/1 'jost';
+			color: #333;
+			margin-bottom: 30px;
+		}
+
+		#gnbMo {
+			position: absolute;
+			left: 20px;
+			top: 200px;
+			li {
+				padding: 0px 20px;
+				margin-bottom: 30px;
+
+				a {
+					font: 17px/1.2 'jost';
+					color: #555;
+					&.on {
+						color: coral;
+					}
+				}
+			}
+		}
+
+		.close {
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			font-size: 15px;
+			color: #333;
 		}
 	}
 }

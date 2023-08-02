@@ -44,6 +44,15 @@ prev.addEventListener('click', () => {
 		},
 	});
 });
+
+const btns = document.querySelectorAll('.bottomNum li');
+btns.forEach((btn, idx) => {
+	btn.addEventListener('click', () => {
+		for (const el of btns) el.classList.remove('on');
+		btns[idx].classList.add('on');
+	});
+});
+
 /*
 const list = document.querySelector('#list');
 const article = list.querySelector('article');

@@ -33,7 +33,7 @@
 			.inner {
 				width: 1180px;
 				margin: 0px auto;
-				padding: 10px 5vw;
+				padding: 20px;
 				p {
 					font: 13px/1 'Jost', sans-serif;
 					color: coral;
@@ -194,6 +194,9 @@
 						font: bold 37px/1.3 'Jost', sans-serif;
 					}
 				}
+			}
+			.swiper-button-prev {
+				left: 50%;
 			}
 		}
 	}
