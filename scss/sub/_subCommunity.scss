@@ -2,7 +2,10 @@
 	.subVisual {
 		width: 100%;
 		height: 250px;
-		background: gray;
+		background-image: url(/img/pic21.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.8;
 	}
 	.inner {
 		h1 {

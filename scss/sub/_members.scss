@@ -2,12 +2,16 @@
 	.subVisual {
 		width: 100%;
 		height: 250px;
-		background: gray;
+		background-image: url(/img/pic41.jpg);
+		background-position-y: 30%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.8;
 	}
 	.inner {
 		h1 {
-			font: bold 50px/1 ' Jost ';
-			color: #333;
+			font: bold 55px/1 'jost ';
+			color: #444;
 			margin-bottom: 40px;
 		}
 

@@ -20,7 +20,7 @@ a {
 }
 
 body {
-  background: #efefef;
+  background: #fafafa;
 }
 
 fieldset {
@@ -368,7 +368,7 @@ body {
   background: #555;
 }
 .content .inner {
-  padding: 150px 10vw 100px;
+  padding: 100px 10vw 500px;
   min-height: 800px;
 }
 .content .inner h1 {
@@ -1520,7 +1520,11 @@ body {
 .about .subVisual {
   width: 100%;
   height: 250px;
-  background: gray;
+  background-image: url(/img/pic35.jpg);
+  background-position-y: 15%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about .inner {
   margin: 0px auto;
@@ -1738,7 +1742,10 @@ body {
 .youtube .subVisual {
   width: 100%;
   height: 250px;
-  background: gray;
+  background-image: url(/img/pic22.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
 .youtube .inner h1 {
   font: bold 50px/1 "Jost", sans-serif;
@@ -1856,7 +1863,11 @@ body {
 .gallery .subVisual {
   width: 100%;
   height: 250px;
-  background: gray;
+  background-image: url(/img/pic43.jpg);
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
 }
 .gallery h1 {
   font: bold 55px/1 "Jost", sans-serif;
@@ -1941,11 +1952,15 @@ body {
 .members .subVisual {
   width: 100%;
   height: 250px;
-  background: gray;
+  background-image: url(/img/pic41.jpg);
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
 }
 .members .inner h1 {
-  font: bold 50px/1 " Jost ";
-  color: #333;
+  font: bold 55px/1 "jost ";
+  color: #444;
   margin-bottom: 40px;
 }
 .members .inner .join {
@@ -2124,7 +2139,11 @@ table {
 .location .subVisual {
   width: 100%;
   height: 250px;
-  background: gray;
+  background-image: url(/img/pic36.jpg);
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
 }
 .location .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
@@ -2244,7 +2263,10 @@ table {
 .subCommunity .subVisual {
   width: 100%;
   height: 250px;
-  background: gray;
+  background-image: url(/img/pic21.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
 }
 .subCommunity .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
