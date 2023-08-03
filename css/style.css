@@ -1517,6 +1517,11 @@ body {
   letter-spacing: 1px;
 }
 
+.about .subVisual {
+  width: 100%;
+  height: 250px;
+  background: gray;
+}
 .about .inner {
   margin: 0px auto;
 }
@@ -1730,6 +1735,11 @@ body {
     margin-bottom: 20px;
   }
 }
+.youtube .subVisual {
+  width: 100%;
+  height: 250px;
+  background: gray;
+}
 .youtube .inner h1 {
   font: bold 50px/1 "Jost", sans-serif;
   color: #444;
@@ -1843,6 +1853,11 @@ body {
   overflow: hidden;
   position: relative;
 }
+.gallery .subVisual {
+  width: 100%;
+  height: 250px;
+  background: gray;
+}
 .gallery h1 {
   font: bold 55px/1 "Jost", sans-serif;
   color: #444;
@@ -1922,6 +1937,11 @@ body {
   .gallery .wrap li {
     width: 100%;
   }
+}
+.members .subVisual {
+  width: 100%;
+  height: 250px;
+  background: gray;
 }
 .members .inner h1 {
   font: bold 50px/1 " Jost ";
@@ -2101,6 +2121,11 @@ table {
     width: 100%;
   }
 }
+.location .subVisual {
+  width: 100%;
+  height: 250px;
+  background: gray;
+}
 .location .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
   color: #444;
@@ -2216,6 +2241,11 @@ table {
   align-items: center;
 }
 
+.subCommunity .subVisual {
+  width: 100%;
+  height: 250px;
+  background: gray;
+}
 .subCommunity .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
   color: #444;

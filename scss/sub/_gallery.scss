@@ -5,6 +5,11 @@
 	background-color: rgb(229, 229, 229);
 	overflow: hidden;
 	position: relative;
+	.subVisual {
+		width: 100%;
+		height: 250px;
+		background: gray;
+	}
 
 	h1 {
 		font: bold 55px/1 'Jost', sans-serif;
