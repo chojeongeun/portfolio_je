@@ -811,23 +811,23 @@ body {
     margin-bottom: 30px;
   }
 }
-#community {
+#mainCommunity {
   width: 100%;
   padding: 100px 0px;
   background: #efefef;
 }
-#community .inner {
+#mainCommunity .inner {
   width: 1180px;
   margin: 0px auto;
   position: relative;
 }
-#community .inner h1 {
+#mainCommunity .inner h1 {
   font: bold 30px/1 "Jost", sans-serif;
   color: #333;
   margin-bottom: 30px;
   position: relative;
 }
-#community .inner h1::before {
+#mainCommunity .inner h1::before {
   content: "";
   display: block;
   position: absolute;
@@ -838,91 +838,91 @@ body {
   background: #999;
   margin-bottom: 30px;
 }
-#community .inner .wrap::after {
+#mainCommunity .inner .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-#community .inner .wrap article:nth-of-type(1) {
+#mainCommunity .inner .wrap article:nth-of-type(1) {
   float: left;
   width: 280px;
 }
-#community .inner .wrap article:nth-of-type(1) .pic {
+#mainCommunity .inner .wrap article:nth-of-type(1) .pic {
   width: 260px;
   height: 300px;
   margin-bottom: 20px;
 }
-#community .inner .wrap article:nth-of-type(1) .pic img {
+#mainCommunity .inner .wrap article:nth-of-type(1) .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#community .inner .wrap article:nth-of-type(1) h2 {
+#mainCommunity .inner .wrap article:nth-of-type(1) h2 {
   font: bold 12px/1 "Jost", sans-serif;
   color: coral;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
-#community .inner .wrap article:nth-of-type(1) h3 {
+#mainCommunity .inner .wrap article:nth-of-type(1) h3 {
   font: bold 18px/1.1 "Poppins", sans-serif;
   color: #222;
   margin-bottom: 15px;
 }
-#community .inner .wrap article:nth-of-type(1) p {
+#mainCommunity .inner .wrap article:nth-of-type(1) p {
   font: 12px/1 "Poppins", sans-serif;
   color: #777;
 }
-#community .inner .wrap article:nth-of-type(2) {
+#mainCommunity .inner .wrap article:nth-of-type(2) {
   float: left;
   width: 280px;
 }
-#community .inner .wrap article:nth-of-type(2) .txtBox {
+#mainCommunity .inner .wrap article:nth-of-type(2) .txtBox {
   width: 260px;
   height: 300px;
   background-color: #aaa;
   padding: 100px 10px;
   box-sizing: border-box;
 }
-#community .inner .wrap article:nth-of-type(2) .txtBox h2 {
+#mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h2 {
   font: bold 12px/1 "Jost", sans-serif;
   color: coral;
   margin-bottom: 15px;
 }
-#community .inner .wrap article:nth-of-type(2) .txtBox h3 {
+#mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h3 {
   font: bold 18px/1.3 "Poppins", sans-serif;
   color: #222;
   margin-bottom: 15px;
 }
-#community .inner .wrap article:nth-of-type(2) .txtBox p {
+#mainCommunity .inner .wrap article:nth-of-type(2) .txtBox p {
   font: 12px/1 "Poppins", sans-serif;
   color: #777;
 }
-#community .inner .wrap article:nth-of-type(3) {
+#mainCommunity .inner .wrap article:nth-of-type(3) {
   float: left;
   width: 580px;
 }
-#community .inner .wrap article:nth-of-type(3) .pic {
+#mainCommunity .inner .wrap article:nth-of-type(3) .pic {
   width: 560px;
   height: 300px;
   margin-bottom: 20px;
 }
-#community .inner .wrap article:nth-of-type(3) .pic img {
+#mainCommunity .inner .wrap article:nth-of-type(3) .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#community .inner .wrap article:nth-of-type(3) h2 {
+#mainCommunity .inner .wrap article:nth-of-type(3) h2 {
   font: bold 12px/1 "Jost", sans-serif;
   color: coral;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
-#community .inner .wrap article:nth-of-type(3) h3 {
+#mainCommunity .inner .wrap article:nth-of-type(3) h3 {
   font: bold 18px/1.1 "Poppins", sans-serif;
   color: #222;
   margin-bottom: 15px;
 }
-#community .inner .wrap article:nth-of-type(3) p {
+#mainCommunity .inner .wrap article:nth-of-type(3) p {
   font: 12px/1 "Poppins", sans-serif;
   color: #777;
 }
@@ -2216,33 +2216,33 @@ table {
   align-items: center;
 }
 
-.community .inner h1 {
+.subCommunity .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
   color: #444;
   text-align: center;
   margin-bottom: 0px;
 }
-.community .inner h2 {
+.subCommunity .inner h2 {
   text-align: center;
   font: 15px/1 "Jost", sans-serif;
   color: #555;
   margin-bottom: 50px;
 }
-.community .inner #list2 table {
+.subCommunity .inner #list2 table {
   width: 1000px;
   height: 400px;
   margin: 0px auto;
   text-align: center;
   border: none;
 }
-.community .inner #list2 table th {
+.subCommunity .inner #list2 table th {
   border-bottom: 1px solid #555;
 }
-.community .inner #list2 table td:nth-of-type(2) {
+.subCommunity .inner #list2 table td:nth-of-type(2) {
   text-align: left;
   padding: 0px 80px;
 }
-.community .inner #list2 .bottomNum {
+.subCommunity .inner #list2 .bottomNum {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2250,16 +2250,16 @@ table {
   gap: 10px;
   margin-top: 30px;
 }
-.community .inner #list2 .bottomNum li {
+.subCommunity .inner #list2 .bottomNum li {
   font: normal 15px/1 "arial";
   color: #999;
   cursor: pointer;
 }
-.community .inner #list2 .bottomNum li.on {
+.subCommunity .inner #list2 .bottomNum li.on {
   color: #111;
   font-weight: 700;
 }
-.community .inner #slider2 {
+.subCommunity .inner #slider2 {
   width: 1000px;
   height: 450px;
   border: 1px solid #ddd;
@@ -2267,61 +2267,61 @@ table {
   position: relative;
   overflow: hidden;
 }
-.community .inner #slider2 .panel2 {
+.subCommunity .inner #slider2 .panel2 {
   width: 500%;
   height: 100%;
   margin-left: -100%;
 }
-.community .inner #slider2 .panel2 li {
+.subCommunity .inner #slider2 .panel2 li {
   width: 20%;
   height: 100%;
   padding: 50px;
   float: left;
 }
-.community .inner #slider2 .panel2 li h3 {
+.subCommunity .inner #slider2 .panel2 li h3 {
   font: bold 35px/1 "jost";
   color: #333;
   margin-bottom: 50px;
   text-align: center;
 }
-.community .inner #slider2 .panel2 li p {
+.subCommunity .inner #slider2 .panel2 li p {
   font: 20px/1.5 "jost";
   color: #444;
 }
-.community .inner #slider2 .panel2 li.p1 {
+.subCommunity .inner #slider2 .panel2 li.p1 {
   background: rgb(246, 195, 204);
 }
-.community .inner #slider2 .panel2 li.p2 {
+.subCommunity .inner #slider2 .panel2 li.p2 {
   background: rgb(213, 243, 213);
 }
-.community .inner #slider2 .panel2 li.p3 {
+.subCommunity .inner #slider2 .panel2 li.p3 {
   background: rgb(239, 219, 183);
 }
-.community .inner #slider2 .panel2 li.p4 {
+.subCommunity .inner #slider2 .panel2 li.p4 {
   background: rgb(206, 241, 253);
 }
-.community .inner #slider2 .panel2 li.p5 {
+.subCommunity .inner #slider2 .panel2 li.p5 {
   background: rgb(240, 196, 237);
 }
-.community .inner #slider2 .prev {
+.subCommunity .inner #slider2 .prev {
   position: absolute;
   bottom: 20%;
   right: 150px;
   border: none;
   background: none;
 }
-.community .inner #slider2 .prev i {
+.subCommunity .inner #slider2 .prev i {
   font-size: 30px;
   color: #777;
 }
-.community .inner #slider2 .next {
+.subCommunity .inner #slider2 .next {
   position: absolute;
   bottom: 20%;
   right: 100px;
   border: none;
   background: none;
 }
-.community .inner #slider2 .next i {
+.subCommunity .inner #slider2 .next i {
   font-size: 30px;
   color: #777;
 }
