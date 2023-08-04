@@ -1,10 +1,8 @@
 const swiper = new Swiper('.mySwiper', {
 	spaceBetween: 30,
-	// effect: 'fade',
 	slidesPerView: 1,
 	centeredSlides: true,
-	loop: false,
-	loopedSlides: 1,
+	loop: true,
 	keyboard: {
 		enabled: true,
 	},
