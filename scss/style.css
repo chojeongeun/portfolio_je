@@ -419,11 +419,13 @@ body {
 .pop .con img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: none;
 }
 .pop .con img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .pop .close {
   font: bold 14px/1 "arial";
@@ -477,7 +479,8 @@ body {
 #banner .inner .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1180px) {
@@ -584,7 +587,8 @@ body {
 #news .inner .wrap article:nth-of-type(1) .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #news .inner .wrap article:nth-of-type(1) .txt h2 {
   font: bold 12px/1 "Jost", sans-serif;
@@ -627,7 +631,8 @@ body {
 #news .inner .wrap article:nth-of-type(4) .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #news .inner .wrap article:nth-of-type(2) .txt,
 #news .inner .wrap article:nth-of-type(3) .txt,
@@ -699,7 +704,8 @@ body {
   #news .inner .wrap article:nth-of-type(4) .pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #news .inner .wrap article:nth-of-type(1) .txt,
   #news .inner .wrap article:nth-of-type(2) .txt,
@@ -775,7 +781,8 @@ body {
   #news .inner .wrap article:nth-of-type(4) .pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #news .inner .wrap article:nth-of-type(1) .txt,
   #news .inner .wrap article:nth-of-type(2) .txt,
@@ -855,7 +862,8 @@ body {
 #mainCommunity .inner .wrap article:nth-of-type(1) .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #mainCommunity .inner .wrap article:nth-of-type(1) h2 {
   font: bold 12px/1 "Jost", sans-serif;
@@ -909,7 +917,8 @@ body {
 #mainCommunity .inner .wrap article:nth-of-type(3) .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #mainCommunity .inner .wrap article:nth-of-type(3) h2 {
   font: bold 12px/1 "Jost", sans-serif;
@@ -1047,7 +1056,8 @@ body {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #science .inner .wrap article h2 {
   font: bold 16px/1 "Poppins", sans-serif;
@@ -1190,7 +1200,8 @@ body {
 #goods .inner ul li .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1180px) {
@@ -1234,7 +1245,8 @@ body {
   #goods .inner ul li .pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 639px) {
@@ -1306,7 +1318,7 @@ body {
 #visual .swiper .swiper-slide .inner .visualTxt {
   width: 1180px;
   height: 100%;
-  padding: 150px 50px;
+  padding: 100px 30px;
 }
 #visual .swiper .swiper-slide .inner.inner1 {
   background-image: url(../img/pic5.jpg);
@@ -1472,7 +1484,8 @@ body {
 .about .inner .SC1 .pic1 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .inner .SC1 h2 {
   width: 90%;
@@ -1505,7 +1518,8 @@ body {
 .about .inner .SC2 .pic2 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.8;
 }
 .about .inner .SC2 .txt {
@@ -1548,7 +1562,8 @@ body {
 .about .inner .wrap article .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   opacity: 0.7;
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.2);
@@ -1592,7 +1607,8 @@ body {
   .about .inner .SC1 .pic1 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about .inner .SC1 h2 {
     width: 90%;
@@ -1700,7 +1716,8 @@ body {
 .youtube .inner .wrap article .box .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
 }
 .youtube .inner .wrap article .txt {
@@ -1828,7 +1845,8 @@ body {
   width: 100%;
   height: 300px;
   padding-bottom: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: grayscale(1);
 }
 .gallery .wrap li > div img:hover {
@@ -2312,6 +2330,4 @@ table {
 .scrollBtn li.on {
   height: 100px;
   background: #000;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
