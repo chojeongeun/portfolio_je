@@ -1,8 +1,6 @@
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
-	//e.preventDefault();
-
 	//userid 인증
 	const userid = form.querySelector('[name=userid]');
 

@@ -11,7 +11,6 @@
 		opacity: 0.5;
 	}
 	.inner {
-		// margin: 0px auto;
 		h1 {
 			font: bold 55px/1 'Jost', sans-serif;
 			color: #444;
@@ -40,7 +39,7 @@
 					height: 100%;
 					background: #111;
 					position: relative;
-					filter: grayscale(40%);
+					filter: grayscale(80%);
 					transition: filter 0.5s;
 
 					&:hover {
@@ -54,7 +53,7 @@
 					li {
 						display: inline-block;
 						padding: 10px 20px;
-						font: bold 14px/20px '맑은고딕';
+						font: bold 14px/1 '맑은고딕';
 						border: 1px solid #333;
 						background: #eee;
 						margin-top: 10px;
@@ -81,7 +80,7 @@
 						margin-bottom: 5px;
 					}
 					input {
-						width: 250px;
+						width: 100%;
 						height: 30px;
 						display: block;
 						margin-top: 10px;
@@ -99,7 +98,7 @@
 							color: #555;
 							border: 1px solid #aaa;
 							cursor: pointer;
-							margin-bottom: 0;
+							padding: 0;
 							&:hover {
 								background: #333;
 								color: #fff;
@@ -112,7 +111,7 @@
 						margin-bottom: 10px;
 					}
 					textarea {
-						width: 250px;
+						width: 100%;
 						height: 70px;
 						margin-top: 10px;
 						display: block;
@@ -161,7 +160,7 @@
 								width: 100%;
 								font: bold 14px/1.3 'jost';
 								color: #555;
-								padding: 10px;
+								padding: 15px;
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
@@ -174,6 +173,73 @@
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.location {
+		.inner {
+			.locationWrap {
+				display: block;
+				width: 100%;
+
+				#mapWrap {
+					width: 100%;
+					#map {
+						height: 500px;
+					}
+					.branch {
+						width: 100%;
+						justify-content: center;
+						li {
+							display: inline-block;
+							padding: 5px 10px;
+							font: bold 13px/1 '맑은고딕';
+							margin-bottom: 20px;
+						}
+					}
+				}
+
+				.txtwrap {
+					width: 100%;
+
+					.contact {
+						p {
+							font: bold 20px/1 'jost';
+						}
+						input {
+							&:last-child {
+								font: bold 12px/30px 'jost';
+							}
+						}
+						label {
+							font: bold 12px/1 'Jost';
+						}
+					}
+
+					.FAQ {
+						.box {
+							margin-bottom: 30px;
+							li {
+								.question {
+									font: bold 12px/1.3 'jost';
+									padding: 20px;
+								}
+								.answer {
+									width: 100%;
+									font: 12px/1.3 'jost';
+									color: #555;
+									padding: 20px;
+									display: flex;
+									justify-content: space-between;
+									align-items: center;
+								}
 							}
 						}
 					}

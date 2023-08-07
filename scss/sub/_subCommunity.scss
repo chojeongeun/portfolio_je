@@ -24,9 +24,9 @@
 
 		#list2 {
 			table {
-				width: 1000px;
-				height: 400px;
-				margin: 0px auto;
+				width: 100%;
+				height: 600px;
+				margin: 50px auto;
 				text-align: center;
 				border: none;
 				tr {
@@ -75,7 +75,8 @@
 
 					&.on {
 						color: #111;
-						font-weight: 700;
+						font-weight: bold;
+						background: rgb(212, 235, 243);
 					}
 					&:first-child,
 					&:last-child {
@@ -182,7 +183,7 @@
 		// }
 
 		#slider2 {
-			width: 1000px;
+			width: 100%;
 			height: 450px;
 			border: 1px solid #ddd;
 			margin: 100px auto;

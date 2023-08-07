@@ -4,10 +4,12 @@ const position = new kakao.maps.LatLng(37.56697058676817, 126.97849940948345);
 const position2 = new kakao.maps.LatLng(37.57534, 126.977128);
 const mapOption = { center: position, level: 3 };
 const map = new kakao.maps.Map(mapContainer, mapOption);
+
 //마커이미지 등록에 필요한 변수들
 const imageSrc = 'img/marker1.png';
 const imageSize = new kakao.maps.Size(232, 99);
 const imageOption = { offset: new kakao.maps.Point(116, 99) };
+
 //위의 정보로 최종 마커이미지 인스턴스 생성
 const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
 

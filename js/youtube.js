@@ -11,12 +11,13 @@ document.body.addEventListener('click', (e) => {
 async function fetchData() {
 	const key = 'AIzaSyAzkLv4Fcv1UNbOrmEVhonD6YXHhLjwsC8';
 	const list = 'PLWvS8-RhJ_PKwK6LI-fBPArE2muxoT1Qc';
-	const num = 4;
+	const num = 5;
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${list}&key=${key}&maxResults=${num}`;
 	const data = await fetch(url);
 	const json = await data.json();
 	createList(json.items);
 }
+
 //동적으로 목록 생성함수
 function createList(arr) {
 	let tags = '';
@@ -30,9 +31,7 @@ function createList(arr) {
 		<article>
 			<div class='box'>
 				<div class='pic'>
-					<img class='thumb' src=${item.snippet.thumbnails.standard.url} alt=${
-			item.snippet.resourceId.videoId
-		} />
+					<img class='thumb' src=${item.snippet.thumbnails.standard.url} alt=${item.snippet.resourceId.videoId} />
 					</div>
 				<div class='txt'>
 					<h2>${tit.length > 50 ? tit.substr(0, 50) + '...' : tit}</h2>
