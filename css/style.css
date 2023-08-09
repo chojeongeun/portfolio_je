@@ -1738,7 +1738,6 @@ body {
 }
 .gallery {
   width: 100%;
-  background-color: rgb(229, 229, 229);
   overflow: hidden;
   position: relative;
 }
