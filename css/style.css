@@ -2266,6 +2266,7 @@ table {
 }
 .subCommunity .inner #list2 table tr {
   border-bottom: 1px solid #ccc;
+  font: 16px/1.2 "poppins";
 }
 .subCommunity .inner #list2 table tr:last-child {
   border-bottom: none;
@@ -2380,6 +2381,87 @@ table {
   color: #777;
 }
 
+@media screen and (max-width: 1180px) {
+  .subCommunity .inner #list2 table tr {
+    font: 13px/1.2 "poppins";
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(2) {
+    padding: 0px 20px;
+  }
+  .subCommunity .inner #list2 .bottomNum {
+    margin-top: 30px;
+  }
+  .subCommunity .inner #list2 .bottomNum li {
+    font: normal 13px/1 "arial";
+    padding: 10px 20px;
+  }
+  .subCommunity .inner #slider2 {
+    height: 350px;
+    margin: 70px auto;
+  }
+  .subCommunity .inner #slider2 .panel2 li {
+    padding: 30px;
+  }
+  .subCommunity .inner #slider2 .panel2 li h3 {
+    font: bold 30px/1 "jost";
+    margin-bottom: 35px;
+  }
+  .subCommunity .inner #slider2 .panel2 li p {
+    font: 17px/1.3 "jost";
+  }
+  .subCommunity .inner #slider2 .prev {
+    bottom: 10%;
+  }
+  .subCommunity .inner #slider2 .prev i {
+    font-size: 20px;
+  }
+  .subCommunity .inner #slider2 .next {
+    bottom: 10%;
+  }
+  .subCommunity .inner #slider2 .next i {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .subCommunity .inner #list2 table tr {
+    font: 11px/1.2 "poppins";
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(2) {
+    padding: 0px 10px;
+  }
+  .subCommunity .inner #list2 .bottomNum {
+    margin-top: 20px;
+  }
+  .subCommunity .inner #list2 .bottomNum li {
+    font: normal 13px/1 "poppgins";
+    padding: 10px 20px;
+  }
+  .subCommunity .inner #slider2 {
+    height: 350px;
+    margin: 50px auto;
+  }
+  .subCommunity .inner #slider2 .panel2 li h3 {
+    font: bold 27px/1 "jost";
+    margin-bottom: 25px;
+  }
+  .subCommunity .inner #slider2 .panel2 li p {
+    font: 15px/1.2 "jost";
+  }
+  .subCommunity .inner #slider2 .prev {
+    right: 60px;
+    bottom: 5%;
+  }
+  .subCommunity .inner #slider2 .prev i {
+    font-size: 20px;
+  }
+  .subCommunity .inner #slider2 .next {
+    right: 30px;
+    bottom: 5%;
+  }
+  .subCommunity .inner #slider2 .next i {
+    font-size: 20px;
+  }
+}
 .scrollBtn {
   position: fixed;
   top: 50%;
