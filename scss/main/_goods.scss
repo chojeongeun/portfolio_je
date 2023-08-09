@@ -12,17 +12,17 @@
 			margin-bottom: 30px;
 			position: relative;
 
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				right: 0px;
-				width: 1000px;
-				height: 1px;
-				background: #999;
-				margin-bottom: 30px;
-			}
+			// &::before {
+			// 	content: '';
+			// 	display: block;
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	right: 0px;
+			// 	width: 1000px;
+			// 	height: 1px;
+			// 	background: #999;
+			// 	margin-bottom: 30px;
+			// }
 		}
 
 		ul {

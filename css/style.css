@@ -554,17 +554,6 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-#news .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 900px;
-  height: 1px;
-  background: #000;
-  margin-bottom: 30px;
-}
 #news .inner .wrap::after {
   content: "";
   display: block;
@@ -826,17 +815,6 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-#mainCommunity .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 800px;
-  height: 1px;
-  background: #999;
-  margin-bottom: 30px;
-}
 #mainCommunity .inner .wrap::after {
   content: "";
   display: block;
@@ -927,86 +905,86 @@ body {
 }
 
 @media screen and (max-width: 1180px) {
-  #community {
+  #mainCommunity {
     padding: 100px 30px;
   }
-  #community .inner {
+  #mainCommunity .inner {
     width: 100%;
     margin: 0px auto;
   }
-  #community .inner h1 {
+  #mainCommunity .inner h1 {
     font: bold 30px/1 "Jost", sans-serif;
     color: #333;
     margin-bottom: 30px;
   }
-  #community .inner .wrap {
+  #mainCommunity .inner .wrap {
     display: flex;
     flex-wrap: wrap;
   }
-  #community .inner .wrap article:nth-of-type(1) {
+  #mainCommunity .inner .wrap article:nth-of-type(1) {
     float: none;
     width: 55%;
     margin-bottom: 30px;
   }
-  #community .inner .wrap article:nth-of-type(1) .pic {
+  #mainCommunity .inner .wrap article:nth-of-type(1) .pic {
     width: 100%;
   }
-  #community .inner .wrap article:nth-of-type(1) h2 {
+  #mainCommunity .inner .wrap article:nth-of-type(1) h2 {
     font: bold 12px/1 "Jost", sans-serif;
     color: coral;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
-  #community .inner .wrap article:nth-of-type(1) h3 {
+  #mainCommunity .inner .wrap article:nth-of-type(1) h3 {
     font: bold 18px/1.1 "Poppins", sans-serif;
     color: #222;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(1) p {
+  #mainCommunity .inner .wrap article:nth-of-type(1) p {
     font: 12px/1 "Poppins", sans-serif;
     color: #777;
   }
-  #community .inner .wrap article:nth-of-type(2) {
+  #mainCommunity .inner .wrap article:nth-of-type(2) {
     float: none;
     width: 100%;
     margin-bottom: 30px;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox {
     width: 55%;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox h2 {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h2 {
     font: bold 12px/1 "Jost", sans-serif;
     color: coral;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox h3 {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h3 {
     font: bold 18px/1.3 "Poppins", sans-serif;
     color: #222;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox p {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox p {
     font: 12px/1 "Poppins", sans-serif;
     color: #777;
   }
-  #community .inner .wrap article:nth-of-type(3) {
+  #mainCommunity .inner .wrap article:nth-of-type(3) {
     float: none;
     width: 100%;
   }
-  #community .inner .wrap article:nth-of-type(3) .pic {
+  #mainCommunity .inner .wrap article:nth-of-type(3) .pic {
     width: 55%;
   }
-  #community .inner .wrap article:nth-of-type(3) h2 {
+  #mainCommunity .inner .wrap article:nth-of-type(3) h2 {
     font: bold 12px/1 "Jost", sans-serif;
     color: coral;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
-  #community .inner .wrap article:nth-of-type(3) h3 {
+  #mainCommunity .inner .wrap article:nth-of-type(3) h3 {
     font: bold 18px/1.1 "Poppins", sans-serif;
     color: #222;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(3) p {
+  #mainCommunity .inner .wrap article:nth-of-type(3) p {
     font: 12px/1 "Poppins", sans-serif;
     color: #777;
   }
@@ -1025,17 +1003,6 @@ body {
   color: #333;
   margin-bottom: 30px;
   position: relative;
-}
-#science .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 1000px;
-  height: 1px;
-  background: #999;
-  margin-bottom: 30px;
 }
 #science .inner .wrap {
   display: flex;
@@ -1140,17 +1107,6 @@ body {
   color: #333;
   margin-bottom: 30px;
   position: relative;
-}
-#goods .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 1000px;
-  height: 1px;
-  background: #999;
-  margin-bottom: 30px;
 }
 #goods .inner ul li {
   display: flex;

@@ -14,17 +14,17 @@
 			margin-bottom: 30px;
 			position: relative;
 
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				right: 0px;
-				width: 800px;
-				height: 1px;
-				background: #999;
-				margin-bottom: 30px;
-			}
+			// &::before {
+			// 	content: '';
+			// 	display: block;
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	right: 0px;
+			// 	width: 800px;
+			// 	height: 1px;
+			// 	background: #999;
+			// 	margin-bottom: 30px;
+			// }
 		}
 		.wrap {
 			&::after {
@@ -135,7 +135,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-	#community {
+	#mainCommunity {
 		padding: 100px 30px;
 		.inner {
 			width: 100%;

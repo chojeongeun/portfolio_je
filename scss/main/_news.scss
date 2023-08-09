@@ -14,17 +14,17 @@
 			margin-bottom: 30px;
 			position: relative;
 
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				right: 0px;
-				width: 900px;
-				height: 1px;
-				background: #000;
-				margin-bottom: 30px;
-			}
+			// &::before {
+			// 	content: '';
+			// 	display: block;
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	right: 0px;
+			// 	width: 900px;
+			// 	height: 1px;
+			// 	background: #000;
+			// 	margin-bottom: 30px;
+			// }
 		}
 
 		.wrap {
