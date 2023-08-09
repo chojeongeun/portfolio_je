@@ -23,7 +23,7 @@ fetch('DB/department.json')
 				<a href="#" class="btn"><i class="fa-brands fa-facebook-f" ></i></i></a>
 				<a href="#" class="btn"><i class="fa-brands fa-twitter" ></i></i></a>
 				<a href="#" class="btn"><i class="fa-solid fa-envelope" ></i></i></a>
-				<a href="#" class="btn"><i class="fa-brands fa-twitter"></i></a>
+
 			</div>
     </article>
     `;
