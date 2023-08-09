@@ -21,7 +21,7 @@
 			text-align: center;
 			font: 15px/1 'Jost', sans-serif;
 			color: #555;
-			margin-bottom: 100px;
+			margin-bottom: 150px;
 		}
 
 		#upper {
@@ -88,157 +88,6 @@
 			}
 		}
 
-		/*
-		.SC1 {
-			width: 100%;
-			padding: 0px 50px;
-			border-bottom: 1px solid #ccc;
-
-			h1 {
-				font: bold 55px/1 'Jost', sans-serif;
-				color: #444;
-				text-align: center;
-				margin-bottom: 0px;
-				letter-spacing: 3px;
-			}
-			span {
-				display: block;
-				font: 14px/1 'Jost', sans-serif;
-				color: #555;
-				text-align: center;
-				margin-bottom: 70px;
-			}
-
-			.pic1 {
-				width: 70%;
-				height: 350px;
-				margin: 0px auto;
-				margin-bottom: 50px;
-				img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
-			}
-
-			h2 {
-				width: 90%;
-				font: normal 20px/1.3 'Poppins', sans-serif;
-				margin-bottom: 20px;
-			}
-
-			h3 {
-				display: inline-block;
-				width: 30%;
-				text-align: left;
-				font: 15px/1.3 'Poppins', sans-serif;
-				margin-bottom: 10px;
-			}
-		}
-
-		.SC2 {
-			width: 100%;
-			padding: 50px;
-
-			h1 {
-				font: bold 40px/1 'Jost', sans-serif;
-				color: #555;
-				text-align: center;
-				margin-bottom: 50px;
-				letter-spacing: 3px;
-			}
-			.pic2 {
-				width: 800px;
-				height: 300px;
-				margin: 40px auto;
-
-				img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					opacity: 0.8;
-				}
-			}
-			.txt {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				gap: 30px;
-				h3 {
-					width: 50%;
-					text-align: right;
-					font: 15px/1.3 'Poppins', sans-serif;
-					margin-bottom: 20px;
-				}
-			}
-		}
-		*/
-		/*
-		.wrap {
-			width: 100%;
-			padding: 50px;
-			&::after {
-				content: '';
-				display: block;
-				clear: both;
-			}
-
-			article {
-				width: calc(100% / 3);
-				float: left;
-				padding: 50px;
-				margin-bottom: 40px;
-
-				.pic {
-					width: 200px;
-					height: 200px;
-					margin: 0px auto 20px;
-					:hover {
-						box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.5);
-						opacity: 0.9;
-						transition: 0.3s;
-					}
-
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-						border-radius: 50%;
-						opacity: 0.7;
-						box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.2);
-					}
-				}
-
-				.txt {
-					h2 {
-						font: bold 22px/1 'Poppins', sans-serif;
-						color: #444;
-						text-align: center;
-						margin-bottom: 10px;
-						letter-spacing: 1px;
-					}
-					p {
-						font: 16px/1 'Poppins', sans-serif;
-						color: #888;
-						text-align: center;
-						margin-bottom: 25px;
-					}
-				}
-				.sns {
-					display: flex;
-					justify-content: center;
-					gap: 10px;
-
-					a {
-						i {
-							font-size: 15px;
-							color: #fa9b9b;
-						}
-					}
-				}
-			}
-		}
-		*/
 		#lower {
 			h2 {
 				font: bold 35px/1 'jost';
@@ -326,53 +175,52 @@
 		.inner {
 			width: 100%;
 
-			.SC1 {
-				padding: 30px;
+			#upper {
+				margin-bottom: 80px;
 
-				.pic1 {
-					width: 90%;
-					height: 250px;
-					margin: 0px auto;
-					margin-bottom: 50px;
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
+				.aboutTxt {
+					h2 {
+						font: bold 30px/1 'jost';
+						margin-bottom: 20px;
+					}
+					p {
+						font: 13px/1.4 'poppins';
 					}
 				}
+			}
 
-				h2 {
-					width: 90%;
-					font: normal 17px/1.3 'Poppins', sans-serif;
-					margin-bottom: 20px;
+			#middle {
+				margin-top: 80px;
+				margin-bottom: 100px;
+
+				i {
+					font-size: 50px;
+					margin-bottom: 25px;
 				}
-
 				h3 {
-					display: inline-block;
-					width: 40%;
-					text-align: left;
-					font: 13px/1.3 'Poppins', sans-serif;
-					margin-bottom: 10px;
+					font: bold 20px/1 'jost';
+					margin-bottom: 15px;
 				}
-			}
-
-			.SC2 {
-				padding: 30px;
-
-				.pic2 {
-					width: 100%;
-					margin: 20px auto;
+				p {
+					font: 12px/1 'poppins';
 				}
-			}
-
-			.wrap {
-				padding: 30px;
 
 				article {
-					width: calc(100% / 2);
-					float: left;
+					margin-right: 10px;
+					padding: 15px;
+				}
+			}
+
+			#lower {
+				.wrap {
 					padding: 30px;
-					margin-bottom: 20px;
+
+					article {
+						width: calc(100% / 2);
+						float: left;
+						padding: 30px;
+						margin-bottom: 20px;
+					}
 				}
 			}
 		}
@@ -382,43 +230,69 @@
 @media screen and (max-width: $mobile) {
 	.about {
 		.inner {
-			.SC1 {
-				.pic1 {
+			#upper {
+				display: block;
+				gap: 0px;
+				margin-bottom: 50px;
+
+				.aboutTxt {
 					width: 100%;
 					margin-bottom: 30px;
+					h2 {
+						font: bold 25px/1 'jost';
+						margin-bottom: 18px;
+					}
+					p {
+						font: 13px/1.4 'poppins';
+					}
 				}
-
-				h2 {
+				.pic {
 					width: 100%;
-				}
-
-				h3 {
-					display: block;
-					width: 100%;
-				}
-			}
-
-			.SC2 {
-				.pic2 {
-					width: 100%;
-					margin: 20px auto;
-				}
-				.txt {
-					display: block;
-					gap: 0px;
-					h3 {
+					height: 0px;
+					img {
 						width: 100%;
-						text-align: left;
-						margin-bottom: 10px;
+						height: 100%;
+						object-fit: cover;
+						opacity: 0.8;
 					}
 				}
 			}
 
-			.wrap {
+			#middle {
+				display: block;
+				width: 100%;
+				margin-top: 60px;
+				margin-bottom: 100px;
+
+				i {
+					font-size: 40px;
+					margin-bottom: 20px;
+				}
+				h3 {
+					font: bold 20px/1 'jost';
+					margin-bottom: 15px;
+				}
+				p {
+					font: 12px/1 'poppins';
+				}
+
 				article {
 					width: 100%;
-					padding: 10px;
 					margin-bottom: 20px;
+					padding: 20px;
+				}
+			}
+
+			#lower {
+				p {
+					width: 90%;
+				}
+				.wrap {
+					article {
+						width: 100%;
+						padding: 10px;
+						margin-bottom: 20px;
+					}
 				}
 			}
 		}
