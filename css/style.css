@@ -1402,7 +1402,7 @@ body {
 .about .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic27.jpg);
+  background-image: url(../img/pic27.jpg);
   background-position-y: 20%;
   opacity: 0.5;
   background-repeat: no-repeat;
@@ -1624,7 +1624,7 @@ body {
 .youtube .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic22.jpg);
+  background-image: url(../img/pic22.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -1744,7 +1744,7 @@ body {
 .gallery .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic43.jpg);
+  background-image: url(../img/pic43.jpg);
   background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1833,7 +1833,7 @@ body {
 .members .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic41.jpg);
+  background-image: url(../img/pic41.jpg);
   background-position-y: 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2020,7 +2020,7 @@ table {
 .location .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic36.jpg);
+  background-image: url(../img/pic36.jpg);
   background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2239,7 +2239,7 @@ table {
 .subCommunity .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic21.jpg);
+  background-image: url(../img/pic21.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
