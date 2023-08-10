@@ -2432,6 +2432,7 @@ table {
 }
 .subCommunity .inner .communityBottom #list {
   width: 50%;
+  height: 350px;
   border: 1px solid #ddd;
   padding: 20px;
 }
@@ -2462,6 +2463,7 @@ table {
 }
 .subCommunity .inner .communityBottom #slider2 {
   width: 50%;
+  height: 350px;
   border: 1px solid #ddd;
   position: relative;
   overflow: hidden;
@@ -2547,10 +2549,12 @@ table {
   }
   .subCommunity .inner .communityBottom #list {
     width: 100%;
+    height: 300px;
     margin-bottom: 30px;
   }
   .subCommunity .inner .communityBottom #slider2 {
     width: 100%;
+    height: 300px;
   }
   .subCommunity .inner .communityBottom #slider2 .panel2 li {
     width: 20%;
@@ -2575,30 +2579,38 @@ table {
     font: normal 13px/1 "poppgins";
     padding: 10px 20px;
   }
-  .subCommunity .inner #slider2 {
-    height: 350px;
-    margin: 50px auto;
+  .subCommunity .inner .communityBottom {
+    width: 100%;
+    display: block;
   }
-  .subCommunity .inner #slider2 .panel2 li h3 {
-    font: bold 27px/1 "jost";
-    margin-bottom: 25px;
+  .subCommunity .inner .communityBottom #list {
+    width: 100%;
+    margin-bottom: 30px;
   }
-  .subCommunity .inner #slider2 .panel2 li p {
-    font: 15px/1.2 "jost";
+  .subCommunity .inner .communityBottom #list article h3 {
+    font: bold 15px/1 "jost";
   }
-  .subCommunity .inner #slider2 .prev {
-    right: 60px;
-    bottom: 5%;
+  .subCommunity .inner .communityBottom #list article h3 i {
+    font-size: 10px;
   }
-  .subCommunity .inner #slider2 .prev i {
-    font-size: 20px;
+  .subCommunity .inner .communityBottom #list article p {
+    font: 14px/1.2 "jost";
+    padding-bottom: 30px;
   }
-  .subCommunity .inner #slider2 .next {
-    right: 30px;
-    bottom: 5%;
+  .subCommunity .inner .communityBottom #slider2 {
+    width: 100%;
   }
-  .subCommunity .inner #slider2 .next i {
-    font-size: 20px;
+  .subCommunity .inner .communityBottom #slider2 .panel2 li {
+    width: 20%;
+    height: 100%;
+    padding: 30px 30px 80px;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li h3 {
+    font: bold 24px/1 "jost";
+    margin-bottom: 20px;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li p {
+    font: 15px/1.3 "jost";
   }
 }
 .scrollBtn {
