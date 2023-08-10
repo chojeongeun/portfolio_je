@@ -2293,24 +2293,26 @@ table {
   margin: 50px auto;
   text-align: center;
   border: none;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 .subCommunity .inner #list2 table tr {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   font: 16px/1.2 "poppins";
 }
 .subCommunity .inner #list2 table tr:last-child {
   border-bottom: none;
 }
 .subCommunity .inner #list2 table tr th {
-  border-bottom: 1px solid #555;
-  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 .subCommunity .inner #list2 table tr th:nth-of-type(1) {
   border-left: none;
 }
 .subCommunity .inner #list2 table tr td {
   padding: 0px 20px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #ddd;
 }
 .subCommunity .inner #list2 table tr td:nth-of-type(1) {
   border-left: none;
@@ -2332,17 +2334,18 @@ table {
   color: #999;
   cursor: pointer;
   border: 1px solid #ccc;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin-top: 0px;
 }
 .subCommunity .inner #list2 .bottomNum li.on {
   color: #111;
   font-weight: bold;
-  background: rgb(212, 235, 243);
+  background: rgb(230, 243, 248);
 }
 .subCommunity .inner #list2 .bottomNum li:first-child, .subCommunity .inner #list2 .bottomNum li:last-child {
   font-weight: bold;
   color: #111;
+  background-color: #efefef;
 }
 .subCommunity .inner #slider2 {
   width: 100%;
