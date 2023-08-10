@@ -53,7 +53,6 @@ btns.forEach((btn, idx) => {
 	});
 });
 
-/*
 const list = document.querySelector('#list');
 const article = list.querySelector('article');
 const titles = list.querySelectorAll('h3');
@@ -67,4 +66,3 @@ titles.forEach((title, idx) => {
 		boxs[idx].classList.add('on');
 	});
 });
-*/
