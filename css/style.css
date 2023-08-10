@@ -118,7 +118,7 @@ body {
 #header .inner #util {
   position: absolute;
   top: 30px;
-  left: 10px;
+  right: 10px;
 }
 #header .inner #util li {
   float: left;
@@ -132,7 +132,7 @@ body {
   display: block;
   position: absolute;
   top: 35px;
-  right: 10px;
+  left: 10px;
 }
 #header .inner .btncall i {
   font-size: 18px;
@@ -159,9 +159,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font: bold 30px/1 "jost";
-  color: #333;
+  color: #111;
   margin-bottom: 20px;
-  width: 100%;
   text-align: center;
 }
 #header #mobilePanel #gnbMo {
@@ -173,18 +172,19 @@ body {
 #header #mobilePanel #gnbMo li {
   padding: 0px 20px;
   margin-bottom: 30px;
+  text-align: center;
 }
 #header #mobilePanel #gnbMo li a {
-  font: 23px/1.2 "jost";
-  color: #555;
+  font: 20px/1.2 "jost";
+  color: #333;
 }
 #header #mobilePanel #gnbMo li a.on {
   color: coral;
 }
 #header #mobilePanel .close {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  top: 30px;
+  left: 5%;
   font-size: 20px;
   color: #333;
 }
