@@ -39,8 +39,8 @@ prev.addEventListener('click', () => {
 		value: '0%',
 		duration: 500,
 		callback: () => {
-			panel.prepend(panel.lastElementChild);
-			panel.style.marginLeft = '-100%';
+			panel2.prepend(panel2.lastElementChild);
+			panel2.style.marginLeft = '-100%';
 		},
 	});
 });
@@ -55,8 +55,8 @@ btns.forEach((btn, idx) => {
 
 const list = document.querySelector('#list');
 const article = list.querySelector('article');
-const titles = list.querySelectorAll('h3');
-const boxs = list.querySelectorAll('p');
+const titles = list.querySelectorAll('#list article h3');
+const boxs = list.querySelectorAll('#list article p');
 
 titles.forEach((title, idx) => {
 	title.addEventListener('click', () => {

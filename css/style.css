@@ -2508,6 +2508,7 @@ table {
   right: 100px;
   border: none;
   background: none;
+  cursor: pointer;
 }
 .subCommunity .inner .communityBottom #slider2 .prev i {
   font-size: 30px;
@@ -2519,6 +2520,7 @@ table {
   right: 50px;
   border: none;
   background: none;
+  cursor: pointer;
 }
 .subCommunity .inner .communityBottom #slider2 .next i {
   font-size: 30px;
@@ -2539,30 +2541,24 @@ table {
     font: normal 13px/1 "arial";
     padding: 10px 20px;
   }
-  .subCommunity .inner #slider2 {
-    height: 350px;
+  .subCommunity .inner .communityBottom {
+    width: 100%;
+    display: block;
   }
-  .subCommunity .inner #slider2 .panel2 li {
-    padding: 30px;
+  .subCommunity .inner .communityBottom #list {
+    width: 100%;
+    margin-bottom: 30px;
   }
-  .subCommunity .inner #slider2 .panel2 li h3 {
-    font: bold 30px/1 "jost";
-    margin-bottom: 35px;
+  .subCommunity .inner .communityBottom #slider2 {
+    width: 100%;
   }
-  .subCommunity .inner #slider2 .panel2 li p {
-    font: 17px/1.3 "jost";
+  .subCommunity .inner .communityBottom #slider2 .panel2 li {
+    width: 20%;
+    height: 100%;
+    padding: 30px 30px 80px;
   }
-  .subCommunity .inner #slider2 .prev {
-    bottom: 10%;
-  }
-  .subCommunity .inner #slider2 .prev i {
-    font-size: 20px;
-  }
-  .subCommunity .inner #slider2 .next {
-    bottom: 10%;
-  }
-  .subCommunity .inner #slider2 .next i {
-    font-size: 20px;
+  .subCommunity .inner .communityBottom #slider2 .panel2 li p {
+    font: 18px/1.3 "jost";
   }
 }
 @media screen and (max-width: 639px) {
