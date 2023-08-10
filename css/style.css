@@ -1498,7 +1498,6 @@ body {
 }
 .about .inner #lower .wrap {
   width: 100%;
-  padding: 30px;
 }
 .about .inner #lower .wrap::after {
   content: "";
@@ -1530,14 +1529,14 @@ body {
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.2);
 }
 .about .inner #lower .wrap article .txt h2 {
-  font: bold 22px/1 "Poppins", sans-serif;
+  font: bold 18px/1 "poppins";
   color: #444;
   text-align: center;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 .about .inner #lower .wrap article .txt p {
-  font: 16px/1 "Poppins", sans-serif;
+  font: 15px/1 "jost";
   color: #888;
   text-align: center;
   margin-bottom: 25px;
