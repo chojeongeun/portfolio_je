@@ -71,7 +71,6 @@ body {
   height: 85px;
   margin: 0px auto;
   position: relative;
-  border-bottom: 1px solid #aaa;
 }
 #header .inner::after {
   content: "";
@@ -119,7 +118,7 @@ body {
 #header .inner #util {
   position: absolute;
   top: 30px;
-  right: 0px;
+  right: 10px;
 }
 #header .inner #util li {
   float: left;
@@ -140,14 +139,15 @@ body {
   color: #333;
 }
 #header #mobilePanel {
-  width: 200px;
-  height: 100%;
-  background: #ddd;
+  width: 100%;
+  height: 100vh;
+  background: #aeaeeb;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
   display: none;
+  opacity: 0.9;
 }
 #header #mobilePanel.on {
   display: block;
@@ -158,31 +158,34 @@ body {
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  font: bold 27px/1 "jost";
-  color: #333;
-  margin-bottom: 30px;
+  font: bold 30px/1 "jost";
+  color: #111;
+  margin-bottom: 20px;
+  text-align: center;
 }
 #header #mobilePanel #gnbMo {
   position: absolute;
-  left: 20px;
-  top: 200px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #header #mobilePanel #gnbMo li {
   padding: 0px 20px;
   margin-bottom: 30px;
+  text-align: center;
 }
 #header #mobilePanel #gnbMo li a {
-  font: 17px/1.2 "jost";
-  color: #555;
+  font: 20px/1.2 "jost";
+  color: #333;
 }
 #header #mobilePanel #gnbMo li a.on {
   color: coral;
 }
 #header #mobilePanel .close {
   position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 15px;
+  top: 30px;
+  left: 5%;
+  font-size: 20px;
   color: #333;
 }
 
@@ -368,7 +371,7 @@ body {
   background: #555;
 }
 .content .inner {
-  padding: 100px 10vw 500px;
+  padding: 100px 10vw 50px;
   min-height: 800px;
 }
 .content .inner h1 {
@@ -557,17 +560,6 @@ body {
   color: #333;
   margin-bottom: 30px;
   position: relative;
-}
-#news .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 900px;
-  height: 1px;
-  background: #000;
-  margin-bottom: 30px;
 }
 #news .inner .wrap::after {
   content: "";
@@ -834,17 +826,6 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-#mainCommunity .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 800px;
-  height: 1px;
-  background: #999;
-  margin-bottom: 30px;
-}
 #mainCommunity .inner .wrap::after {
   content: "";
   display: block;
@@ -937,86 +918,86 @@ body {
 }
 
 @media screen and (max-width: 1180px) {
-  #community {
+  #mainCommunity {
     padding: 100px 30px;
   }
-  #community .inner {
+  #mainCommunity .inner {
     width: 100%;
     margin: 0px auto;
   }
-  #community .inner h1 {
+  #mainCommunity .inner h1 {
     font: bold 30px/1 "Jost", sans-serif;
     color: #333;
     margin-bottom: 30px;
   }
-  #community .inner .wrap {
+  #mainCommunity .inner .wrap {
     display: flex;
     flex-wrap: wrap;
   }
-  #community .inner .wrap article:nth-of-type(1) {
+  #mainCommunity .inner .wrap article:nth-of-type(1) {
     float: none;
     width: 55%;
     margin-bottom: 30px;
   }
-  #community .inner .wrap article:nth-of-type(1) .pic {
+  #mainCommunity .inner .wrap article:nth-of-type(1) .pic {
     width: 100%;
   }
-  #community .inner .wrap article:nth-of-type(1) h2 {
+  #mainCommunity .inner .wrap article:nth-of-type(1) h2 {
     font: bold 12px/1 "Jost", sans-serif;
     color: coral;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
-  #community .inner .wrap article:nth-of-type(1) h3 {
+  #mainCommunity .inner .wrap article:nth-of-type(1) h3 {
     font: bold 18px/1.1 "Poppins", sans-serif;
     color: #222;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(1) p {
+  #mainCommunity .inner .wrap article:nth-of-type(1) p {
     font: 12px/1 "Poppins", sans-serif;
     color: #777;
   }
-  #community .inner .wrap article:nth-of-type(2) {
+  #mainCommunity .inner .wrap article:nth-of-type(2) {
     float: none;
     width: 100%;
     margin-bottom: 30px;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox {
     width: 55%;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox h2 {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h2 {
     font: bold 12px/1 "Jost", sans-serif;
     color: coral;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox h3 {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h3 {
     font: bold 18px/1.3 "Poppins", sans-serif;
     color: #222;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(2) .txtBox p {
+  #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox p {
     font: 12px/1 "Poppins", sans-serif;
     color: #777;
   }
-  #community .inner .wrap article:nth-of-type(3) {
+  #mainCommunity .inner .wrap article:nth-of-type(3) {
     float: none;
     width: 100%;
   }
-  #community .inner .wrap article:nth-of-type(3) .pic {
+  #mainCommunity .inner .wrap article:nth-of-type(3) .pic {
     width: 55%;
   }
-  #community .inner .wrap article:nth-of-type(3) h2 {
+  #mainCommunity .inner .wrap article:nth-of-type(3) h2 {
     font: bold 12px/1 "Jost", sans-serif;
     color: coral;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
-  #community .inner .wrap article:nth-of-type(3) h3 {
+  #mainCommunity .inner .wrap article:nth-of-type(3) h3 {
     font: bold 18px/1.1 "Poppins", sans-serif;
     color: #222;
     margin-bottom: 15px;
   }
-  #community .inner .wrap article:nth-of-type(3) p {
+  #mainCommunity .inner .wrap article:nth-of-type(3) p {
     font: 12px/1 "Poppins", sans-serif;
     color: #777;
   }
@@ -1035,17 +1016,6 @@ body {
   color: #333;
   margin-bottom: 30px;
   position: relative;
-}
-#science .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 1000px;
-  height: 1px;
-  background: #999;
-  margin-bottom: 30px;
 }
 #science .inner .wrap {
   display: flex;
@@ -1151,17 +1121,6 @@ body {
   color: #333;
   margin-bottom: 30px;
   position: relative;
-}
-#goods .inner h1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 1000px;
-  height: 1px;
-  background: #999;
-  margin-bottom: 30px;
 }
 #goods .inner ul li {
   display: flex;
@@ -1318,7 +1277,8 @@ body {
 #visual .swiper .swiper-slide .inner .visualTxt {
   width: 1180px;
   height: 100%;
-  padding: 100px 30px;
+  margin: 0px auto;
+  padding: 150px 50px;
 }
 #visual .swiper .swiper-slide .inner.inner1 {
   background-image: url(../img/pic5.jpg);
@@ -1348,6 +1308,7 @@ body {
   position: absolute;
   top: 70%;
   left: 60%;
+  margin-right: 20px;
 }
 #visual .swiper .swiper-button-next {
   position: absolute;
@@ -1364,24 +1325,34 @@ body {
 }
 
 @media screen and (max-width: 1180px) {
-  #visual .swiper .swiper-slide .inner {
+  #visual .swiper .swiper-slide .inner .visualTxt {
     width: 100%;
+    padding: 130px 40px;
   }
-  #visual .swiper .swiper-slide .inner h1 {
+  #visual .swiper .swiper-slide .inner .visualTxt h1 {
     width: 75%;
     font: bold 37px/1.3 "Jost", sans-serif;
   }
   #visual .swiper .swiper-button-prev {
-    left: 50%;
+    left: 55%;
+  }
+  #visual .swiper .swiper-button-next {
+    right: 30%;
   }
 }
 @media screen and (max-width: 639px) {
-  #visual .swiper .swiper-slide .inner {
-    width: 100%;
+  #visual .swiper .swiper-slide .inner .visualTxt {
+    padding: 130px 30px;
   }
-  #visual .swiper .swiper-slide .inner h1 {
-    width: 70%;
-    font: bold 25px/1.3 "Jost", sans-serif;
+  #visual .swiper .swiper-slide .inner .visualTxt h1 {
+    width: 80%;
+    font: bold 20px/1.4 "Jost", sans-serif;
+  }
+  #visual .swiper .swiper-button-prev {
+    left: 40%;
+  }
+  #visual .swiper .swiper-button-next {
+    right: 20%;
   }
 }
 #pop {
@@ -1397,6 +1368,7 @@ body {
   border: 1px solid #999;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   z-index: 2;
+  opacity: 0.9;
 }
 #pop .content {
   width: 100%;
@@ -1447,7 +1419,7 @@ body {
 .about .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic27.jpg);
+  background-image: url(../img/pic27.jpg);
   background-position-y: 20%;
   opacity: 0.5;
   background-repeat: no-repeat;
@@ -1456,110 +1428,116 @@ body {
 .about .inner {
   margin: 0px auto;
 }
-.about .inner .SC1 {
-  width: 100%;
-  padding: 0px 50px;
-  border-bottom: 1px solid #ccc;
-}
-.about .inner .SC1 h1 {
+.about .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
   color: #444;
   text-align: center;
   margin-bottom: 0px;
-  letter-spacing: 3px;
 }
-.about .inner .SC1 span {
-  display: block;
-  font: 14px/1 "Jost", sans-serif;
-  color: #555;
+.about .inner > h2 {
   text-align: center;
-  margin-bottom: 70px;
-}
-.about .inner .SC1 .pic1 {
-  width: 70%;
-  height: 350px;
-  margin: 0px auto;
-  margin-bottom: 50px;
-}
-.about .inner .SC1 .pic1 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.about .inner .SC1 h2 {
-  width: 90%;
-  font: normal 20px/1.3 "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-.about .inner .SC1 h3 {
-  display: inline-block;
-  width: 30%;
-  text-align: left;
-  font: 15px/1.3 "Poppins", sans-serif;
-  margin-bottom: 10px;
-}
-.about .inner .SC2 {
-  width: 100%;
-  padding: 50px;
-}
-.about .inner .SC2 h1 {
-  font: bold 40px/1 "Jost", sans-serif;
+  font: 15px/1 "Jost", sans-serif;
   color: #555;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: 3px;
+  margin-bottom: 150px;
 }
-.about .inner .SC2 .pic2 {
-  width: 800px;
+.about .inner #upper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.about .inner #upper .aboutTxt {
+  width: 60%;
+}
+.about .inner #upper .aboutTxt h2 {
+  font: bold 35px/1 "jost";
+  color: #333;
+  margin-bottom: 25px;
+}
+.about .inner #upper .aboutTxt p {
+  font: 15px/1.6 "poppins";
+  color: #777;
+}
+.about .inner #upper .pic {
+  width: calc(40% - 20px);
   height: 300px;
-  margin: 40px auto;
 }
-.about .inner .SC2 .pic2 img {
+.about .inner #upper .pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.8;
 }
-.about .inner .SC2 .txt {
+.about .inner #middle {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
 }
-.about .inner .SC2 .txt h3 {
-  width: 50%;
-  text-align: right;
-  font: 15px/1.3 "Poppins", sans-serif;
+.about .inner #middle i {
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: #7083c0;
+}
+.about .inner #middle h3 {
+  font: bold 25px/1 "jost";
+  color: #333;
   margin-bottom: 20px;
 }
-.about .inner .wrap {
-  width: 100%;
-  padding: 50px;
+.about .inner #middle p {
+  font: 15px/1.3 "poppins";
+  color: #555;
+  margin: 0px auto;
 }
-.about .inner .wrap::after {
+.about .inner #middle article {
+  width: 33.3333333333%;
+  background-color: #ebe7fc;
+  margin-right: 30px;
+  padding: 40px;
+}
+.about .inner #lower h2 {
+  font: bold 35px/1 "jost";
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.about .inner #lower p {
+  width: 50%;
+  font: 15px/1.3 "jost";
+  color: #555;
+  margin: 0px auto;
+  text-align: center;
+}
+.about .inner #lower .wrap {
+  width: 100%;
+}
+.about .inner #lower .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-.about .inner .wrap article {
+.about .inner #lower .wrap article {
   width: 33.3333333333%;
   float: left;
   padding: 50px;
   margin-bottom: 40px;
 }
-.about .inner .wrap article .pic {
+.about .inner #lower .wrap article .pic {
   width: 200px;
   height: 200px;
   margin: 0px auto 20px;
 }
-.about .inner .wrap article .pic :hover {
+.about .inner #lower .wrap article .pic :hover {
   box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
   transition: 0.3s;
 }
-.about .inner .wrap article .pic img {
+.about .inner #lower .wrap article .pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1568,25 +1546,25 @@ body {
   opacity: 0.7;
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.2);
 }
-.about .inner .wrap article .txt h2 {
-  font: bold 22px/1 "Poppins", sans-serif;
+.about .inner #lower .wrap article .txt h2 {
+  font: bold 18px/1 "poppins";
   color: #444;
   text-align: center;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
-.about .inner .wrap article .txt p {
-  font: 16px/1 "Poppins", sans-serif;
+.about .inner #lower .wrap article .txt p {
+  font: 15px/1 "jost";
   color: #888;
   text-align: center;
   margin-bottom: 25px;
 }
-.about .inner .wrap article .sns {
+.about .inner #lower .wrap article .sns {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
-.about .inner .wrap article .sns a i {
+.about .inner #lower .wrap article .sns a i {
   font-size: 15px;
   color: #fa9b9b;
 }
@@ -1595,44 +1573,39 @@ body {
   .about .inner {
     width: 100%;
   }
-  .about .inner .SC1 {
-    padding: 30px;
+  .about .inner #upper {
+    margin-bottom: 80px;
   }
-  .about .inner .SC1 .pic1 {
-    width: 90%;
-    height: 250px;
-    margin: 0px auto;
-    margin-bottom: 50px;
-  }
-  .about .inner .SC1 .pic1 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .about .inner .SC1 h2 {
-    width: 90%;
-    font: normal 17px/1.3 "Poppins", sans-serif;
+  .about .inner #upper .aboutTxt h2 {
+    font: bold 30px/1 "jost";
     margin-bottom: 20px;
   }
-  .about .inner .SC1 h3 {
-    display: inline-block;
-    width: 40%;
-    text-align: left;
-    font: 13px/1.3 "Poppins", sans-serif;
-    margin-bottom: 10px;
+  .about .inner #upper .aboutTxt p {
+    font: 13px/1.4 "poppins";
   }
-  .about .inner .SC2 {
+  .about .inner #middle {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  .about .inner #middle i {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  .about .inner #middle h3 {
+    font: bold 20px/1 "jost";
+    margin-bottom: 15px;
+  }
+  .about .inner #middle p {
+    font: 12px/1 "poppins";
+  }
+  .about .inner #middle article {
+    margin-right: 10px;
+    padding: 15px;
+  }
+  .about .inner #lower .wrap {
     padding: 30px;
   }
-  .about .inner .SC2 .pic2 {
-    width: 100%;
-    margin: 20px auto;
-  }
-  .about .inner .wrap {
-    padding: 30px;
-  }
-  .about .inner .wrap article {
+  .about .inner #lower .wrap article {
     width: 50%;
     float: left;
     padding: 30px;
@@ -1640,31 +1613,59 @@ body {
   }
 }
 @media screen and (max-width: 639px) {
-  .about .inner .SC1 .pic1 {
+  .about .inner #upper {
+    display: block;
+    gap: 0px;
+    margin-bottom: 50px;
+  }
+  .about .inner #upper .aboutTxt {
     width: 100%;
     margin-bottom: 30px;
   }
-  .about .inner .SC1 h2 {
-    width: 100%;
+  .about .inner #upper .aboutTxt h2 {
+    font: bold 25px/1 "jost";
+    margin-bottom: 18px;
   }
-  .about .inner .SC1 h3 {
+  .about .inner #upper .aboutTxt p {
+    font: 13px/1.4 "poppins";
+  }
+  .about .inner #upper .pic {
+    width: 100%;
+    height: 170px;
+  }
+  .about .inner #upper .pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.8;
+  }
+  .about .inner #middle {
     display: block;
     width: 100%;
+    margin-top: 60px;
+    margin-bottom: 100px;
   }
-  .about .inner .SC2 .pic2 {
+  .about .inner #middle i {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .about .inner #middle h3 {
+    font: bold 20px/1 "jost";
+    margin-bottom: 15px;
+  }
+  .about .inner #middle p {
+    font: 12px/1 "poppins";
+  }
+  .about .inner #middle article {
     width: 100%;
-    margin: 20px auto;
+    margin-bottom: 20px;
+    padding: 20px;
   }
-  .about .inner .SC2 .txt {
-    display: block;
-    gap: 0px;
+  .about .inner #lower p {
+    width: 90%;
   }
-  .about .inner .SC2 .txt h3 {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .about .inner .wrap article {
+  .about .inner #lower .wrap article {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -1673,7 +1674,7 @@ body {
 .youtube .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic22.jpg);
+  background-image: url(../img/pic22.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -1693,9 +1694,9 @@ body {
 .youtube .inner .wrap article {
   width: 100%;
   padding: 20px 20px;
-  border: 1.5px solid #ddd;
   background: #efefef;
   margin-bottom: 30px;
+  display: flex;
 }
 .youtube .inner .wrap article .box {
   display: flex;
@@ -1788,14 +1789,13 @@ body {
 }
 .gallery {
   width: 100%;
-  background-color: rgb(229, 229, 229);
   overflow: hidden;
   position: relative;
 }
 .gallery .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic43.jpg);
+  background-image: url(../img/pic43.jpg);
   background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1885,7 +1885,7 @@ body {
 .members .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic41.jpg);
+  background-image: url(../img/pic41.jpg);
   background-position-y: 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1987,7 +1987,7 @@ body {
   margin-right: 30px;
 }
 .members .inner form table td .err {
-  color: hotpink;
+  color: coral;
   margin-top: 5px;
   font: 11px/1 "맑은 고딕";
   display: none;
@@ -2072,10 +2072,11 @@ table {
 .location .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic36.jpg);
+  background-image: url(../img/pic36.jpg);
   background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.7;
   opacity: 0.5;
 }
 .location .inner h1 {
@@ -2090,44 +2091,70 @@ table {
   color: #555;
   margin-bottom: 50px;
 }
-.location .inner #map {
-  width: 100%;
-  height: 400px;
-  background: #111;
-  position: relative;
-  filter: grayscale(40%);
-  transition: filter 0.5s;
-}
-.location .inner #map:hover {
-  filter: saturate(100%);
-}
-.location .inner .txtwrap {
-  width: 100%;
-  margin-top: 20px;
+.location .inner .locationWrap {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   gap: 20px;
+  margin-bottom: 100px;
 }
-.location .inner .txtwrap .contact {
-  width: 50%;
+.location .inner .locationWrap #mapWrap {
+  width: 70%;
+  height: 600px;
+}
+.location .inner .locationWrap #mapWrap #map {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  position: relative;
+  filter: grayscale(80%);
+  transition: filter 0.5s;
+}
+.location .inner .locationWrap #mapWrap #map:hover {
+  filter: saturate(100%);
+}
+.location .inner .locationWrap #mapWrap .branch {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+.location .inner .locationWrap #mapWrap .branch li {
+  display: inline-block;
+  padding: 10px 20px;
+  font: bold 14px/1 "맑은고딕";
+  border: 1px solid #333;
+  background: #eee;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.location .inner .locationWrap .txtwrap {
+  width: 30%;
+}
+.location .inner .locationWrap .txtwrap .contact {
+  width: 100%;
+  height: 350px;
   padding: 20px;
   border: 1px solid #aaa;
+  display: inline-block;
+  margin-bottom: 10px;
 }
-.location .inner .txtwrap .contact p {
-  font: bold 30px/1 "jost";
+.location .inner .locationWrap .txtwrap .contact p {
+  font: bold 25px/1 "jost";
   color: #555;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
-.location .inner .txtwrap .contact input {
-  width: 200px;
-  height: 20px;
+.location .inner .locationWrap .txtwrap .contact input {
+  width: 100%;
+  height: 30px;
   display: block;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #aaa;
+  font-family: "돋움";
+  padding: 2px 5px;
 }
-.location .inner .txtwrap .contact input:last-child {
+.location .inner .locationWrap .txtwrap .contact input:last-child {
   display: block;
   width: 150px;
   height: 30px;
@@ -2136,70 +2163,211 @@ table {
   color: #555;
   border: 1px solid #aaa;
   cursor: pointer;
+  padding: 0;
 }
-.location .inner .txtwrap .contact label {
+.location .inner .locationWrap .txtwrap .contact input:last-child:hover {
+  background: #333;
+  color: #fff;
+}
+.location .inner .locationWrap .txtwrap .contact label {
   font: bold 14px/1 "Jost";
   color: #555;
+  margin-bottom: 10px;
 }
-.location .inner .txtwrap .contact textarea {
-  width: 300px;
-  height: 80px;
+.location .inner .locationWrap .txtwrap .contact textarea {
+  width: 100%;
+  height: 70px;
   margin-top: 10px;
   display: block;
   resize: none;
   border: 1px solid #aaa;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-family: "돋움";
+  padding: 5px 5px;
 }
-.location .inner .txtwrap .FAQ {
-  width: 50%;
+.location .inner .locationWrap .txtwrap .FAQ {
+  width: 100%;
+  height: 250px;
   border: 1px solid #aaa;
 }
-.location .inner .txtwrap .FAQ .btn {
+.location .inner .locationWrap .txtwrap .FAQ .btn {
   width: 100%;
 }
-.location .inner .txtwrap .FAQ .btn li {
+.location .inner .locationWrap .txtwrap .FAQ .btn li {
   float: left;
   width: 33.3333333333%;
-  height: 50px;
+  height: 45px;
   display: block;
-  font: bold 14px/50px "Jost";
+  font: bold 14px/45px "Jost";
   color: #999;
   background: #333;
   text-align: center;
   cursor: pointer;
 }
-.location .inner .txtwrap .FAQ .btn li.on {
-  background: #efefef;
+.location .inner .locationWrap .txtwrap .FAQ .btn li.on {
+  background: #fff;
   color: #333;
 }
-.location .inner .txtwrap .FAQ .box {
+.location .inner .locationWrap .txtwrap .FAQ .box {
   width: 100%;
 }
-.location .inner .txtwrap .FAQ .box li {
+.location .inner .locationWrap .txtwrap .FAQ .box li {
   width: 100%;
-  height: 300px;
+  height: 320px;
   display: none;
 }
-.location .inner .txtwrap .FAQ .box li.on {
+.location .inner .locationWrap .txtwrap .FAQ .box li.on {
   display: block;
 }
-.location .inner .txtwrap .FAQ .box li p {
+.location .inner .locationWrap .txtwrap .FAQ .box li .question {
   width: 100%;
-  font: 18px/1 "jost";
+  font: bold 14px/1.3 "jost";
   color: #555;
-  padding: 30px;
+  padding: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.location .inner .locationWrap .txtwrap .FAQ .box li .answer {
+  width: 100%;
+  font: 14px/1.4 "jost";
+  color: #555;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+@media screen and (max-width: 1180px) {
+  .location .inner .locationWrap {
+    display: block;
+    width: 100%;
+  }
+  .location .inner .locationWrap #mapWrap {
+    width: 100%;
+  }
+  .location .inner .locationWrap #mapWrap #map {
+    height: 500px;
+  }
+  .location .inner .locationWrap #mapWrap .branch {
+    width: 100%;
+    justify-content: center;
+  }
+  .location .inner .locationWrap #mapWrap .branch li {
+    display: inline-block;
+    padding: 5px 10px;
+    font: bold 13px/1 "맑은고딕";
+    margin-bottom: 20px;
+  }
+  .location .inner .locationWrap .txtwrap {
+    width: 100%;
+  }
+  .location .inner .locationWrap .txtwrap .contact p {
+    font: bold 20px/1 "jost";
+  }
+  .location .inner .locationWrap .txtwrap .contact input:last-child {
+    font: bold 12px/30px "jost";
+  }
+  .location .inner .locationWrap .txtwrap .contact label {
+    font: bold 12px/1 "Jost";
+  }
+  .location .inner .locationWrap .txtwrap .FAQ .box {
+    margin-bottom: 30px;
+  }
+  .location .inner .locationWrap .txtwrap .FAQ .box li .question {
+    font: bold 12px/1.3 "jost";
+    padding: 20px;
+  }
+  .location .inner .locationWrap .txtwrap .FAQ .box li .answer {
+    width: 100%;
+    font: 12px/1.3 "jost";
+    color: #555;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .subCommunity .subVisual {
   width: 100%;
   height: 250px;
-  background-image: url(/img/pic21.jpg);
+  background-image: url(../img/pic21.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+}
+.subCommunity .inner {
+  /*
+  #slider {
+  	width: 700px;
+  	height: 450px;
+  	border: 1px solid #eee;
+  	margin: 100px auto;
+  	position: relative;
+  	overflow: hidden;
+
+  	.panel {
+  		width: calc(100% * 5);
+  		height: 100%;
+
+  		&::after {
+  			content: '';
+  			display: block;
+  			clear: both;
+  		}
+  		li {
+  			width: calc(100% / 5);
+  			height: 100%;
+  			float: left;
+  			text-align: center;
+  			padding: 50px;
+  			h3 {
+  				font: bold 30px/1 'arial';
+  				margin-bottom: 20px;
+  			}
+  			p {
+  				font: 20px/1 'arial';
+  			}
+
+  			&:nth-of-type(1) {
+  				background: #aaa;
+  			}
+  			&:nth-of-type(2) {
+  				background: #bbb;
+  			}
+  			&:nth-of-type(3) {
+  				background: #ccc;
+  			}
+  			&:nth-of-type(4) {
+  				background: #ddd;
+  			}
+  			&:nth-of-type(5) {
+  				background: #999;
+  			}
+  		}
+  	}
+  	.btn {
+  		position: absolute;
+  		bottom: 30px;
+  		left: 30px;
+  		li {
+  			float: left;
+  			width: 20px;
+  			height: 20px;
+  			background: #fff;
+  			margin-left: 10px;
+  			cursor: pointer;
+  			transition: 0.5s;
+  			border-radius: 50%;
+  			&.on {
+  				width: 80px;
+  				background: #333;
+  				border-radius: 30px;
+  			}
+  		}
+  	}
+  }
+  */
 }
 .subCommunity .inner h1 {
   font: bold 55px/1 "Jost", sans-serif;
@@ -2214,16 +2382,36 @@ table {
   margin-bottom: 50px;
 }
 .subCommunity .inner #list2 table {
-  width: 1000px;
-  height: 400px;
-  margin: 0px auto;
+  width: 100%;
+  height: 600px;
+  margin: 50px auto;
   text-align: center;
   border: none;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
-.subCommunity .inner #list2 table th {
-  border-bottom: 1px solid #555;
+.subCommunity .inner #list2 table tr {
+  border-bottom: 1px solid #ddd;
+  font: 16px/1.2 "poppins";
 }
-.subCommunity .inner #list2 table td:nth-of-type(2) {
+.subCommunity .inner #list2 table tr:last-child {
+  border-bottom: none;
+}
+.subCommunity .inner #list2 table tr th {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+.subCommunity .inner #list2 table tr th:nth-of-type(1) {
+  border-left: none;
+}
+.subCommunity .inner #list2 table tr td {
+  padding: 0px 20px;
+  border-left: 1px solid #ddd;
+}
+.subCommunity .inner #list2 table tr td:nth-of-type(1) {
+  border-left: none;
+}
+.subCommunity .inner #list2 table tr td:nth-of-type(2) {
   text-align: left;
   padding: 0px 80px;
 }
@@ -2232,85 +2420,223 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 .subCommunity .inner #list2 .bottomNum li {
+  display: inline-block;
   font: normal 15px/1 "arial";
   color: #999;
   cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin-top: 0px;
 }
 .subCommunity .inner #list2 .bottomNum li.on {
   color: #111;
-  font-weight: 700;
+  font-weight: bold;
+  background: rgb(238, 249, 253);
+  border: 1px solid #999;
 }
-.subCommunity .inner #slider2 {
-  width: 1000px;
-  height: 450px;
+.subCommunity .inner #list2 .bottomNum li:first-child, .subCommunity .inner #list2 .bottomNum li:last-child {
+  font-weight: bold;
+  color: #111;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+}
+.subCommunity .inner .communityBottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.subCommunity .inner .communityBottom #list {
+  width: 50%;
+  height: 350px;
   border: 1px solid #ddd;
-  margin: 100px auto;
+  padding: 20px;
+}
+.subCommunity .inner .communityBottom #list article {
+  width: 100%;
+}
+.subCommunity .inner .communityBottom #list article h3 {
+  font: bold 18px/1 "jost";
+  color: #555;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.subCommunity .inner .communityBottom #list article h3 i {
+  margin-right: 10px;
+  font-size: 13px;
+  color: #bbb;
+}
+.subCommunity .inner .communityBottom #list article p {
+  font: 16px/1.3 "jost";
+  color: #555;
+  display: none;
+  margin-bottom: 30px;
+  background: #ededed;
+  padding: 20px 20px 40px;
+}
+.subCommunity .inner .communityBottom #list article p.on {
+  display: block;
+}
+.subCommunity .inner .communityBottom #slider2 {
+  width: 50%;
+  height: 350px;
+  border: 1px solid #ddd;
   position: relative;
   overflow: hidden;
 }
-.subCommunity .inner #slider2 .panel2 {
+.subCommunity .inner .communityBottom #slider2 .panel2 {
   width: 500%;
   height: 100%;
   margin-left: -100%;
 }
-.subCommunity .inner #slider2 .panel2 li {
+.subCommunity .inner .communityBottom #slider2 .panel2 li {
   width: 20%;
   height: 100%;
-  padding: 50px;
+  padding: 30px;
   float: left;
 }
-.subCommunity .inner #slider2 .panel2 li h3 {
-  font: bold 35px/1 "jost";
+.subCommunity .inner .communityBottom #slider2 .panel2 li h3 {
+  width: 100%;
+  font: bold 28px/1 "jost";
   color: #333;
-  margin-bottom: 50px;
   text-align: center;
+  margin-bottom: 20px;
 }
-.subCommunity .inner #slider2 .panel2 li p {
-  font: 20px/1.5 "jost";
+.subCommunity .inner .communityBottom #slider2 .panel2 li article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.subCommunity .inner .communityBottom #slider2 .panel2 li article .pic {
+  width: 50%;
+  height: 200px;
+}
+.subCommunity .inner .communityBottom #slider2 .panel2 li article .pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.subCommunity .inner .communityBottom #slider2 .panel2 li article p {
+  width: calc(50% - 20px);
+  font: 18px/1.3 "jost";
   color: #444;
 }
-.subCommunity .inner #slider2 .panel2 li.p1 {
-  background: rgb(246, 195, 204);
-}
-.subCommunity .inner #slider2 .panel2 li.p2 {
-  background: rgb(213, 243, 213);
-}
-.subCommunity .inner #slider2 .panel2 li.p3 {
-  background: rgb(239, 219, 183);
-}
-.subCommunity .inner #slider2 .panel2 li.p4 {
-  background: rgb(206, 241, 253);
-}
-.subCommunity .inner #slider2 .panel2 li.p5 {
-  background: rgb(240, 196, 237);
-}
-.subCommunity .inner #slider2 .prev {
+.subCommunity .inner .communityBottom #slider2 .prev {
   position: absolute;
-  bottom: 20%;
-  right: 150px;
-  border: none;
-  background: none;
-}
-.subCommunity .inner #slider2 .prev i {
-  font-size: 30px;
-  color: #777;
-}
-.subCommunity .inner #slider2 .next {
-  position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   right: 100px;
   border: none;
   background: none;
+  cursor: pointer;
 }
-.subCommunity .inner #slider2 .next i {
+.subCommunity .inner .communityBottom #slider2 .prev i {
   font-size: 30px;
-  color: #777;
+  color: #bbb;
+}
+.subCommunity .inner .communityBottom #slider2 .next {
+  position: absolute;
+  bottom: 10%;
+  right: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.subCommunity .inner .communityBottom #slider2 .next i {
+  font-size: 30px;
+  color: #bbb;
 }
 
+@media screen and (max-width: 1180px) {
+  .subCommunity .inner #list2 table tr {
+    font: 13px/1.2 "poppins";
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(2) {
+    padding: 0px 20px;
+  }
+  .subCommunity .inner #list2 .bottomNum {
+    margin-top: 30px;
+  }
+  .subCommunity .inner #list2 .bottomNum li {
+    font: normal 13px/1 "arial";
+    padding: 10px 20px;
+  }
+  .subCommunity .inner .communityBottom {
+    width: 100%;
+    display: block;
+  }
+  .subCommunity .inner .communityBottom #list {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .subCommunity .inner .communityBottom #slider2 {
+    width: 100%;
+    height: 300px;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li {
+    width: 20%;
+    height: 100%;
+    padding: 30px 30px 80px;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li p {
+    font: 18px/1.3 "jost";
+  }
+}
+@media screen and (max-width: 639px) {
+  .subCommunity .inner #list2 table tr {
+    font: 11px/1.2 "poppins";
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(2) {
+    padding: 0px 10px;
+  }
+  .subCommunity .inner #list2 .bottomNum {
+    margin-top: 20px;
+  }
+  .subCommunity .inner #list2 .bottomNum li {
+    font: normal 13px/1 "poppgins";
+    padding: 10px 20px;
+  }
+  .subCommunity .inner .communityBottom {
+    width: 100%;
+    display: block;
+  }
+  .subCommunity .inner .communityBottom #list {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .subCommunity .inner .communityBottom #list article h3 {
+    font: bold 15px/1 "jost";
+  }
+  .subCommunity .inner .communityBottom #list article h3 i {
+    font-size: 10px;
+  }
+  .subCommunity .inner .communityBottom #list article p {
+    font: 14px/1.2 "jost";
+    padding-bottom: 30px;
+  }
+  .subCommunity .inner .communityBottom #slider2 {
+    width: 100%;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li {
+    width: 20%;
+    height: 100%;
+    padding: 30px 30px 80px;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li h3 {
+    font: bold 24px/1 "jost";
+    margin-bottom: 20px;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li p {
+    font: 15px/1.3 "jost";
+  }
+}
 .scrollBtn {
   position: fixed;
   top: 50%;
