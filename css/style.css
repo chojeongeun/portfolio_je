@@ -1673,11 +1673,34 @@ body {
   text-align: center;
   letter-spacing: 2px;
 }
-.youtube .inner p {
+.youtube .inner > p {
   text-align: center;
   font: 15px/1 "Jost", sans-serif;
   color: #555;
   margin-bottom: 50px;
+}
+.youtube .inner .upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.youtube .inner .upper > p {
+  width: 70%;
+  font: 18px/1.5 "jost";
+  color: #555;
+}
+.youtube .inner .upper .pic {
+  width: calc(30% - 20px);
+  height: 250px;
+}
+.youtube .inner .upper .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
 }
 .youtube .inner .wrap {
   width: 100%;
@@ -1690,25 +1713,28 @@ body {
 .youtube .inner .wrap article {
   width: calc(33.3333333333% - 40px);
   gap: 20px;
-  border: 1.5px solid #ddd;
+  border: 1.5px solid #aaa;
   margin-bottom: 30px;
   background: #fff;
 }
 .youtube .inner .wrap article .box .pic {
   width: 100%;
-  height: 200px;
+  height: 210px;
   margin: 0px auto;
   margin-bottom: 10px;
   cursor: pointer;
 }
 .youtube .inner .wrap article .box .pic :hover {
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  width: 102%;
+  height: 102%;
+  opacity: 1;
   transition: 0.3s;
 }
 .youtube .inner .wrap article .box .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
 .youtube .inner .wrap article .txt {
   padding: 10px;
@@ -1725,7 +1751,7 @@ body {
   padding-top: 20px;
   font: 15px/1.3 "jost";
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: left;
 }
 .youtube .inner .wrap article .txt span {
@@ -1739,44 +1765,64 @@ body {
 }
 
 @media screen and (max-width: 1180px) {
-  .youtube .inner .wrap article .box {
-    gap: 20px;
+  .youtube .inner .upper {
+    margin-bottom: 70px;
+  }
+  .youtube .inner .upper > p {
+    font: 16px/1.4 "jost";
+  }
+  .youtube .inner .upper .pic {
+    height: 200px;
+  }
+  .youtube .inner .wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 10px;
+  }
+  .youtube .inner .wrap article {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
   }
   .youtube .inner .wrap article .box .pic {
-    width: calc(50% - 20px);
-  }
-  .youtube .inner .wrap article .txt {
-    width: 50%;
+    height: 180px;
   }
   .youtube .inner .wrap article .txt h2 {
-    font: bold 20px/1.2 "Poppins", sans-serif;
+    font: bold 18px/1.2 "jost", sans-serif;
+    padding-bottom: 15px;
   }
   .youtube .inner .wrap article .txt p {
-    font: 13px/1.3 "arial";
+    padding-top: 15px;
+    font: 13px/1.2 "jost";
+    margin-bottom: 20px;
   }
   .youtube .inner .wrap article .txt span {
     font: 11px/1 "arial";
+  }
+  .youtube .inner .wrap article .txt a {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 639px) {
-  .youtube .inner .wrap article .box {
+  .youtube .inner .upper {
     display: block;
-    gap: 20px;
+    margin-bottom: 50px;
   }
-  .youtube .inner .wrap article .box .pic {
+  .youtube .inner .upper > p {
     width: 100%;
+    font: 16px/1.4 "jost";
   }
-  .youtube .inner .wrap article .txt {
+  .youtube .inner .upper .pic {
+    display: none;
+  }
+  .youtube .inner .wrap {
     width: 100%;
+    display: block;
   }
-  .youtube .inner .wrap article .txt h2 {
-    font: bold 20px/1.2 "Poppins", sans-serif;
-  }
-  .youtube .inner .wrap article .txt p {
-    font: 13px/1.3 "arial";
-  }
-  .youtube .inner .wrap article .txt span {
-    font: 11px/1 "arial";
+  .youtube .inner .wrap article {
+    width: 100%;
   }
 }
 .gallery {

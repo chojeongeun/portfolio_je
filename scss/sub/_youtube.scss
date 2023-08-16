@@ -17,11 +17,36 @@
 			text-align: center;
 			letter-spacing: 2px;
 		}
-		p {
+		> p {
 			text-align: center;
 			font: 15px/1 'Jost', sans-serif;
 			color: #555;
 			margin-bottom: 50px;
+		}
+
+		.upper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 20px;
+			margin-bottom: 100px;
+
+			> p {
+				width: 70%;
+				font: 18px/1.5 'jost';
+				color: #555;
+			}
+			.pic {
+				width: calc(30% - 20px);
+				height: 250px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					opacity: 0.8;
+				}
+			}
 		}
 
 		.wrap {
@@ -35,7 +60,7 @@
 			article {
 				width: calc(100% / 3 - 40px);
 				gap: 20px;
-				border: 1.5px solid #ddd;
+				border: 1.5px solid #aaa;
 				margin-bottom: 30px;
 				// display: flex;
 				background: #fff;
@@ -43,12 +68,14 @@
 				.box {
 					.pic {
 						width: 100%;
-						height: 200px;
+						height: 210px;
 						margin: 0px auto;
 						margin-bottom: 10px;
 						cursor: pointer;
 						:hover {
-							box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+							width: 102%;
+							height: 102%;
+							opacity: 1;
 							transition: 0.3s;
 						}
 
@@ -56,6 +83,7 @@
 							width: 100%;
 							height: 100%;
 							object-fit: cover;
+							opacity: 0.8;
 						}
 					}
 				}
@@ -75,7 +103,7 @@
 						padding-top: 20px;
 						font: 15px/1.3 'jost';
 						color: #666;
-						margin-bottom: 40px;
+						margin-bottom: 30px;
 						text-align: left;
 					}
 					span {
@@ -93,29 +121,54 @@
 		}
 	}
 }
-
 @media screen and (max-width: $tablet) {
 	.youtube {
 		.inner {
+			.upper {
+				margin-bottom: 70px;
+
+				> p {
+					font: 16px/1.4 'jost';
+				}
+				.pic {
+					height: 200px;
+				}
+			}
+
 			.wrap {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: space-between;
+				gap: 10px;
+
 				article {
+					width: calc(100% / 2 - 20px);
+					margin-bottom: 20px;
+
 					.box {
-						gap: 20px;
 						.pic {
-							width: calc((100% / 2) - 20px);
+							height: 180px;
 						}
 					}
 
 					.txt {
-						width: 50%;
 						h2 {
-							font: bold 20px/1.2 'Poppins', sans-serif;
+							font: bold 18px/1.2 'jost', sans-serif;
+							padding-bottom: 15px;
 						}
 						p {
-							font: 13px/1.3 'arial';
+							padding-top: 15px;
+							font: 13px/1.2 'jost';
+							margin-bottom: 20px;
 						}
 						span {
 							font: 11px/1 'arial';
+						}
+
+						a {
+							font-size: 17px;
 						}
 					}
 				}
@@ -127,28 +180,25 @@
 @media screen and (max-width: $mobile) {
 	.youtube {
 		.inner {
-			.wrap {
-				article {
-					.box {
-						display: block;
-						gap: 20px;
-						.pic {
-							width: 100%;
-						}
-					}
+			.upper {
+				display: block;
+				margin-bottom: 50px;
 
-					.txt {
-						width: 100%;
-						h2 {
-							font: bold 20px/1.2 'Poppins', sans-serif;
-						}
-						p {
-							font: 13px/1.3 'arial';
-						}
-						span {
-							font: 11px/1 'arial';
-						}
-					}
+				> p {
+					width: 100%;
+					font: 16px/1.4 'jost';
+				}
+				.pic {
+					display: none;
+				}
+			}
+
+			.wrap {
+				width: 100%;
+				display: block;
+
+				article {
+					width: 100%;
 				}
 			}
 		}
