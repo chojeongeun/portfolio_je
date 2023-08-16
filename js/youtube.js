@@ -11,7 +11,7 @@ document.body.addEventListener('click', (e) => {
 async function fetchData() {
 	const key = 'AIzaSyAzkLv4Fcv1UNbOrmEVhonD6YXHhLjwsC8';
 	const list = 'PLWvS8-RhJ_PKwK6LI-fBPArE2muxoT1Qc';
-	const num = 5;
+	const num = 9;
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${list}&key=${key}&maxResults=${num}`;
 	const data = await fetch(url);
 	const json = await data.json();
@@ -35,7 +35,7 @@ function createList(arr) {
 					</div>
 				<div class='txt'>
 					<h2>${tit.length > 50 ? tit.substr(0, 50) + '...' : tit}</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusantium quidem iusto eligendi ipsam provident minima nesciunt aut asperiores nostrum!</p>
+					<p>${desc.length > 200 ? desc.substr(0, 200) + '...' : desc}</p>
 					<span>${date.split('T')[0].split('-').join('.')}</span>
 					<a href="#" class="btn"><i class="fa-solid fa-arrow-right"></i></i></a>
 				</div>  

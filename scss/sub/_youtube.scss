@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
 
 .youtube {
+	background: #efefef;
 	.subVisual {
 		width: 100%;
 		height: 250px;
@@ -24,24 +25,28 @@
 		}
 
 		.wrap {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: center;
+			gap: 10px;
+
 			article {
-				width: 100%;
-				padding: 20px 20px;
-				// border: 1.5px solid #ddd;
-				background: #efefef;
+				width: calc(100% / 3 - 40px);
+				gap: 20px;
+				border: 1.5px solid #ddd;
 				margin-bottom: 30px;
-				display: flex;
+				// display: flex;
+				background: #fff;
 
 				.box {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					gap: 40px;
 					.pic {
-						width: calc((100% / 2) - 40px);
-						height: 280px;
+						width: 100%;
+						height: 200px;
 						margin: 0px auto;
-						margin-bottom: 30px;
+						margin-bottom: 10px;
+						cursor: pointer;
 						:hover {
 							box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
 							transition: 0.3s;
@@ -51,24 +56,27 @@
 							width: 100%;
 							height: 100%;
 							object-fit: cover;
-							box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
 						}
 					}
 				}
 
 				.txt {
-					width: 50%;
+					padding: 10px;
+					width: 100%;
+					margin: 0px auto;
+
 					h2 {
-						font: bold 25px/1.2 'Poppins', sans-serif;
+						font: bold 20px/1.2 'jost', sans-serif;
 						color: #222;
 						border-bottom: 1px solid #555;
 						padding-bottom: 20px;
 					}
 					p {
 						padding-top: 20px;
-						font: 15px/1.3 'arial';
+						font: 15px/1.3 'jost';
 						color: #666;
 						margin-bottom: 40px;
+						text-align: left;
 					}
 					span {
 						font: 12px/1 'arial';
@@ -85,93 +93,6 @@
 		}
 	}
 }
-
-// .youtube {
-// 	.subVisual {
-// 		width: 100%;
-// 		height: 250px;
-// 		background-image: url(../img/pic22.jpg);
-// 		background-repeat: no-repeat;
-// 		background-size: cover;
-// 		opacity: 0.9;
-// 	}
-// 	.inner {
-// 		h1 {
-// 			font: bold 50px/1 'Jost', sans-serif;
-// 			color: #444;
-// 			text-align: center;
-// 			letter-spacing: 2px;
-// 		}
-// 		p {
-// 			text-align: center;
-// 			font: 15px/1 'Jost', sans-serif;
-// 			color: #555;
-// 			margin-bottom: 50px;
-// 		}
-
-// 		.wrap {
-// 			article {
-// 				width: 30%;
-// 				padding: 20px 20px;
-// 				// border: 1.5px solid #ddd;
-// 				background: #efefef;
-// 				margin-bottom: 30px;
-// 				display: flex;
-// 				justify-content: center;
-// 				align-content: center;
-
-// 				.box {
-// 					// display: flex;
-// 					// justify-content: center;
-// 					// align-items: center;
-// 					// gap: 40px;
-// 					.pic {
-// 						width: calc((100% / 2) - 40px);
-// 						height: 280px;
-// 						margin: 0px auto;
-// 						margin-bottom: 30px;
-// 						:hover {
-// 							box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
-// 							transition: 0.3s;
-// 						}
-
-// 						img {
-// 							width: 100%;
-// 							height: 100%;
-// 							object-fit: cover;
-// 							box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
-// 						}
-// 					}
-// 					.txt {
-// 						width: 50%;
-// 						h2 {
-// 							font: bold 25px/1.2 'Poppins', sans-serif;
-// 							color: #222;
-// 							border-bottom: 1px solid #555;
-// 							padding-bottom: 20px;
-// 						}
-// 						p {
-// 							padding-top: 20px;
-// 							font: 15px/1.3 'arial';
-// 							color: #666;
-// 							margin-bottom: 40px;
-// 						}
-// 						span {
-// 							font: 12px/1 'arial';
-// 							color: #666;
-// 						}
-
-// 						a {
-// 							font-size: 20px;
-// 							float: right;
-// 							color: #999;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
 @media screen and (max-width: $tablet) {
 	.youtube {
