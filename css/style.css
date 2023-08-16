@@ -2430,6 +2430,7 @@ table {
 .subCommunity .inner #list2 table tr {
   border-bottom: 1px solid #ddd;
   font: 16px/1.2 "poppins";
+  color: #111;
 }
 .subCommunity .inner #list2 table tr:last-child {
   border-bottom: none;
@@ -2437,6 +2438,7 @@ table {
 .subCommunity .inner #list2 table tr th {
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
+  color: #111;
 }
 .subCommunity .inner #list2 table tr th:nth-of-type(1) {
   border-left: none;
@@ -2444,6 +2446,11 @@ table {
 .subCommunity .inner #list2 table tr td {
   padding: 0px 20px;
   border-left: 1px solid #ddd;
+  color: #555;
+}
+.subCommunity .inner #list2 table tr td a {
+  font: 14px/1.2 "poppins";
+  color: #333;
 }
 .subCommunity .inner #list2 table tr td:nth-of-type(1) {
   border-left: none;
@@ -2461,11 +2468,17 @@ table {
   border: 1px solid #777;
   width: 200px;
   height: 20px;
+  font: 12px/20px "맑은고딕";
+  padding: 2px 4px;
 }
 .subCommunity .inner #list2 .search .searchBtn {
   width: 50px;
   height: 20px;
   border: 1px solid #777;
+  cursor: pointer;
+  text-align: center;
+  font: bold 12px/20px "맑은고딕";
+  background: #ddd;
 }
 .subCommunity .inner #list2 .bottomNum {
   width: 100%;
@@ -2607,6 +2620,9 @@ table {
 @media screen and (max-width: 1180px) {
   .subCommunity .inner #list2 table tr {
     font: 13px/1.2 "poppins";
+  }
+  .subCommunity .inner #list2 table tr td a {
+    font: 12px/1.2 "poppins";
   }
   .subCommunity .inner #list2 table tr td:nth-of-type(2) {
     padding: 0px 20px;

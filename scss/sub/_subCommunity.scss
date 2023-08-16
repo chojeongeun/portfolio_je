@@ -34,6 +34,7 @@
 				tr {
 					border-bottom: 1px solid #ddd;
 					font: 16px/1.2 'poppins';
+					color: #111;
 
 					&:last-child {
 						border-bottom: none;
@@ -41,6 +42,7 @@
 					th {
 						border-bottom: 1px solid #ddd;
 						border-left: 1px solid #ddd;
+						color: #111;
 						&:nth-of-type(1) {
 							border-left: none;
 						}
@@ -48,6 +50,11 @@
 					td {
 						padding: 0px 20px;
 						border-left: 1px solid #ddd;
+						color: #555;
+						a {
+							font: 14px/1.2 'poppins';
+							color: #333;
+						}
 						&:nth-of-type(1) {
 							border-left: none;
 						}
@@ -68,11 +75,17 @@
 					border: 1px solid #777;
 					width: 200px;
 					height: 20px;
+					font: 12px/20px '맑은고딕';
+					padding: 2px 4px;
 				}
 				.searchBtn {
 					width: 50px;
 					height: 20px;
 					border: 1px solid #777;
+					cursor: pointer;
+					text-align: center;
+					font: bold 12px/20px '맑은고딕';
+					background: #ddd;
 				}
 			}
 			.bottomNum {
@@ -324,6 +337,9 @@
 					tr {
 						font: 13px/1.2 'poppins';
 						td {
+							a {
+								font: 12px/1.2 'poppins';
+							}
 							&:nth-of-type(2) {
 								padding: 0px 20px;
 							}
