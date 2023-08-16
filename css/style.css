@@ -2421,7 +2421,7 @@ table {
 .subCommunity .inner #list2 table {
   width: 100%;
   height: 600px;
-  margin: 50px auto;
+  margin: 50px auto 20px;
   text-align: center;
   border: none;
   border-top: 1px solid #333;
@@ -2451,6 +2451,21 @@ table {
 .subCommunity .inner #list2 table tr td:nth-of-type(2) {
   text-align: left;
   padding: 0px 80px;
+}
+.subCommunity .inner #list2 .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.subCommunity .inner #list2 .search input {
+  border: 1px solid #777;
+  width: 200px;
+  height: 20px;
+}
+.subCommunity .inner #list2 .search .searchBtn {
+  width: 50px;
+  height: 20px;
+  border: 1px solid #777;
 }
 .subCommunity .inner #list2 .bottomNum {
   width: 100%;
@@ -2595,6 +2610,9 @@ table {
   }
   .subCommunity .inner #list2 table tr td:nth-of-type(2) {
     padding: 0px 20px;
+  }
+  .subCommunity .inner #list2 .search input {
+    width: 150px;
   }
   .subCommunity .inner #list2 .bottomNum {
     margin-top: 30px;

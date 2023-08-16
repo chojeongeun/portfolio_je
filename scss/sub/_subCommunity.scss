@@ -26,7 +26,7 @@
 			table {
 				width: 100%;
 				height: 600px;
-				margin: 50px auto;
+				margin: 50px auto 20px;
 				text-align: center;
 				border: none;
 				border-top: 1px solid #333;
@@ -57,6 +57,22 @@
 							padding: 0px 80px;
 						}
 					}
+				}
+			}
+
+			.search {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				input {
+					border: 1px solid #777;
+					width: 200px;
+					height: 20px;
+				}
+				.searchBtn {
+					width: 50px;
+					height: 20px;
+					border: 1px solid #777;
 				}
 			}
 			.bottomNum {
@@ -312,6 +328,11 @@
 								padding: 0px 20px;
 							}
 						}
+					}
+				}
+				.search {
+					input {
+						width: 150px;
 					}
 				}
 				.bottomNum {
