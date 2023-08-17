@@ -45,6 +45,7 @@
 					color: #777;
 					background: rgba(0, 0, 0, 0.03);
 					border: 1px solid #aaa;
+					resize: none;
 				}
 
 				input {
@@ -114,8 +115,9 @@
 					}
 
 					.err {
-						color: coral;
+						color: rgb(240, 60, 60);
 						margin-top: 5px;
+						padding: 2px 5px;
 						font: 11px/1 '맑은 고딕';
 						display: none;
 					}

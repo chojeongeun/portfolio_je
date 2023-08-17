@@ -1689,7 +1689,7 @@ body {
 }
 .youtube .inner .upper > p {
   width: 70%;
-  font: 18px/1.5 "jost";
+  font: 15px/1.5 "poppins";
   color: #555;
 }
 .youtube .inner .upper .pic {
@@ -1742,20 +1742,20 @@ body {
   margin: 0px auto;
 }
 .youtube .inner .wrap article .txt h2 {
-  font: bold 20px/1.2 "jost", sans-serif;
+  font: bold 18px/1.1 "poppins", sans-serif;
   color: #222;
   border-bottom: 1px solid #555;
   padding-bottom: 20px;
 }
 .youtube .inner .wrap article .txt p {
   padding-top: 20px;
-  font: 15px/1.3 "jost";
+  font: 13px/1.3 "poppins";
   color: #666;
   margin-bottom: 30px;
   text-align: left;
 }
 .youtube .inner .wrap article .txt span {
-  font: 12px/1 "arial";
+  font: 12px/1 "poppins";
   color: #666;
 }
 .youtube .inner .wrap article .txt a {
@@ -1769,18 +1769,10 @@ body {
     margin-bottom: 70px;
   }
   .youtube .inner .upper > p {
-    font: 16px/1.4 "jost";
+    font: 14px/1.5 "poppins";
   }
   .youtube .inner .upper .pic {
     height: 200px;
-  }
-  .youtube .inner .wrap {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    gap: 10px;
   }
   .youtube .inner .wrap article {
     width: calc(50% - 20px);
@@ -1790,16 +1782,13 @@ body {
     height: 180px;
   }
   .youtube .inner .wrap article .txt h2 {
-    font: bold 18px/1.2 "jost", sans-serif;
+    font: bold 16px/1.2 "poppins", sans-serif;
     padding-bottom: 15px;
   }
   .youtube .inner .wrap article .txt p {
     padding-top: 15px;
-    font: 13px/1.2 "jost";
+    font: 12px/1.2 "poppins";
     margin-bottom: 20px;
-  }
-  .youtube .inner .wrap article .txt span {
-    font: 11px/1 "arial";
   }
   .youtube .inner .wrap article .txt a {
     font-size: 17px;
@@ -1812,7 +1801,6 @@ body {
   }
   .youtube .inner .upper > p {
     width: 100%;
-    font: 16px/1.4 "jost";
   }
   .youtube .inner .upper .pic {
     display: none;
@@ -1962,6 +1950,7 @@ body {
   color: #777;
   background: rgba(0, 0, 0, 0.03);
   border: 1px solid #aaa;
+  resize: none;
 }
 .members .inner form .agreement input {
   margin-left: 10px;
@@ -2024,8 +2013,9 @@ body {
   margin-right: 30px;
 }
 .members .inner form table td .err {
-  color: coral;
+  color: rgb(240, 60, 60);
   margin-top: 5px;
+  padding: 2px 5px;
   font: 11px/1 "맑은 고딕";
   display: none;
 }
@@ -2479,6 +2469,7 @@ table {
   text-align: center;
   font: bold 12px/20px "맑은고딕";
   background: #ddd;
+  color: #555;
 }
 .subCommunity .inner #list2 .bottomNum {
   width: 100%;
