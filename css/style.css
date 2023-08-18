@@ -2709,14 +2709,14 @@ table {
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background: #fff;
+  background: rgb(121, 180, 170);
   margin-bottom: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
 .scrollBtn li.on {
   height: 100px;
-  background: #000;
+  background: rgb(48, 48, 48);
 }
 
 /*# sourceMappingURL=style.css.map */
