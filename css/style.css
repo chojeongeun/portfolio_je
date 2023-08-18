@@ -543,6 +543,49 @@ body {
     height: 200px;
   }
 }
+#banner2 {
+  width: 100%;
+  padding: 150px 0px;
+  background: #e9e8e8;
+}
+#banner2 .inner {
+  width: 1180px;
+  height: 20px;
+  margin: 0px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner2 .inner h1 {
+  width: 50%;
+  font: bold 50px/1.3 "jost";
+  color: coral;
+  text-align: left;
+}
+#banner2 .inner .right {
+  width: 50%;
+  margin-left: 100px;
+  text-align: left;
+}
+#banner2 .inner .right p {
+  font: 20px/1 "poppins";
+  color: #333;
+  margin-bottom: 20px;
+}
+#banner2 .inner .right input {
+  width: 50%;
+  height: 25px;
+  font: 18px/25px "jost";
+  color: #333;
+  padding: 2px 4px;
+}
+#banner2 .inner .right .signup {
+  height: 25px;
+  font: 18px/1 "jost";
+  color: #333;
+}
+
 #news {
   width: 100%;
   padding: 180px 0px;

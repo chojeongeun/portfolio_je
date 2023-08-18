@@ -1,0 +1,44 @@
+#banner2 {
+	width: 100%;
+	padding: 150px 0px;
+	background: #e9e8e8;
+
+	.inner {
+		width: 1180px;
+		height: 20px;
+		margin: 0px auto;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h1 {
+			width: 50%;
+			font: bold 50px/1.3 'jost';
+			color: coral;
+			text-align: left;
+		}
+		.right {
+			width: 50%;
+			margin-left: 100px;
+			text-align: left;
+			p {
+				font: 20px/1 'poppins';
+				color: #333;
+				margin-bottom: 20px;
+			}
+			input {
+				width: 50%;
+				height: 25px;
+				font: 18px/25px 'jost';
+				color: #333;
+				padding: 2px 4px;
+			}
+			.signup {
+				height: 25px;
+				font: 18px/1 'jost';
+				color: #333;
+			}
+		}
+	}
+}
