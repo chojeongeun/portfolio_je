@@ -1,4 +1,4 @@
-const secs = document.querySelectorAll('section');
+const secs = document.querySelectorAll('.myscroll');
 //secs이라는 변수를 만들어서 문서에서 'section'을 불러옴.
 const btns = document.querySelectorAll('.scrollBtn li');
 //secs이라는 변수를 만들어서 문서에서 'section'을 불러옴.
@@ -32,6 +32,18 @@ window.addEventListener('scroll', () => {
 		btns[3].classList.add('on');
 		for (const el of secs) el.classList.remove('on');
 		secs[3].classList.add('on');
+	}
+	if (scroll >= secs[4].offsetTop + baseline) {
+		for (const el of btns) el.classList.remove('on');
+		btns[4].classList.add('on');
+		for (const el of secs) el.classList.remove('on');
+		secs[4].classList.add('on');
+	}
+	if (scroll >= secs[5].offsetTop + baseline) {
+		for (const el of btns) el.classList.remove('on');
+		btns[5].classList.add('on');
+		for (const el of secs) el.classList.remove('on');
+		secs[5].classList.add('on');
 	}
 });
 

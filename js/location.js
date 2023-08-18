@@ -40,3 +40,12 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
 const zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
+const traffic = document.querySelectorAll('.traffic li');
+
+traffic.addEventListener('click', () => {
+	traffic.classList.toggle('on');
+	map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+});
