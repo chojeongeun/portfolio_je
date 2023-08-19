@@ -1,11 +1,10 @@
 #banner2 {
 	width: 100%;
-	padding: 150px 0px;
-	background: #e9e8e8;
+	padding: 120px 50px;
+	background: #edecec;
 
 	.inner {
 		width: 1180px;
-		height: 20px;
 		margin: 0px auto;
 		text-align: center;
 		display: flex;
@@ -13,31 +12,96 @@
 		align-items: center;
 
 		h1 {
-			width: 50%;
-			font: bold 50px/1.3 'jost';
-			color: coral;
+			width: 40%;
+			font: bold 40px/1.3 'jost';
+			color: #fa4444;
 			text-align: left;
 		}
 		.right {
 			width: 50%;
-			margin-left: 100px;
 			text-align: left;
 			p {
-				font: 20px/1 'poppins';
+				font: 16px/1 'poppins';
 				color: #333;
 				margin-bottom: 20px;
 			}
 			input {
-				width: 50%;
+				width: 300px;
 				height: 25px;
-				font: 18px/25px 'jost';
-				color: #333;
 				padding: 2px 4px;
+				margin-right: 7px;
+				border: none;
+				border-bottom: 1px solid #333;
+				background: inherit;
 			}
 			.signup {
-				height: 25px;
-				font: 18px/1 'jost';
+				display: inline-block;
+				padding: 10px 20px;
+				font: 12px/1 'jost';
 				color: #333;
+				border: 1px solid #555;
+				transition: 0.5s;
+
+				&:hover {
+					color: #fff;
+					background: #444;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#banner2 {
+		padding: 100px 50px;
+		.inner {
+			width: 100%;
+
+			h1 {
+				font: bold 27px/1.3 'jost';
+			}
+			.right {
+				p {
+					font: 13px/1 'poppins';
+				}
+				input {
+					width: 200px;
+					height: 20px;
+				}
+				.signup {
+					padding: 8px 15px;
+					font: 11px/1 'jost';
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#banner2 {
+		padding: 40px 30px;
+		.inner {
+			width: 100%;
+			display: block;
+
+			h1 {
+				width: 100%;
+				margin-bottom: 35px;
+			}
+			.right {
+				width: 100%;
+				p {
+					margin-bottom: 10px;
+				}
+				input {
+					width: 200px;
+					height: 20px;
+					margin-bottom: 10px;
+				}
+				.signup {
+					padding: 8px 15px;
+					font: 11px/1 'jost';
+				}
 			}
 		}
 	}
