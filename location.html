@@ -81,38 +81,37 @@
     <div class="inner">
       <h1>LOCATION</h1>
       <h2>Lorem ipsum dolor sit amet.</h2>
-      <div class="locationWrap">
-        <setion id="mapWrap">
-          <div id="map"></div>
-          <ul class="branch">
-            <li>
-              <h3>서울시청</h3>
-              <p>서울특별시 중구 세종대로 110</p>
-            </li>
-            <li>
-              <h3>경복궁</h3>
-              <p>서울특별시 종로구 사직로 161</p>
-            </li>
-          </ul>
 
+      <div class="txtwrap">
+        <article class="contact">
+          <form id="contact-form">
+            <p>CONTACT</p>
+            <input type="hidden" name="contact_number">
+            <!-- <label>Name</label> -->
+            <input type="text" name="user_name" placeholder="NAME">
+            <!-- <label>Email</label> -->
+            <input type="email" name="user_email" placeholder="EMAIL">
+            <!-- <label>Message</label> -->
+            <textarea name="message" placeholder="MESSAGE"></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </article>
 
-        </setion id="mapWrap">
-        <div class="txtwrap">
-          <article class="contact">
-            <form id="contact-form">
-              <p>CONTACT</p>
-              <input type="hidden" name="contact_number">
-              <label>Name</label>
-              <input type="text" name="user_name" placeholder="이름을 입력해주세요.">
-              <label>Email</label>
-              <input type="email" name="user_email" placeholder="이메일을 입력해주세요.">
-              <label>Message</label>
-              <textarea name="message" placeholder="남기는 말을 입력해주세요."></textarea>
-              <input type="submit" value="Send">
-            </form>
-          </article>
+        <article class="Information">
+          <h2>Email Us</h2>
+          <p>lorem@google.com</p>
+          <h2>Call Us</h2>
+          <p>031 345 6789</p>
+          <h2>Follow</h2>
+          <p>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </p>
+          <h2></h2>
+        </article>
 
-          <article class="FAQ">
+        <!-- <article class="FAQ">
             <ul class="btn">
               <li class="on">FAQ1</li>
               <li>FAQ2</li>
@@ -143,9 +142,25 @@
                 </p>
               </li>
             </ul>
-          </article>
-        </div>
+          </article> -->
       </div>
+
+      <setion id="mapWrap">
+        <div id="map"></div>
+        <ul class="branch">
+          <li>
+            <h3>서울시청</h3>
+            <p>서울특별시 중구 세종대로 110</p>
+          </li>
+          <li>
+            <h3>경복궁</h3>
+            <p>서울특별시 종로구 사직로 161</p>
+          </li>
+        </ul>
+      </setion>
+
+
+
     </div>
   </section>
 

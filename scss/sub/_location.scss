@@ -1,3 +1,4 @@
+/*
 .location {
 	.subVisual {
 		width: 100%;
@@ -123,60 +124,60 @@
 					}
 				}
 
-				.FAQ {
-					width: 100%;
-					height: 250px;
-					border: 1px solid #aaa;
+				// .FAQ {
+				// 	width: 100%;
+				// 	height: 250px;
+				// 	border: 1px solid #aaa;
 
-					.btn {
-						width: 100%;
-						li {
-							float: left;
-							width: calc(100% / 3);
-							height: 45px;
-							display: block;
-							font: bold 14px/45px 'Jost';
-							color: #999;
-							background: #333;
-							text-align: center;
-							cursor: pointer;
-							&.on {
-								background: #fff;
-								color: #333;
-							}
-						}
-					}
-					.box {
-						width: 100%;
-						li {
-							width: 100%;
-							height: 320px;
+				// 	.btn {
+				// 		width: 100%;
+				// 		li {
+				// 			float: left;
+				// 			width: calc(100% / 3);
+				// 			height: 45px;
+				// 			display: block;
+				// 			font: bold 14px/45px 'Jost';
+				// 			color: #999;
+				// 			background: #333;
+				// 			text-align: center;
+				// 			cursor: pointer;
+				// 			&.on {
+				// 				background: #fff;
+				// 				color: #333;
+				// 			}
+				// 		}
+				// 	}
+				// 	.box {
+				// 		width: 100%;
+				// 		li {
+				// 			width: 100%;
+				// 			height: 320px;
 
-							display: none;
-							&.on {
-								display: block;
-							}
-							.question {
-								width: 100%;
-								font: bold 14px/1.3 'jost';
-								color: #555;
-								padding: 15px;
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-							}
-							.answer {
-								width: 100%;
-								font: 14px/1.4 'jost';
-								color: #555;
-								padding: 15px;
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-							}
-						}
-					}
-				}
+				// 			display: none;
+				// 			&.on {
+				// 				display: block;
+				// 			}
+				// 			.question {
+				// 				width: 100%;
+				// 				font: bold 14px/1.3 'jost';
+				// 				color: #555;
+				// 				padding: 15px;
+				// 				display: flex;
+				// 				justify-content: space-between;
+				// 				align-items: center;
+				// 			}
+				// 			.answer {
+				// 				width: 100%;
+				// 				font: 14px/1.4 'jost';
+				// 				color: #555;
+				// 				padding: 15px;
+				// 				display: flex;
+				// 				justify-content: space-between;
+				// 				align-items: center;
+				// 			}
+				// 		}
+				// 	}
+				// }
 			}
 		}
 	}
@@ -243,6 +244,215 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+}
+*/
+
+.location {
+	.subVisual {
+		width: 100%;
+		height: 250px;
+		background-image: url(../img/pic36.jpg);
+		background-position-y: 60%;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.7;
+		opacity: 0.5;
+	}
+	.inner {
+		h1 {
+			font: bold 55px/1 'Jost', sans-serif;
+			color: #444;
+			text-align: center;
+			margin-bottom: 0px;
+		}
+
+		h2 {
+			text-align: center;
+			font: 15px/1 'Jost', sans-serif;
+			color: #555;
+			margin-bottom: 50px;
+		}
+
+		.txtwrap {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+
+			.contact {
+				width: 50%;
+				height: 400px;
+				padding: 20px;
+				border: 1px solid #ddd;
+				display: inline-block;
+				margin-bottom: 10px;
+
+				p {
+					font: bold 25px/1 'jost';
+					color: #555;
+					text-align: center;
+					margin-bottom: 50px;
+				}
+				input {
+					width: 100%;
+					height: 30px;
+					display: block;
+					margin-top: 10px;
+					margin-bottom: 25px;
+					border: 1px solid #ddd;
+					font-family: 'jost';
+					padding: 2px 10px;
+					font-weight: bold;
+					letter-spacing: 1px;
+
+					&:last-child {
+						display: block;
+						width: 150px;
+						height: 30px;
+						margin: 50px auto;
+						font: bold 14px/30px 'jost';
+						color: #555;
+						border: 1px solid #ddd;
+						cursor: pointer;
+						padding: 0;
+						&:hover {
+							background: #333;
+							color: #fff;
+						}
+					}
+				}
+				// label {
+				// 	font: bold 14px/1 'Jost';
+				// 	color: #555;
+				// 	margin-bottom: 10px;
+				// }
+				textarea {
+					width: 100%;
+					height: 70px;
+					margin-top: 10px;
+					display: block;
+					resize: none;
+					border: 1px solid #ddd;
+					margin-bottom: 15px;
+					font-family: 'jost';
+					padding: 5px 10px;
+					font-weight: bold;
+					letter-spacing: 1px;
+				}
+			}
+
+			.Information {
+				width: 50%;
+				height: 400px;
+				padding: 50px;
+				background: #efefef;
+
+				> h2 {
+					font: bold 20px/1 'arial';
+					color: #555;
+					margin-bottom: 15px;
+					text-align: left;
+					letter-spacing: 1px;
+				}
+				> p {
+					font: 15px/1 'arial';
+					color: #777;
+					margin-bottom: 30px;
+					text-align: left;
+					i {
+						margin-right: 20px;
+					}
+				}
+			}
+
+			// .FAQ {
+			// 	width: 100%;
+			// 	height: 250px;
+			// 	border: 1px solid #aaa;
+
+			// 	.btn {
+			// 		width: 100%;
+			// 		li {
+			// 			float: left;
+			// 			width: calc(100% / 3);
+			// 			height: 45px;
+			// 			display: block;
+			// 			font: bold 14px/45px 'Jost';
+			// 			color: #999;
+			// 			background: #333;
+			// 			text-align: center;
+			// 			cursor: pointer;
+			// 			&.on {
+			// 				background: #fff;
+			// 				color: #333;
+			// 			}
+			// 		}
+			// 	}
+			// 	.box {
+			// 		width: 100%;
+			// 		li {
+			// 			width: 100%;
+			// 			height: 320px;
+
+			// 			display: none;
+			// 			&.on {
+			// 				display: block;
+			// 			}
+			// 			.question {
+			// 				width: 100%;
+			// 				font: bold 14px/1.3 'jost';
+			// 				color: #555;
+			// 				padding: 15px;
+			// 				display: flex;
+			// 				justify-content: space-between;
+			// 				align-items: center;
+			// 			}
+			// 			.answer {
+			// 				width: 100%;
+			// 				font: 14px/1.4 'jost';
+			// 				color: #555;
+			// 				padding: 15px;
+			// 				display: flex;
+			// 				justify-content: space-between;
+			// 				align-items: center;
+			// 			}
+			// 		}
+			// 	}
+			// }
+		}
+
+		#mapWrap {
+			width: 100%;
+
+			#map {
+				width: 100%;
+				height: 600px;
+				background: #111;
+				position: relative;
+				filter: grayscale(80%);
+				transition: filter 0.5s;
+
+				&:hover {
+					filter: saturate(100%);
+				}
+			}
+			.branch {
+				width: 100%;
+				display: flex;
+				cursor: pointer;
+				li {
+					display: inline-block;
+					padding: 10px 20px;
+					font: bold 14px/1 '맑은고딕';
+					border: 1px solid #333;
+					background: #eee;
+					margin-top: 10px;
+					margin-right: 10px;
 				}
 			}
 		}
