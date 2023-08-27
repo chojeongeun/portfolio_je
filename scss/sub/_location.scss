@@ -464,3 +464,74 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	.location {
+		.inner {
+			.txtwrap {
+				.contact {
+					width: 60%;
+					padding: 20px;
+					p {
+						font: bold 20px/1 'jost';
+					}
+					input {
+						font-size: 11px;
+					}
+					textarea {
+						font-size: 11px;
+					}
+				}
+
+				.Information {
+					width: 40%;
+					padding: 20px;
+
+					> h2 {
+						font: bold 20px/1.2 'jost';
+						margin-bottom: 40px;
+						text-align: center;
+					}
+
+					> h3 {
+						font: bold 17px/1 'arial';
+					}
+					> p {
+						font: 14px/1 'arial';
+					}
+				}
+			}
+
+			#mapWrap {
+				width: 100%;
+
+				#map {
+					width: 100%;
+					height: 400px;
+					background: #111;
+					position: relative;
+					filter: grayscale(80%);
+					transition: filter 0.5s;
+
+					&:hover {
+						filter: saturate(100%);
+					}
+				}
+				.branch {
+					width: 100%;
+					display: flex;
+					cursor: pointer;
+					li {
+						display: inline-block;
+						padding: 10px 20px;
+						font: bold 14px/1 '맑은고딕';
+						border: 1px solid #333;
+						background: #eee;
+						margin-top: 10px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

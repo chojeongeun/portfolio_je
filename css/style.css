@@ -2586,6 +2586,64 @@ table {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1180px) {
+  .location .inner .txtwrap .contact {
+    width: 60%;
+    padding: 20px;
+  }
+  .location .inner .txtwrap .contact p {
+    font: bold 20px/1 "jost";
+  }
+  .location .inner .txtwrap .contact input {
+    font-size: 11px;
+  }
+  .location .inner .txtwrap .contact textarea {
+    font-size: 11px;
+  }
+  .location .inner .txtwrap .Information {
+    width: 40%;
+    padding: 20px;
+  }
+  .location .inner .txtwrap .Information > h2 {
+    font: bold 20px/1.2 "jost";
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .location .inner .txtwrap .Information > h3 {
+    font: bold 17px/1 "arial";
+  }
+  .location .inner .txtwrap .Information > p {
+    font: 14px/1 "arial";
+  }
+  .location .inner #mapWrap {
+    width: 100%;
+  }
+  .location .inner #mapWrap #map {
+    width: 100%;
+    height: 400px;
+    background: #111;
+    position: relative;
+    filter: grayscale(80%);
+    transition: filter 0.5s;
+  }
+  .location .inner #mapWrap #map:hover {
+    filter: saturate(100%);
+  }
+  .location .inner #mapWrap .branch {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+  }
+  .location .inner #mapWrap .branch li {
+    display: inline-block;
+    padding: 10px 20px;
+    font: bold 14px/1 "맑은고딕";
+    border: 1px solid #333;
+    background: #eee;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
 .subCommunity .subVisual {
   width: 100%;
   height: 250px;
