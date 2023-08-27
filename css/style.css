@@ -2543,13 +2543,13 @@ table {
   text-align: center;
 }
 .location .inner .txtwrap .Information > h3 {
-  font: bold 18px/1 "arial";
-  color: #666;
+  font: bold 15px/1 "poppins";
+  color: coral;
   margin-bottom: 15px;
   text-align: left;
 }
 .location .inner .txtwrap .Information > p {
-  font: 15px/1 "arial";
+  font: 14px/1 "poppins";
   color: #888;
   margin-bottom: 35px;
   text-align: left;
