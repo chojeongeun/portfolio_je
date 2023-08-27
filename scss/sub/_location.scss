@@ -494,10 +494,10 @@
 					}
 
 					> h3 {
-						font: bold 17px/1 'arial';
+						font: bold 17px/1 'jost';
 					}
 					> p {
-						font: 14px/1 'arial';
+						font: 14px/1 'jost';
 					}
 				}
 			}
@@ -529,6 +529,44 @@
 						background: #eee;
 						margin-top: 10px;
 						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	.location {
+		.inner {
+			.txtwrap {
+				display: block;
+				.contact {
+					width: 100%;
+				}
+
+				.Information {
+					width: 100%;
+					padding: 20px;
+					height: 350px;
+
+					> h2 {
+						font: bold 20px/1.2 'jost';
+					}
+
+					> h3 {
+						font: bold 15px/1 'jost';
+					}
+					> p {
+						font: 13px/1 'jost';
+					}
+				}
+			}
+
+			#mapWrap {
+				.branch {
+					li {
+						padding: 5px;
+						font: 12px/1.3 '맑은고딕';
 					}
 				}
 			}

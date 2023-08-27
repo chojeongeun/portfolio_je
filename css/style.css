@@ -2610,10 +2610,10 @@ table {
     text-align: center;
   }
   .location .inner .txtwrap .Information > h3 {
-    font: bold 17px/1 "arial";
+    font: bold 17px/1 "jost";
   }
   .location .inner .txtwrap .Information > p {
-    font: 14px/1 "arial";
+    font: 14px/1 "jost";
   }
   .location .inner #mapWrap {
     width: 100%;
@@ -2642,6 +2642,32 @@ table {
     background: #eee;
     margin-top: 10px;
     margin-right: 10px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .location .inner .txtwrap {
+    display: block;
+  }
+  .location .inner .txtwrap .contact {
+    width: 100%;
+  }
+  .location .inner .txtwrap .Information {
+    width: 100%;
+    padding: 20px;
+    height: 350px;
+  }
+  .location .inner .txtwrap .Information > h2 {
+    font: bold 20px/1.2 "jost";
+  }
+  .location .inner .txtwrap .Information > h3 {
+    font: bold 15px/1 "jost";
+  }
+  .location .inner .txtwrap .Information > p {
+    font: 13px/1 "jost";
+  }
+  .location .inner #mapWrap .branch li {
+    padding: 5px;
+    font: 12px/1.3 "맑은고딕";
   }
 }
 .subCommunity .subVisual {
