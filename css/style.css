@@ -2477,9 +2477,9 @@ table {
   margin-bottom: 50px;
 }
 .location .inner .txtwrap .contact {
-  width: 50%;
+  width: 70%;
   height: 400px;
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #ddd;
   display: inline-block;
   margin-bottom: 10px;
@@ -2531,22 +2531,27 @@ table {
   letter-spacing: 1px;
 }
 .location .inner .txtwrap .Information {
-  width: 50%;
+  width: 30%;
   height: 400px;
-  padding: 50px;
+  padding: 40px;
   background: #efefef;
 }
 .location .inner .txtwrap .Information > h2 {
-  font: bold 20px/1 "arial";
+  font: bold 25px/1 "jost";
   color: #555;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.location .inner .txtwrap .Information > h3 {
+  font: bold 18px/1 "arial";
+  color: #666;
   margin-bottom: 15px;
   text-align: left;
-  letter-spacing: 1px;
 }
 .location .inner .txtwrap .Information > p {
   font: 15px/1 "arial";
-  color: #777;
-  margin-bottom: 30px;
+  color: #888;
+  margin-bottom: 35px;
   text-align: left;
 }
 .location .inner .txtwrap .Information > p i {
