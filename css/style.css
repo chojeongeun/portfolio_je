@@ -2496,7 +2496,8 @@ table {
   display: block;
   margin-top: 10px;
   margin-bottom: 25px;
-  border: 1px solid #ddd;
+  border: none;
+  border-bottom: 1px solid #aaa;
   font-family: "jost";
   padding: 2px 10px;
   font-weight: bold;
@@ -2509,7 +2510,7 @@ table {
   margin: 50px auto;
   font: bold 14px/30px "jost";
   color: #555;
-  border: 1px solid #ddd;
+  border: 1px solid #bbb;
   cursor: pointer;
   padding: 0;
 }
@@ -2523,7 +2524,8 @@ table {
   margin-top: 10px;
   display: block;
   resize: none;
-  border: 1px solid #ddd;
+  border: none;
+  border-bottom: 1px solid #aaa;
   margin-bottom: 15px;
   font-family: "jost";
   padding: 5px 10px;
@@ -2562,7 +2564,7 @@ table {
 }
 .location .inner #mapWrap #map {
   width: 100%;
-  height: 600px;
+  height: 400px;
   background: #111;
   position: relative;
   filter: grayscale(80%);
@@ -2580,48 +2582,70 @@ table {
 .location .inner #mapWrap .branch li {
   display: inline-block;
   padding: 10px 20px;
-  font: bold 14px/1 "맑은고딕";
-  border: 1px solid #333;
-  background: #eee;
+  font: 14px/1.5 "맑은고딕";
+  color: #555;
+  border: 1px solid #aaa;
+  background: #efefef;
   margin-top: 10px;
   margin-right: 10px;
 }
 .location .inner .FAQ {
   width: 100%;
-  height: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.location .inner .FAQ .faqTit {
+  width: 40%;
+  height: 100%;
+}
+.location .inner .FAQ .faqTit span {
+  font: bold 12px/1 "jost";
+  color: coral;
+  margin-bottom: 10px;
+}
+.location .inner .FAQ .faqTit > p {
+  margin-top: 20px;
+  font-size: 45px;
+  font-family: "poppins";
+  font-weight: bold;
+  color: #444;
+}
+.location .inner .FAQ .faqTxtwrap {
+  width: 60%;
   border: 1px solid #ccc;
 }
-.location .inner .FAQ .btn {
+.location .inner .FAQ .faqTxtwrap .btn {
   width: 100%;
 }
-.location .inner .FAQ .btn li {
+.location .inner .FAQ .faqTxtwrap .btn li {
   float: left;
   width: 33.3333333333%;
   height: 60px;
   display: block;
   font: bold 18px/60px "Jost";
   color: #fff;
-  background: rgb(116, 160, 211);
+  background: rgb(117, 117, 117);
   text-align: center;
   cursor: pointer;
 }
-.location .inner .FAQ .btn li.on {
+.location .inner .FAQ .faqTxtwrap .btn li.on {
   background: #fff;
   color: #333;
 }
-.location .inner .FAQ .box {
+.location .inner .FAQ .faqTxtwrap .box {
   width: 100%;
 }
-.location .inner .FAQ .box li {
+.location .inner .FAQ .faqTxtwrap .box li {
   width: 100%;
   height: 320px;
   display: none;
-  padding: 90px 30px 0px;
 }
-.location .inner .FAQ .box li.on {
+.location .inner .FAQ .faqTxtwrap .box li.on {
   display: block;
 }
-.location .inner .FAQ .box li .question {
+.location .inner .FAQ .faqTxtwrap .box li .question {
   width: 100%;
   font: bold 16px/1.3 "jost";
   color: #555;
@@ -2630,7 +2654,7 @@ table {
   justify-content: space-between;
   align-items: center;
 }
-.location .inner .FAQ .box li .answer {
+.location .inner .FAQ .faqTxtwrap .box li .answer {
   width: 100%;
   font: 16px/1.4 "jost";
   color: #555;
