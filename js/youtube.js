@@ -35,7 +35,7 @@ function createList(arr) {
 					</div>
 				<div class='txt'>
 					<h2>${tit.length > 50 ? tit.substr(0, 50) + '...' : tit}</h2>
-					<p>${desc.length > 200 ? desc.substr(0, 200) + '...' : desc}</p>
+					<p>${desc.length > 70 ? desc.substr(0, 70) + '...' : desc}</p>
 					<span>${date.split('T')[0].split('-').join('.')}</span>
 					<a href="#" class="btn"><i class="fa-solid fa-arrow-right"></i></i></a>
 				</div>  
