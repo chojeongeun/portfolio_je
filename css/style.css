@@ -1788,13 +1788,13 @@ body {
   margin-bottom: 100px;
 }
 .youtube .inner .upper > p {
-  width: 70%;
+  width: 60%;
   font: 15px/1.5 "poppins";
   color: #555;
 }
 .youtube .inner .upper .pic {
-  width: calc(30% - 20px);
-  height: 250px;
+  width: calc(40% - 30px);
+  height: 230px;
 }
 .youtube .inner .upper .pic img {
   width: 100%;
