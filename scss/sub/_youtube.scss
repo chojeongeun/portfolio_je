@@ -73,8 +73,7 @@
 						margin-bottom: 10px;
 						cursor: pointer;
 						:hover {
-							width: 102%;
-							height: 102%;
+							transform: scale(1.2);
 							opacity: 1;
 							transition: 0.3s;
 						}

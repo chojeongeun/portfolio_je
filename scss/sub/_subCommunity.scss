@@ -72,20 +72,20 @@
 				align-items: center;
 				gap: 10px;
 				input {
-					border: 1px solid #777;
+					border: 1px solid #aaa;
 					width: 200px;
-					height: 20px;
-					font: 12px/20px '맑은고딕';
-					padding: 2px 4px;
+					height: 25px;
+					font: 12px/25px '맑은고딕';
+					padding: 2px 5px;
 				}
 				.searchBtn {
 					width: 50px;
-					height: 20px;
-					border: 1px solid #777;
+					height: 25px;
+					border: 1px solid #aaa;
 					cursor: pointer;
 					text-align: center;
-					font: bold 12px/20px '맑은고딕';
-					background: #ddd;
+					font: bold 12px/25px '맑은고딕';
+					background: #dfdddd;
 					color: #555;
 				}
 			}
@@ -103,22 +103,24 @@
 					font: normal 15px/1 'arial';
 					color: #999;
 					cursor: pointer;
-					border: 1px solid #ccc;
+					border: 1px solid #aaa;
 					padding: 10px 20px;
 					margin-top: 0px;
 
 					&.on {
 						color: #111;
 						font-weight: bold;
-						background: rgb(238, 249, 253);
-						border: 1px solid #999;
+						border: 1px solid #111;
+					}
+					&:hover {
+						border: 1px solid #111;
 					}
 					&:first-child,
 					&:last-child {
 						font-weight: bold;
 						color: #111;
 						background-color: #fafafa;
-						border: 1px solid #ccc;
+						border: 1px solid #aaa;
 					}
 				}
 			}
