@@ -2575,6 +2575,7 @@ table {
   width: 100%;
   display: flex;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 .location .inner #mapWrap .branch li {
   display: inline-block;
@@ -2584,6 +2585,59 @@ table {
   background: #eee;
   margin-top: 10px;
   margin-right: 10px;
+}
+.location .inner .FAQ {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #ccc;
+}
+.location .inner .FAQ .btn {
+  width: 100%;
+}
+.location .inner .FAQ .btn li {
+  float: left;
+  width: 33.3333333333%;
+  height: 60px;
+  display: block;
+  font: bold 18px/60px "Jost";
+  color: #fff;
+  background: rgb(116, 160, 211);
+  text-align: center;
+  cursor: pointer;
+}
+.location .inner .FAQ .btn li.on {
+  background: #fff;
+  color: #333;
+}
+.location .inner .FAQ .box {
+  width: 100%;
+}
+.location .inner .FAQ .box li {
+  width: 100%;
+  height: 320px;
+  display: none;
+  padding: 90px 30px 0px;
+}
+.location .inner .FAQ .box li.on {
+  display: block;
+}
+.location .inner .FAQ .box li .question {
+  width: 100%;
+  font: bold 16px/1.3 "jost";
+  color: #555;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location .inner .FAQ .box li .answer {
+  width: 100%;
+  font: 16px/1.4 "jost";
+  color: #555;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 1180px) {
