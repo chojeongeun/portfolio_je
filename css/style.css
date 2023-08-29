@@ -2037,12 +2037,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   margin-bottom: 80px;
 }
 .members .inner .join li {
-  font: 16px/1 "맑은고딕";
-  color: #333;
+  text-align: center;
+}
+.members .inner .join li p {
+  font: 16px/1.5 "맑은고딕";
+  color: #aaa;
+}
+.members .inner .join li i {
+  font-size: 30px;
+  color: #aaa;
 }
 .members .inner form h2 {
   font: bold 20px/1 "맑은고딕";
@@ -2130,6 +2137,9 @@ body {
 .members .inner form table td select:hover,
 .members .inner form table td textarea:hover {
   background: rgba(0, 0, 0, 0.09);
+}
+.members .inner form table td textarea {
+  height: 130px;
 }
 .members .inner form table td input[type=checkbox],
 .members .inner form table td input[type=radio] {

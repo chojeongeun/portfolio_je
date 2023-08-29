@@ -19,12 +19,19 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			gap: 40px;
+			gap: 80px;
 			margin-bottom: 80px;
 
 			li {
-				font: 16px/1 '맑은고딕';
-				color: #333;
+				text-align: center;
+				p {
+					font: 16px/1.5 '맑은고딕';
+					color: #aaa;
+				}
+				i {
+					font-size: 30px;
+					color: #aaa;
+				}
 			}
 		}
 		form {
@@ -116,6 +123,9 @@
 						&:hover {
 							background: rgba(0, 0, 0, 0.09);
 						}
+					}
+					textarea {
+						height: 130px;
 					}
 					input[type='checkbox'],
 					input[type='radio'] {
