@@ -2131,7 +2131,7 @@ body {
 }
 .members .inner form table th:last-child {
   border-top: 1px solid #bbb;
-  background: #fff;
+  background: inherit;
 }
 .members .inner form table th input[type=submit],
 .members .inner form table th input[type=reset] {
@@ -2241,23 +2241,120 @@ table {
 	}
 }
 */
+/*
+@media screen and (max-width: $tablet) {
+	.members {
+		table {
+			th {
+				display: none;
+				&:last-child {
+					display: inline;
+				}
+			}
+			td {
+				width: 100%;
+
+				#userid,
+				#pwd1,
+				#pwd2,
+				#email,
+				#edu,
+				#comments {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+*/
 @media screen and (max-width: 1180px) {
-  .members table th {
+  .members .inner .join {
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+  .members .inner form table th,
+  .members .inner form table td {
+    border: none;
+  }
+  .members .inner form table th {
     display: none;
   }
-  .members table th:last-child {
-    display: inline;
-  }
-  .members table td {
+  .members .inner form table th:last-child {
     width: 100%;
+    display: inline-block;
+    border-top: none;
+    margin: 0px auto;
+    padding: 0px;
+    padding-bottom: 20px;
   }
-  .members table td #userid,
-  .members table td #pwd1,
-  .members table td #pwd2,
-  .members table td #email,
-  .members table td #edu,
-  .members table td #comments {
+  .members .inner form table th input[type=submit],
+  .members .inner form table th input[type=reset] {
+    width: 40%;
+    height: 40px;
+  }
+  .members .inner form table td {
+    border-left: none;
+  }
+  .members .inner form table td input[type=text],
+  .members .inner form table td input[type=password],
+  .members .inner form table td select,
+  .members .inner form table td textarea {
     width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.01);
+    padding: 5px 8px;
+    border: 1px solid #bbb;
+    resize: none;
+  }
+  .members .inner form table td input[type=text]:hover,
+  .members .inner form table td input[type=password]:hover,
+  .members .inner form table td select:hover,
+  .members .inner form table td textarea:hover {
+    background: rgba(0, 0, 0, 0.09);
+  }
+  .members .inner form table td textarea {
+    height: 130px;
+  }
+  .members .inner form table td input[type=checkbox],
+  .members .inner form table td input[type=radio] {
+    margin-right: 30px;
+  }
+  .members .inner form table td .err {
+    color: rgb(240, 60, 60);
+    margin-top: 5px;
+    padding: 2px 5px;
+    font: 11px/1 "맑은 고딕";
+    display: none;
+  }
+  .members .inner form table #comments {
+    font-family: "맑은 고딕";
+  }
+}
+@media screen and (max-width: 639px) {
+  .members .inner .join li .step {
+    font: bold 11px/1 "poppins";
+  }
+  .members .inner .join li .num {
+    font: 17px/1 "poppins";
+  }
+  .members .inner .join li i {
+    font-size: 25px;
+  }
+  .members .inner .join li .txt {
+    font: bold 12px/1 "맑은고딕";
+  }
+  .members .inner form h2 {
+    font: bold 15px/1 "맑은고딕";
+    margin-bottom: 15px;
+  }
+  .members .inner form .agreement textarea {
+    font: 13px/1.5 "poppins";
+  }
+  .members .inner form table td {
+    padding: 15px 25px;
+  }
+  .members .inner form table td textarea {
+    height: 100px;
   }
 }
 /*
