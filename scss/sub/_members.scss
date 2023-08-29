@@ -9,16 +9,16 @@
 		opacity: 0.8;
 	}
 	.inner {
-		h1 {
+		> h1 {
 			font: bold 55px/1 'Jost';
 			color: #444;
 			margin-bottom: 5px;
 		}
-		h2 {
+		> h2 {
 			text-align: center;
 			font: 15px/1 'Jost', sans-serif;
 			color: #555;
-			margin-bottom: 50px;
+			margin-bottom: 100px;
 		}
 
 		.join {
@@ -30,23 +30,34 @@
 
 			li {
 				text-align: center;
-				p {
-					font: 16px/1.5 '맑은고딕';
-					color: #aaa;
+				.step {
+					font: bold 13px/1 'poppins';
+					color: #bbb;
 					margin-bottom: 10px;
+					letter-spacing: 1px;
+				}
+				.num {
+					font: 20px/1 'poppins';
+					margin-bottom: 10px;
+					color: #bbb;
 				}
 				i {
-					font-size: 35px;
-					color: #aaa;
-					margin-bottom: 10px;
+					font-size: 30px;
+					color: #bbb;
+					margin-bottom: 15px;
 				}
+				.txt {
+					font: bold 15px/1 '맑은고딕';
+					color: #bbb;
+				}
+
 				&:nth-of-type(2) {
 					p {
-						font: bold 16px/1.5 '맑은고딕';
+						font-weight: bold;
 						color: #333;
 					}
 					i {
-						color: #3eeadb;
+						color: #2decbd;
 					}
 				}
 			}

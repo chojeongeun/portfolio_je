@@ -2028,16 +2028,16 @@ body {
   background-size: cover;
   opacity: 0.8;
 }
-.members .inner h1 {
+.members .inner > h1 {
   font: bold 55px/1 "Jost";
   color: #444;
   margin-bottom: 5px;
 }
-.members .inner h2 {
+.members .inner > h2 {
   text-align: center;
   font: 15px/1 "Jost", sans-serif;
   color: #555;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .members .inner .join {
   display: flex;
@@ -2049,22 +2049,32 @@ body {
 .members .inner .join li {
   text-align: center;
 }
-.members .inner .join li p {
-  font: 16px/1.5 "맑은고딕";
-  color: #aaa;
+.members .inner .join li .step {
+  font: bold 13px/1 "poppins";
+  color: #bbb;
   margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.members .inner .join li .num {
+  font: 20px/1 "poppins";
+  margin-bottom: 10px;
+  color: #bbb;
 }
 .members .inner .join li i {
-  font-size: 35px;
-  color: #aaa;
-  margin-bottom: 10px;
+  font-size: 30px;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+.members .inner .join li .txt {
+  font: bold 15px/1 "맑은고딕";
+  color: #bbb;
 }
 .members .inner .join li:nth-of-type(2) p {
-  font: bold 16px/1.5 "맑은고딕";
+  font-weight: bold;
   color: #333;
 }
 .members .inner .join li:nth-of-type(2) i {
-  color: #3eeadb;
+  color: #2decbd;
 }
 .members .inner .join .fa-long-arrow-alt-right {
   color: #aaa;
