@@ -501,12 +501,12 @@
 						height: 60px;
 						display: block;
 						font: bold 18px/60px 'Jost';
-						color: #fff;
+						color: inherit;
 						background: rgb(117, 117, 117);
 						text-align: center;
 						cursor: pointer;
 						&.on {
-							background: #fff;
+							background: inherit;
 							color: #333;
 						}
 					}
@@ -613,6 +613,40 @@
 					}
 				}
 			}
+			.FAQ {
+				height: 300px;
+
+				.faqTit {
+					> p {
+						font-size: 30px;
+					}
+				}
+				.faqTxtwrap {
+					.btn {
+						li {
+							height: 40px;
+							font: bold 15px/40px 'Jost';
+						}
+					}
+					.box {
+						li {
+							width: 100%;
+							height: 320px;
+							display: none;
+
+							&.on {
+								display: block;
+							}
+							.question {
+								font: bold 14px/1.2 'jost';
+							}
+							.answer {
+								font: 14px/1.3 'jost';
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -648,6 +682,43 @@
 					li {
 						padding: 5px;
 						font: 12px/1.3 '맑은고딕';
+					}
+				}
+			}
+
+			.FAQ {
+				height: 300px;
+
+				.faqTit {
+					display: none;
+					> p {
+						font-size: 30px;
+					}
+				}
+				.faqTxtwrap {
+					width: 100%;
+					.btn {
+						li {
+							height: 40px;
+							font: bold 15px/40px 'Jost';
+						}
+					}
+					.box {
+						li {
+							width: 100%;
+							height: 320px;
+							display: none;
+
+							&.on {
+								display: block;
+							}
+							.question {
+								font: bold 14px/1.2 'jost';
+							}
+							.answer {
+								font: 14px/1.3 'jost';
+							}
+						}
 					}
 				}
 			}
