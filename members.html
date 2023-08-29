@@ -79,7 +79,7 @@
             <tbody>
               <!-- 사용자 아이디 -->
               <tr>
-                <th scope="row"><label for="userid">userid</label></th>
+                <th scope="row"><label for="userid">ID</label></th>
                 <td>
                   <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
                   <p class="err">아이디를 5글자 이상 입력하세요.</p>
@@ -88,7 +88,7 @@
 
               <!-- 비밀번호 -->
               <tr>
-                <th scope="row"><label for="pwd1">password</label></th>
+                <th scope="row"><label for="pwd1">Password</label></th>
                 <td>
                   <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
                   <p class="err">비밀번호에 숫자, 문자, 특수문자를 모두 포함하세요.</p>
@@ -97,7 +97,7 @@
 
               <!-- 비밀번호 재입력 -->
               <tr>
-                <th scope="row"><label for="pwd2">re-password</label></th>
+                <th scope="row"><label for="pwd2">Re-password</label></th>
                 <td>
                   <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요.">
                   <p class="err">두개의 비밀번호를 같게 입력하세요.</p>
@@ -106,7 +106,7 @@
 
               <!-- 성별 선택 -->
               <tr>
-                <th scope="row">gender</th>
+                <th scope="row">Gender</th>
                 <td>
                   <label for="female">female</label>
                   <input type="radio" name="gender" value="female" id="female">
@@ -117,25 +117,9 @@
                 </td>
               </tr>
 
-              <!-- 관심사 선택 -->
-              <tr>
-                <th scope="row">interests</th>
-                <td>
-                  <label for="sports">sports</label>
-                  <input type="checkbox" name="interests" value="sports" id="sports">
-
-                  <label for="music">music</label>
-                  <input type="checkbox" name="interests" value="music" id="music">
-
-                  <label for="reading">reading</label>
-                  <input type="checkbox" name="interests" value="reading" id="reading">
-                  <p class="err">취미를 하나 이상 선택하세요.</p>
-                </td>
-              </tr>
-
               <!-- 최종학력 선택 -->
               <tr>
-                <th scope="row"><label for="edu">education</label></th>
+                <th scope="row"><label for="edu">Education</label></th>
                 <td>
                   <select name="edu" id="edu">
                     <option value="">최종학력을 선택하세요.</option>
@@ -150,7 +134,7 @@
 
               <!-- 남기는 말 -->
               <tr>
-                <th scope="row"><label for="comments">comments</label></th>
+                <th scope="row"><label for="comments">Comments</label></th>
                 <td>
                   <textarea name="comments" id="comments" cols="30" rows="3" placeholder="남기는말을 입력하세요"></textarea>
                   <p class="err">남기는 말을 10글자 이상 입력하세요.</p>

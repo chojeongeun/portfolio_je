@@ -3,7 +3,7 @@ const swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
 	centeredSlides: true,
 	loop: true,
-	// autoplay: true,
+	autoplay: true,
 	keyboard: {
 		enabled: true,
 	},

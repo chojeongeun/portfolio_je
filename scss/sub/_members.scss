@@ -65,27 +65,35 @@
 
 				th,
 				td {
-					border: none;
-					padding: 16px 25px;
+					// border: none;
+					border: 1px solid #bbb;
+					border-left: 0px;
+					border-right: 0px;
+					padding: 20px 35px;
 					font: bold 15px/1 'Poppins', sans-serif;
 					color: #555;
 				}
 
 				th {
 					width: 20%;
-
+					// text-align: left;
+					font: bold 15px/1 'poppins';
+					background: #efefef;
+					&:last-child {
+						border-top: 1px solid #bbb;
+						background: #fff;
+					}
 					input[type='submit'],
 					input[type='reset'] {
 						width: 20%;
 						height: 40px;
 						border: 1px solid #333;
-						margin: 10px;
+						// margin: 10px;
 						font: bold 14px/40px 'Poppins', sans-serif;
 						color: #555;
 						cursor: pointer;
 						transition: 0.5s;
 						border-radius: 50px;
-
 						&:hover {
 							background: #333;
 							color: #fff;
@@ -94,13 +102,13 @@
 				}
 
 				td {
-					// border-left: 1px solid #aaa;
-
+					border-left: 1px solid #bbb;
 					input[type='text'],
 					input[type='password'],
 					select,
 					textarea {
-						width: 60%;
+						width: 80%;
+						height: 30px;
 						background: rgba(0, 0, 0, 0.01);
 						padding: 5px 8px;
 						border: 1px solid #bbb;
