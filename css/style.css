@@ -63,6 +63,11 @@ body {
 #header.main .inner #util li a {
   color: #fff;
 }
+#header.main .inner #gnb1 li a:hover,
+#header.main .inner #gnb2 li a:hover,
+#header.main .inner #util li a:hover {
+  border-bottom: 1px solid coral;
+}
 #header.main .inner .btncall i {
   color: #fff;
 }
@@ -102,6 +107,9 @@ body {
   font: bold 14px/1 "Poppins", sans-serif;
   color: #333;
 }
+#header .inner #gnb1 li a:hover {
+  border-bottom: 1px solid coral;
+}
 #header .inner #gnb2 {
   position: absolute;
   top: 30px;
@@ -114,6 +122,9 @@ body {
 #header .inner #gnb2 li a {
   font: bold 14px/1 "Poppins", sans-serif;
   color: #333;
+}
+#header .inner #gnb2 li a:hover {
+  border-bottom: 1px solid coral;
 }
 #header .inner #util {
   position: absolute;

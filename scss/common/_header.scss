@@ -22,6 +22,9 @@
 				li {
 					a {
 						color: #fff;
+						&:hover {
+							border-bottom: 1px solid coral;
+						}
 					}
 				}
 			}
@@ -69,6 +72,9 @@
 				a {
 					font: bold 14px/1 'Poppins', sans-serif;
 					color: #333;
+					&:hover {
+						border-bottom: 1px solid coral;
+					}
 				}
 			}
 		}
@@ -84,6 +90,9 @@
 				a {
 					font: bold 14px/1 'Poppins', sans-serif;
 					color: #333;
+					&:hover {
+						border-bottom: 1px solid coral;
+					}
 				}
 			}
 		}
