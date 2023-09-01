@@ -62,21 +62,18 @@
       <ul class="join">
         <li>
           <p class="step">STEP 1</p>
-          <!-- <p class="num">01</p> -->
           <i class="fa-regular fa-user"></i>
           <p class="txt">회원가입</p>
         </li>
         <i class="fas fa-long-arrow-alt-right"></i>
         <li>
           <p class="step">STEP 2</p>
-          <!-- <p class="num">02</p> -->
           <i class="fa-regular fa-pen-to-square"></i>
           <p class="txt">정보입력</p>
         </li>
         <i class="fas fa-long-arrow-alt-right"></i>
         <li>
           <p class="step">STEP 3</p>
-          <!-- <p class="num">03</p> -->
           <i class="fa-regular fa-circle-check"></i>
           <p class="txt">가입완료</p>
         </li>
@@ -98,7 +95,7 @@
             <tbody>
               <!-- 사용자 아이디 -->
               <tr>
-                <th scope="row"><label for="userid">ID</label></th>
+                <th scope="row"><label for="userid">아이디</label></th>
                 <td>
                   <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
                   <p class="err">아이디를 5글자 이상 입력하세요.</p>
@@ -107,7 +104,7 @@
 
               <!-- 비밀번호 -->
               <tr>
-                <th scope="row"><label for="pwd1">Password</label></th>
+                <th scope="row"><label for="pwd1">비밀번호</label></th>
                 <td>
                   <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요.">
                   <p class="err">비밀번호에 숫자, 문자, 특수문자를 모두 포함하세요.</p>
@@ -116,7 +113,7 @@
 
               <!-- 비밀번호 재입력 -->
               <tr>
-                <th scope="row"><label for="pwd2">Re-password</label></th>
+                <th scope="row"><label for="pwd2">비밀번호 확인</label></th>
                 <td>
                   <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요.">
                   <p class="err">두개의 비밀번호를 같게 입력하세요.</p>
@@ -125,12 +122,12 @@
 
               <!-- 성별 선택 -->
               <tr>
-                <th scope="row">Gender</th>
+                <th scope="row">성별</th>
                 <td>
-                  <label for="female">female</label>
+                  <label for="female">여성</label>
                   <input type="radio" name="gender" value="female" id="female">
 
-                  <label for="male">male</label>
+                  <label for="male">남성</label>
                   <input type="radio" name="gender" value="male" id="male">
                   <p class="err">성별을 선택해주세요.</p>
                 </td>
@@ -138,7 +135,7 @@
 
               <!-- 최종학력 선택 -->
               <tr>
-                <th scope="row"><label for="edu">Education</label></th>
+                <th scope="row"><label for="edu">최종학력</label></th>
                 <td>
                   <select name="edu" id="edu">
                     <option value="">최종학력을 선택하세요.</option>
@@ -153,9 +150,9 @@
 
               <!-- 남기는 말 -->
               <tr>
-                <th scope="row"><label for="comments">Comments</label></th>
+                <th scope="row"><label for="comments">남기는 말</label></th>
                 <td>
-                  <textarea name="comments" id="comments" cols="30" rows="3" placeholder="남기는말을 입력하세요"></textarea>
+                  <textarea name="comments" id="comments" cols="30" rows="3" placeholder="남기는 말을 입력하세요."></textarea>
                   <p class="err">남기는 말을 10글자 이상 입력하세요.</p>
                 </td>
               </tr>
