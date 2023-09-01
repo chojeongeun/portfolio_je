@@ -85,6 +85,9 @@
 					background: rgba(0, 0, 0, 0.03);
 					border: 1px solid #aaa;
 					resize: none;
+					&:focus {
+						outline: 1px solid gray;
+					}
 				}
 
 				input {
@@ -142,6 +145,7 @@
 
 				td {
 					border-left: 1px solid #bbb;
+
 					input[type='text'],
 					input[type='password'],
 					select,
@@ -152,9 +156,12 @@
 						padding: 5px 8px;
 						border: 1px solid #bbb;
 						resize: none;
-						&:hover {
-							background: rgba(0, 0, 0, 0.09);
+						&:focus {
+							outline: 1px solid gray;
 						}
+						// &:hover {
+						// 	background: rgb(230, 224, 222);
+						// }
 					}
 					textarea {
 						height: 130px;

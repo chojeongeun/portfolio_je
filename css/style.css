@@ -2102,6 +2102,9 @@ body {
   border: 1px solid #aaa;
   resize: none;
 }
+.members .inner form .agreement textarea:focus {
+  outline: 1px solid gray;
+}
 .members .inner form .agreement input {
   margin-left: 10px;
 }
@@ -2163,11 +2166,11 @@ body {
   border: 1px solid #bbb;
   resize: none;
 }
-.members .inner form table td input[type=text]:hover,
-.members .inner form table td input[type=password]:hover,
-.members .inner form table td select:hover,
-.members .inner form table td textarea:hover {
-  background: rgba(0, 0, 0, 0.09);
+.members .inner form table td input[type=text]:focus,
+.members .inner form table td input[type=password]:focus,
+.members .inner form table td select:focus,
+.members .inner form table td textarea:focus {
+  outline: 1px solid gray;
 }
 .members .inner form table td textarea {
   height: 130px;
