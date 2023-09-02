@@ -5,7 +5,6 @@
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
-		// border: 1px solid red;
 		position: relative;
 
 		h1 {
@@ -13,18 +12,6 @@
 			color: #333;
 			margin-bottom: 30px;
 			position: relative;
-
-			// &::before {
-			// 	content: '';
-			// 	display: block;
-			// 	position: absolute;
-			// 	top: 50%;
-			// 	right: 0px;
-			// 	width: 900px;
-			// 	height: 1px;
-			// 	background: #000;
-			// 	margin-bottom: 30px;
-			// }
 		}
 
 		.wrap {
@@ -59,7 +46,7 @@
 					}
 
 					p {
-						font: bold 18px/1.1 'Poppins', sans-serif;
+						font: bold 18px/1.3 'Poppins', sans-serif;
 						color: #222;
 						margin-bottom: 15px;
 					}
@@ -86,7 +73,7 @@
 					float: right;
 					width: 150px;
 					height: 100px;
-					margin-bottom: 15;
+					margin-bottom: 15px;
 
 					img {
 						width: 100%;
@@ -153,12 +140,6 @@
 						width: 150px;
 						height: 100px;
 						margin-bottom: 15px;
-
-						img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
 					}
 
 					.txt {
@@ -166,21 +147,15 @@
 						width: 380px;
 
 						h2 {
-							font: bold 12px/1 'Jost', sans-serif;
-							color: #fa4444;
-							margin-bottom: 15px;
-							letter-spacing: 1px;
+							font: bold 11px/1 'Jost', sans-serif;
 						}
 
 						p {
-							font: bold 18px/1.1 'Poppins', sans-serif;
-							color: #222;
-							margin-bottom: 15px;
+							font: bold 16px/1.3 'Poppins', sans-serif;
 						}
 						span {
 							display: block;
-							font: 12px/1 'Poppins', sans-serif;
-							color: #666;
+							font: 11px/1 'Poppins', sans-serif;
 							margin-bottom: 30px;
 						}
 					}
@@ -195,8 +170,6 @@
 		padding: 100px 5vw;
 
 		.inner {
-			width: 100%;
-
 			h1 {
 				margin-bottom: 30px;
 			}
@@ -206,49 +179,20 @@
 				article:nth-of-type(2),
 				article:nth-of-type(3),
 				article:nth-of-type(4) {
-					width: 100%;
-					float: left;
-					margin-bottom: 20px;
-					border-bottom: 1px solid #ccc;
-
-					&:last-child {
-						border-bottom: 0px;
-					}
-
 					.pic {
 						float: left;
-						width: 300px;
-						height: 250px;
-						margin-bottom: 15px;
-
-						img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
+						width: 80%;
+						height: 200px;
 					}
 
 					.txt {
-						float: left;
-						width: 100%;
-
 						h2 {
-							font: bold 12px/1 'Jost', sans-serif;
-							color: #fa4444;
-							margin-bottom: 15px;
-							letter-spacing: 1px;
+							margin-bottom: 12px;
 						}
 
 						p {
-							font: bold 18px/1.1 'Poppins', sans-serif;
-							color: #222;
-							margin-bottom: 15px;
-						}
-						span {
-							display: block;
-							font: 12px/1 'Poppins', sans-serif;
-							color: #666;
-							margin-bottom: 30px;
+							font: bold 15px/1.1 'Poppins', sans-serif;
+							margin-bottom: 12px;
 						}
 					}
 				}
