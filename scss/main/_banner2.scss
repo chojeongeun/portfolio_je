@@ -33,6 +33,9 @@
 				border: none;
 				border-bottom: 1px solid #333;
 				background: inherit;
+				&:focus {
+					outline: none;
+				}
 			}
 			.signup {
 				display: inline-block;

@@ -598,6 +598,9 @@ body {
   border-bottom: 1px solid #333;
   background: inherit;
 }
+#banner2 .inner .right input:focus {
+  outline: none;
+}
 #banner2 .inner .right .signup {
   display: inline-block;
   padding: 10px 20px;
