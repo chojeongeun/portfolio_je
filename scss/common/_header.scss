@@ -64,7 +64,7 @@
 		}
 		#gnb1 {
 			position: absolute;
-			bottom: 10px;
+			bottom: 20px;
 			left: 150px;
 
 			li {
@@ -72,6 +72,7 @@
 				a {
 					display: inline-block;
 					padding: 20px;
+					padding-bottom: 10px;
 					font: bold 14px/1 'Poppins', sans-serif;
 					color: #333;
 
@@ -84,15 +85,15 @@
 
 		#gnb2 {
 			position: absolute;
-			bottom: 10px;
+			bottom: 20px;
 			right: 150px;
 
 			li {
 				float: left;
-				// border: 1px solid red;
 				a {
 					display: inline-block;
 					padding: 20px;
+					padding-bottom: 10px;
 					font: bold 14px/1 'Poppins', sans-serif;
 					color: #333;
 					&:hover {
@@ -104,13 +105,14 @@
 
 		#util {
 			position: absolute;
-			bottom: 10px;
+			bottom: 20px;
 			right: 10px;
 			li {
 				float: left;
 				a {
 					display: inline-block;
 					padding: 20px 10px;
+					padding-bottom: 10px;
 					font: 14px/1 'Poppins', sans-serif;
 					color: #333;
 				}
