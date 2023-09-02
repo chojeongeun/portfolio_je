@@ -467,7 +467,7 @@ body {
 }
 #banner .inner p {
   font: bold 16px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
 }
 #banner .inner .txtBN {
   position: absolute;
@@ -482,7 +482,7 @@ body {
   transition: 0.5s;
 }
 #banner .inner .txtBN h1 span {
-  color: coral;
+  color: #fa4444;
 }
 #banner .inner .txtBN h2 {
   font: 18px/1 "Jost", sans-serif;
@@ -540,7 +540,7 @@ body {
   }
   #banner .inner p {
     font: bold 16px/1 "Jost", sans-serif;
-    color: coral;
+    color: #fa4444;
   }
   #banner .inner .txtBN {
     width: 85%;
@@ -701,7 +701,7 @@ body {
 }
 #news .inner .wrap article:nth-of-type(1) .txt h2 {
   font: bold 12px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -752,7 +752,7 @@ body {
 #news .inner .wrap article:nth-of-type(3) .txt h2,
 #news .inner .wrap article:nth-of-type(4) .txt h2 {
   font: bold 12px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -826,7 +826,7 @@ body {
   #news .inner .wrap article:nth-of-type(3) .txt h2,
   #news .inner .wrap article:nth-of-type(4) .txt h2 {
     font: bold 12px/1 "Jost", sans-serif;
-    color: coral;
+    color: #fa4444;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
@@ -902,7 +902,7 @@ body {
   #news .inner .wrap article:nth-of-type(3) .txt h2,
   #news .inner .wrap article:nth-of-type(4) .txt h2 {
     font: bold 12px/1 "Jost", sans-serif;
-    color: coral;
+    color: #fa4444;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
@@ -961,7 +961,7 @@ body {
 }
 #mainCommunity .inner .wrap article:nth-of-type(1) h2 {
   font: bold 12px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -987,7 +987,7 @@ body {
 }
 #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h2 {
   font: bold 12px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
 }
 #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h3 {
@@ -1015,7 +1015,7 @@ body {
 }
 #mainCommunity .inner .wrap article:nth-of-type(3) h2 {
   font: bold 12px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -1056,7 +1056,7 @@ body {
   }
   #mainCommunity .inner .wrap article:nth-of-type(1) h2 {
     font: bold 12px/1 "Jost", sans-serif;
-    color: coral;
+    color: #fa4444;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
@@ -1079,7 +1079,7 @@ body {
   }
   #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h2 {
     font: bold 12px/1 "Jost", sans-serif;
-    color: coral;
+    color: #fa4444;
     margin-bottom: 15px;
   }
   #mainCommunity .inner .wrap article:nth-of-type(2) .txtBox h3 {
@@ -1100,7 +1100,7 @@ body {
   }
   #mainCommunity .inner .wrap article:nth-of-type(3) h2 {
     font: bold 12px/1 "Jost", sans-serif;
-    color: coral;
+    color: #fa4444;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
@@ -1245,7 +1245,7 @@ body {
 }
 #goods .inner ul li .date p:nth-of-type(1) {
   font: bold 18px/1 "Poppins", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
 }
 #goods .inner ul li .date p:nth-of-type(2) {
@@ -1370,7 +1370,7 @@ body {
 }
 #visual .swiper .swiper-slide .inner p {
   font: 13px/1 "Jost", sans-serif;
-  color: coral;
+  color: #fa4444;
   margin-bottom: 15px;
 }
 #visual .swiper .swiper-slide .inner h1 {
@@ -1431,7 +1431,7 @@ body {
   font-weight: bold;
 }
 #visual .swiper .swiper-pagination-bullet {
-  background: coral;
+  background: #fa4444;
 }
 
 @media screen and (max-width: 1180px) {
