@@ -849,6 +849,12 @@ body {
     width: 80%;
     height: 200px;
   }
+  #news .inner .wrap article:nth-of-type(1) .txt,
+  #news .inner .wrap article:nth-of-type(2) .txt,
+  #news .inner .wrap article:nth-of-type(3) .txt,
+  #news .inner .wrap article:nth-of-type(4) .txt {
+    width: 100%;
+  }
   #news .inner .wrap article:nth-of-type(1) .txt h2,
   #news .inner .wrap article:nth-of-type(2) .txt h2,
   #news .inner .wrap article:nth-of-type(3) .txt h2,
