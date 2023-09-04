@@ -3274,7 +3274,7 @@ table {
     font: 13px/1.2 "poppins";
   }
   .subCommunity .inner #list2 table tr td a {
-    font: 12px/1.2 "poppins";
+    font: 13px/1.2 "poppins";
   }
   .subCommunity .inner #list2 table tr td:nth-of-type(2) {
     padding: 0px 20px;
@@ -3282,11 +3282,8 @@ table {
   .subCommunity .inner #list2 .search input {
     width: 150px;
   }
-  .subCommunity .inner #list2 .bottomNum {
-    margin-top: 30px;
-  }
   .subCommunity .inner #list2 .bottomNum li {
-    font: normal 13px/1 "arial";
+    font: normal 12px/1 "poppins";
     padding: 10px 20px;
   }
   .subCommunity .inner .communityBottom {
@@ -3315,18 +3312,29 @@ table {
   .subCommunity .inner #list2 table tr {
     font: 11px/1.2 "poppins";
   }
-  .subCommunity .inner #list2 table tr td:nth-of-type(2) {
+  .subCommunity .inner #list2 table tr th {
+    display: none;
+  }
+  .subCommunity .inner #list2 table tr td {
+    border-left: none;
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(1) {
     padding: 0px 10px;
+    font-weight: bold;
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(2) {
+    width: 100%;
+  }
+  .subCommunity .inner #list2 table tr td:nth-of-type(3) {
+    display: none;
   }
   .subCommunity .inner #list2 .bottomNum {
     margin-top: 20px;
   }
   .subCommunity .inner #list2 .bottomNum li {
-    font: normal 13px/1 "poppgins";
-    padding: 10px 20px;
+    padding: 8px 15px;
   }
   .subCommunity .inner .communityBottom {
-    width: 100%;
     display: block;
   }
   .subCommunity .inner .communityBottom #list {
@@ -3355,8 +3363,15 @@ table {
     font: bold 24px/1 "jost";
     margin-bottom: 20px;
   }
-  .subCommunity .inner .communityBottom #slider2 .panel2 li p {
-    font: 15px/1.3 "jost";
+  .subCommunity .inner .communityBottom #slider2 .panel2 li article {
+    display: block;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li article .pic {
+    display: none;
+  }
+  .subCommunity .inner .communityBottom #slider2 .panel2 li article p {
+    width: 100%;
+    font: 16px/1.2 "jost";
   }
 }
 .scrollBtn {
