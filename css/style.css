@@ -3319,11 +3319,12 @@ table {
     border-left: none;
   }
   .subCommunity .inner #list2 table tr td:nth-of-type(1) {
-    padding: 0px 10px;
+    padding: 20px 10px;
     font-weight: bold;
   }
   .subCommunity .inner #list2 table tr td:nth-of-type(2) {
     width: 100%;
+    padding: 20px;
   }
   .subCommunity .inner #list2 table tr td:nth-of-type(3) {
     display: none;
