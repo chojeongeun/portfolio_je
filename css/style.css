@@ -3069,6 +3069,7 @@ table {
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
+  margin-right: 20px;
 }
 .subCommunity .inner #list2 .search input {
   border: none;
@@ -3087,78 +3088,83 @@ table {
 }
 .subCommunity .inner #list2 table {
   width: 100%;
-  height: 600px;
-  margin: 50px auto 20px;
+  height: 700px;
+  margin: 30px auto 20px;
   text-align: center;
   border: none;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
 }
 .subCommunity .inner #list2 table tr {
+  font: 15px/1 "poppins";
   border-bottom: 1px solid #ddd;
-  font: 16px/1.2 "poppins";
-  color: #111;
+}
+.subCommunity .inner #list2 table tr:hover {
+  background: #f3f3f3;
+}
+.subCommunity .inner #list2 table tr:first-child {
+  background: inherit;
 }
 .subCommunity .inner #list2 table tr:last-child {
   border-bottom: none;
 }
 .subCommunity .inner #list2 table tr th {
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  color: #111;
-}
-.subCommunity .inner #list2 table tr th:nth-of-type(1) {
-  border-left: none;
+  padding: 2px 20px;
+  color: #333;
 }
 .subCommunity .inner #list2 table tr td {
-  padding: 0px 20px;
-  border-left: 1px solid #ddd;
+  color: #555;
+  font: 14px/1.2 "poppins";
   color: #555;
 }
 .subCommunity .inner #list2 table tr td a {
-  font: 14px/1.2 "poppins";
-  color: #333;
+  color: #555;
   overflow: hidden;
   word-wrap: break-word;
   text-overflow: ellipsis;
 }
 .subCommunity .inner #list2 table tr td:nth-of-type(1) {
   border-left: none;
+  color: #333;
 }
 .subCommunity .inner #list2 table tr td:nth-of-type(2) {
   text-align: left;
-  padding: 0px 80px;
+  padding: 0px 50px;
 }
-.subCommunity .inner #list2 .bottomNum {
+.subCommunity .inner #list2 .lower {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 70px;
   margin-bottom: 100px;
+  gap: 5px;
 }
-.subCommunity .inner #list2 .bottomNum li {
+.subCommunity .inner #list2 .lower a i {
   display: inline-block;
-  font: normal 15px/1 "arial";
-  color: #999;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  color: #555;
+}
+.subCommunity .inner #list2 .lower a i:hover {
+  border: 1px solid #263960;
+}
+.subCommunity .inner #list2 .lower .bottomNum li {
+  display: inline-block;
+  font: normal 15px/1 "jost";
+  color: #555;
   cursor: pointer;
-  border: 1px solid #aaa;
-  padding: 10px 20px;
-  margin-top: 0px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
 }
-.subCommunity .inner #list2 .bottomNum li.on {
-  color: #111;
+.subCommunity .inner #list2 .lower .bottomNum li.on, .subCommunity .inner #list2 .lower .bottomNum li:hover {
+  color: #fff;
+  background: #263960;
   font-weight: bold;
-  border: 1px solid #111;
-}
-.subCommunity .inner #list2 .bottomNum li:hover {
-  border: 1px solid #111;
-}
-.subCommunity .inner #list2 .bottomNum li:first-child, .subCommunity .inner #list2 .bottomNum li:last-child {
-  font-weight: bold;
-  color: #111;
-  background-color: #fafafa;
-  border: 1px solid #aaa;
+  transition: 0.3s;
+  border: 1px solid #263960;
 }
 .subCommunity .inner .communityBottom {
   width: 100%;
