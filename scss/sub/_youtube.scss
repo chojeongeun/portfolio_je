@@ -139,7 +139,7 @@
 			.wrap {
 				article {
 					width: calc(100% / 2 - 20px);
-					margin-bottom: 20px;
+					margin-bottom: 50px;
 
 					.box {
 						.pic {
@@ -149,15 +149,11 @@
 
 					.txt {
 						h2 {
-							font: bold 16px/1.2 'poppins', sans-serif;
-							padding-bottom: 15px;
+							font: bold 15px/1.2 'poppins', sans-serif;
 						}
 						p {
-							padding-top: 15px;
-							font: 12px/1.2 'poppins';
-							margin-bottom: 20px;
+							font: 11px/1.2 'poppins';
 						}
-
 						a {
 							font-size: 17px;
 						}

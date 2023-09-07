@@ -1879,19 +1879,16 @@ body {
   }
   .youtube .inner .wrap article {
     width: calc(50% - 20px);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .youtube .inner .wrap article .box .pic {
     height: 180px;
   }
   .youtube .inner .wrap article .txt h2 {
-    font: bold 16px/1.2 "poppins", sans-serif;
-    padding-bottom: 15px;
+    font: bold 15px/1.2 "poppins", sans-serif;
   }
   .youtube .inner .wrap article .txt p {
-    padding-top: 15px;
-    font: 12px/1.2 "poppins";
-    margin-bottom: 20px;
+    font: 11px/1.2 "poppins";
   }
   .youtube .inner .wrap article .txt a {
     font-size: 17px;
