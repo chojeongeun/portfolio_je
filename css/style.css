@@ -1760,7 +1760,7 @@ body {
   }
 }
 .youtube {
-  background: #efefef;
+  background: #fff;
 }
 .youtube .subVisual {
   width: 100%;
@@ -1811,18 +1811,18 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  gap: 10px;
 }
 .youtube .inner .wrap article {
   width: calc(33.3333333333% - 40px);
   gap: 20px;
-  border: 1.5px solid #aaa;
-  margin-bottom: 30px;
+  border: 1.5px solid #ccc;
+  margin-bottom: 80px;
   background: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .youtube .inner .wrap article .box .pic {
   width: 100%;
-  height: 165px;
+  height: 200px;
   margin: 0px auto;
   margin-bottom: 10px;
   cursor: pointer;
@@ -1831,7 +1831,7 @@ body {
 .youtube .inner .wrap article .box .pic :hover {
   transform: scale(1.1);
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .youtube .inner .wrap article .box .pic img {
   width: 100%;
@@ -1845,21 +1845,21 @@ body {
   margin: 0px auto;
 }
 .youtube .inner .wrap article .txt h2 {
-  font: bold 18px/1.1 "poppins", sans-serif;
-  color: #222;
+  font: bold 16px/1.1 "poppins", sans-serif;
+  color: #555;
   border-bottom: 1px solid #555;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .youtube .inner .wrap article .txt p {
-  padding-top: 20px;
-  font: 13px/1.3 "poppins";
-  color: #666;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  font: 12px/1.3 "poppins";
+  color: #777;
+  margin-bottom: 10px;
   text-align: left;
 }
 .youtube .inner .wrap article .txt span {
-  font: 12px/1 "poppins";
-  color: #666;
+  font: 11px/1 "poppins";
+  color: #777;
 }
 .youtube .inner .wrap article .txt a {
   font-size: 20px;
