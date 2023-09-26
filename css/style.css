@@ -66,7 +66,7 @@ body {
 #header.main .inner #gnb1 li a:hover,
 #header.main .inner #gnb2 li a:hover,
 #header.main .inner #util li a:hover {
-  border-bottom: 2px solid rgb(248, 156, 122);
+  color: #fa4444;
 }
 #header.main .inner .btncall i {
   color: #fff;
@@ -111,7 +111,7 @@ body {
   color: #333;
 }
 #header .inner #gnb1 li a:hover {
-  border-bottom: 2px solid rgb(248, 156, 122);
+  color: #fa4444;
 }
 #header .inner #gnb2 {
   position: absolute;
@@ -129,7 +129,7 @@ body {
   color: #333;
 }
 #header .inner #gnb2 li a:hover {
-  border-bottom: 2px solid rgb(248, 156, 122);
+  color: #fa4444;
 }
 #header .inner #util {
   position: absolute;
