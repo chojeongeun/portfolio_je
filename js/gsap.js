@@ -12,10 +12,10 @@ const banner2Txt = document.querySelector('#banner2 .inner .right');
 
 const newsTl = gsap.timeline({
 	scrollTrigger: {
-		trigger: newsTitle,
+		trigger: '#news .inner',
 		start: 'top center',
-		end: 'bottom 0%',
-		markers: false,
+		end: 'bottom 40%',
+		markers: true,
 		toggleActions: 'restart reverse restart reverse',
 	},
 });
@@ -25,9 +25,9 @@ newsTl.from(newsWrap, { x: 500, opacity: 0 });
 
 const commuTl = gsap.timeline({
 	scrollTrigger: {
-		trigger: commuTitle,
+		trigger: '#mainCommunity .inner',
 		start: 'top center',
-		end: 'bottom 0%',
+		end: 'bottom 40%',
 		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
@@ -40,7 +40,7 @@ gsap.from(bannerTxt, {
 	scale: 1.5,
 	duration: 1,
 	scrollTrigger: {
-		trigger: bannerTxt,
+		trigger: '#banner .inner',
 		start: 'top 60%',
 		end: 'bottom 20%',
 		scrub: true,
@@ -50,9 +50,9 @@ gsap.from(bannerTxt, {
 
 const scienceTl = gsap.timeline({
 	scrollTrigger: {
-		trigger: scienceTitle,
+		trigger: '#science .inner',
 		start: 'top center',
-		end: 'bottom 0%',
+		end: 'bottom 40%',
 		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
@@ -63,9 +63,9 @@ scienceTl.from(scienceWrap, { x: -500, opacity: 0 });
 
 const goodsTl = gsap.timeline({
 	scrollTrigger: {
-		trigger: goodsTitle,
+		trigger: '#goods .inner',
 		start: 'top center',
-		end: 'bottom 0%',
+		end: 'bottom 40%',
 		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
@@ -76,10 +76,10 @@ goodsTl.from(goodsContent, { x: -500, opacity: 0 });
 
 const banner2Tl = gsap.timeline({
 	scrollTrigger: {
-		trigger: banner2Title,
+		trigger: '#banner2 .inner',
 		start: 'top center',
 		end: 'bottom 0%',
-		markers: true,
+		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
 });
