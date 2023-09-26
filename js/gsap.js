@@ -20,7 +20,7 @@ const newsTl = gsap.timeline({
 	},
 });
 
-newsTl.from(newsTitle, { x: 500, scale: 2 });
+newsTl.from(newsTitle, { x: 500, scale: 2, opacity: 0 });
 newsTl.from(newsWrap, { x: 500, opacity: 0 });
 
 const commuTl = gsap.timeline({
@@ -33,7 +33,7 @@ const commuTl = gsap.timeline({
 	},
 });
 
-commuTl.from(commuTitle, { x: 500, scale: 2 });
+commuTl.from(commuTitle, { x: 500, scale: 2, opacity: 0 });
 commuTl.from(commuWrap, { x: -500, opacity: 0 });
 
 gsap.from(bannerTxt, {
@@ -58,7 +58,7 @@ const scienceTl = gsap.timeline({
 	},
 });
 
-scienceTl.from(scienceTitle, { x: 500, scale: 2 });
+scienceTl.from(scienceTitle, { x: 500, scale: 2, opacity: 0 });
 scienceTl.from(scienceWrap, { x: -500, opacity: 0 });
 
 const goodsTl = gsap.timeline({
@@ -71,7 +71,7 @@ const goodsTl = gsap.timeline({
 	},
 });
 
-goodsTl.from(goodsTitle, { x: 500, scale: 2 });
+goodsTl.from(goodsTitle, { x: 500, scale: 2, opacity: 0 });
 goodsTl.from(goodsContent, { x: -500, opacity: 0 });
 
 const banner2Tl = gsap.timeline({
