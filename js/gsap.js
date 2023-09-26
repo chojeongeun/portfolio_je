@@ -7,13 +7,15 @@ const scienceTitle = document.querySelector('#science h1');
 const scienceWrap = document.querySelector('#science .inner .wrap');
 const goodsTitle = document.querySelector('#goods .inner h1');
 const goodsContent = document.querySelectorAll('#goods .inner ul li');
+const banner2Title = document.querySelector('#banner2 .inner h1');
+const banner2Txt = document.querySelector('#banner2 .inner .right');
 
 const newsTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: newsTitle,
 		start: 'top center',
 		end: 'bottom 0%',
-		markers: true,
+		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
 });
@@ -71,3 +73,16 @@ const goodsTl = gsap.timeline({
 
 goodsTl.from(goodsTitle, { x: 500, scale: 2 });
 goodsTl.from(goodsContent, { x: -500, opacity: 0 });
+
+const banner2Tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: banner2Title,
+		start: 'top center',
+		end: 'bottom 0%',
+		markers: true,
+		toggleActions: 'restart reverse restart reverse',
+	},
+});
+
+banner2Tl.from(banner2Title, { x: 500, opacity: 0 });
+banner2Tl.from(banner2Txt, { x: 500, opacity: 0 });
