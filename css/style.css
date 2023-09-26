@@ -389,7 +389,7 @@ body {
   background: #555;
 }
 .content .inner {
-  padding: 100px 10vw 50px;
+  padding: 100px 10vw 100px;
   min-height: 800px;
 }
 .content .inner h1 {

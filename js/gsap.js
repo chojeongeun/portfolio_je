@@ -11,8 +11,10 @@ const goodsContent = document.querySelectorAll('#goods .inner ul li');
 const newsTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: newsTitle,
-		start: 'top 50%',
-		end: 'top 0%',
+		start: 'top center',
+		end: 'bottom 0%',
+		markers: true,
+		toggleActions: 'restart reverse restart reverse',
 	},
 });
 
@@ -22,8 +24,10 @@ newsTl.from(newsWrap, { x: 500, opacity: 0 });
 const commuTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: commuTitle,
-		start: 'top 50%',
-		end: 'top 0%',
+		start: 'top center',
+		end: 'bottom 0%',
+		markers: false,
+		toggleActions: 'restart reverse restart reverse',
 	},
 });
 
@@ -45,8 +49,10 @@ gsap.from(bannerTxt, {
 const scienceTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: scienceTitle,
-		start: 'top 50%',
-		end: 'top 0%',
+		start: 'top center',
+		end: 'bottom 0%',
+		markers: false,
+		toggleActions: 'restart reverse restart reverse',
 	},
 });
 
@@ -56,8 +62,10 @@ scienceTl.from(scienceWrap, { x: -500, opacity: 0 });
 const goodsTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: goodsTitle,
-		start: 'top 50%',
-		end: 'top 0%',
+		start: 'top center',
+		end: 'bottom 0%',
+		markers: false,
+		toggleActions: 'restart reverse restart reverse',
 	},
 });
 
