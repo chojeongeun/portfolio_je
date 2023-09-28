@@ -10,12 +10,14 @@ const goodsContent = document.querySelectorAll('#goods .inner ul li');
 const banner2Title = document.querySelector('#banner2 .inner h1');
 const banner2Txt = document.querySelector('#banner2 .inner .right');
 
+console.log(goodsContent);
+
 const newsTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: '#news .inner',
 		start: 'top center',
 		end: 'bottom 40%',
-		markers: true,
+		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
 });
@@ -72,7 +74,9 @@ const goodsTl = gsap.timeline({
 });
 
 goodsTl.from(goodsTitle, { x: 500, scale: 2, opacity: 0 });
-goodsTl.from(goodsContent, { x: -500, opacity: 0 });
+goodsTl.from('.goods1', { y: -50, opacity: 0 });
+goodsTl.from('.goods2', { y: -50, opacity: 0 });
+goodsTl.from('.goods3', { y: -50, opacity: 0 });
 
 const banner2Tl = gsap.timeline({
 	scrollTrigger: {
