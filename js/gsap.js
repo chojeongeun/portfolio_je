@@ -60,8 +60,11 @@ const scienceTl = gsap.timeline({
 	},
 });
 
-scienceTl.from(scienceTitle, { x: 500, scale: 2, opacity: 0 });
-scienceTl.from(scienceWrap, { x: -500, opacity: 0 });
+scienceTl
+	.from(scienceTitle, { x: 500, scale: 2, opacity: 0, duration: 1 })
+	.from('.science1', { x: -500, opacity: 0, duration: 0.5 })
+	.from('.science2', { x: -500, opacity: 0, duration: 0.5 })
+	.from('.science3', { x: -500, opacity: 0, duration: 0.5 });
 
 const goodsTl = gsap.timeline({
 	scrollTrigger: {
