@@ -1199,7 +1199,8 @@ body {
 }
 #goods {
   width: 100%;
-  padding: 170px 0px;
+  padding: 150px 0px;
+  background: #f1f1f1;
 }
 #goods .inner {
   width: 1180px;

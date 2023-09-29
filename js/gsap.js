@@ -20,11 +20,11 @@ const newsTl = gsap.timeline({
 });
 
 newsTl
-	.from(newsTitle, { x: 500, scale: 2, opacity: 0, duration: 0.5 })
-	.from('.news-content1', { x: 500, opacity: 0, duration: 0.5 })
-	.from('.news-content2', { x: 500, opacity: 0, duration: 0.5 })
-	.from('.news-content3', { x: 500, opacity: 0, duration: 0.5 })
-	.from('.news-content4', { x: 500, opacity: 0, duration: 0.5 });
+	.from(newsTitle, { x: 500, scale: 2, opacity: 0, duration: 1 })
+	.from('.news-content1', { x: -50, opacity: 0, duration: 0.5 })
+	.from('.news-content2', { y: -50, opacity: 0, duration: 0.5 })
+	.from('.news-content3', { y: -50, opacity: 0, duration: 0.5 })
+	.from('.news-content4', { y: -50, opacity: 0, duration: 0.5 });
 
 const commuTl = gsap.timeline({
 	scrollTrigger: {
@@ -38,9 +38,9 @@ const commuTl = gsap.timeline({
 
 commuTl
 	.from(commuTitle, { x: 500, scale: 2, opacity: 0, duration: 0.5 })
-	.from('.community-content1', { x: -500, opacity: 0, duration: 0.5 })
-	.from('.community-content2', { x: -500, opacity: 0, duration: 0.5 })
-	.from('.community-content3', { x: -500, opacity: 0, duration: 0.5 });
+	.from('.community-content1', { y: -50, opacity: 0, duration: 0.5 })
+	.from('.community-content2', { y: -50, opacity: 0, duration: 0.5 })
+	.from('.community-content3', { x: 50, opacity: 0, duration: 0.5 });
 
 gsap.from(bannerTxt, {
 	scale: 1.5,
@@ -66,9 +66,9 @@ const scienceTl = gsap.timeline({
 
 scienceTl
 	.from(scienceTitle, { x: 500, scale: 2, opacity: 0, duration: 0.5 })
-	.from('.science-content1', { x: -500, opacity: 0, duration: 0.5 })
-	.from('.science-content2', { x: -500, opacity: 0, duration: 0.5 })
-	.from('.science-content3', { x: -500, opacity: 0, duration: 0.5 });
+	.from('.science-content1', { y: -50, opacity: 0, duration: 0.5 })
+	.from('.science-content2', { y: -50, opacity: 0, duration: 0.5 })
+	.from('.science-content3', { x: 50, opacity: 0, duration: 0.5 });
 
 const goodsTl = gsap.timeline({
 	scrollTrigger: {
@@ -96,4 +96,4 @@ const banner2Tl = gsap.timeline({
 	},
 });
 
-banner2Tl.from(banner2Title, { x: 500, opacity: 0, duration: 0.5 }).from(banner2Txt, { x: 500, opacity: 0, duration: 0.5 });
+banner2Tl.from(banner2Title, { x: 200, opacity: 0, duration: 0.5 }).from(banner2Txt, { x: 200, opacity: 0, duration: 0.5 });
