@@ -51,18 +51,20 @@
 
 				&.inner1 {
 					background-image: url(../img/pic5.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
 				}
 
 				&.inner2 {
 					background-image: url(../img/pic17.jpg);
 					background-repeat: no-repeat;
-					background-size: 100%;
+					background-size: cover;
 				}
 
 				&.inner3 {
 					background-image: url(../img/pic46.jpg);
 					background-repeat: no-repeat;
-					background-size: 100%;
+					background-size: cover;
 				}
 
 				.btn1 {

@@ -1372,16 +1372,18 @@ body {
 }
 #visual .swiper .swiper-slide .inner.inner1 {
   background-image: url(../img/pic5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #visual .swiper .swiper-slide .inner.inner2 {
   background-image: url(../img/pic17.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 #visual .swiper .swiper-slide .inner.inner3 {
   background-image: url(../img/pic46.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 #visual .swiper .swiper-slide .inner .btn1 {
   display: block;
