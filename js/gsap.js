@@ -1,10 +1,7 @@
 const newsTitle = document.querySelector('#news h1');
-const newsWrap = document.querySelector('#news .inner .wrap');
 const commuTitle = document.querySelector('#mainCommunity h1');
-const commuWrap = document.querySelector('#mainCommunity .inner .wrap');
 const bannerTxt = document.querySelector('#banner .inner .txtBN');
 const scienceTitle = document.querySelector('#science h1');
-const scienceWrap = document.querySelector('#science .inner .wrap');
 const goodsTitle = document.querySelector('#goods .inner h1');
 const goodsContent = document.querySelectorAll('#goods .inner ul li');
 const banner2Title = document.querySelector('#banner2 .inner h1');
@@ -39,8 +36,11 @@ const commuTl = gsap.timeline({
 	},
 });
 
-commuTl.from(commuTitle, { x: 500, scale: 2, opacity: 0 });
-commuTl.from(commuWrap, { x: -500, opacity: 0 });
+commuTl
+	.from(commuTitle, { x: 500, scale: 2, opacity: 0, duration: 0.5 })
+	.from('.community-content1', { x: -500, opacity: 0, duration: 0.5 })
+	.from('.community-content2', { x: -500, opacity: 0, duration: 0.5 })
+	.from('.community-content3', { x: -500, opacity: 0, duration: 0.5 });
 
 gsap.from(bannerTxt, {
 	scale: 1.5,
@@ -81,10 +81,10 @@ const goodsTl = gsap.timeline({
 });
 
 goodsTl
-	.from(goodsTitle, { x: 500, scale: 2, opacity: 0 })
-	.from('.goods-content1', { y: -70, opacity: 0 })
-	.from('.goods-content2', { y: -70, opacity: 0 })
-	.from('.goods-content3', { y: -70, opacity: 0 });
+	.from(goodsTitle, { x: 500, scale: 2, opacity: 0, duration: 0.5 })
+	.from('.goods-content1', { y: -70, opacity: 0, duration: 0.5 })
+	.from('.goods-content2', { y: -70, opacity: 0, duration: 0.5 })
+	.from('.goods-content3', { y: -70, opacity: 0, duration: 0.5 });
 
 const banner2Tl = gsap.timeline({
 	scrollTrigger: {
