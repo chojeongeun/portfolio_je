@@ -7,7 +7,21 @@ const goodsContent = document.querySelectorAll('#goods .inner ul li');
 const banner2Title = document.querySelector('#banner2 .inner h1');
 const banner2Txt = document.querySelector('#banner2 .inner .right');
 
-console.log(goodsContent);
+let split = new SplitText('.banner-text');
+console.log(split);
+
+let bannertl = gsap.timeline({
+	scrollTrigger: {
+		trigger: '#banner .inner',
+		start: 'top 50%',
+		end: 'top 0%',
+		markers: true,
+		toggleActions: 'restart pause reverse reset',
+		duration: 0.5,
+	},
+});
+
+bannertl.from(split.chars, { scale: 2, opacity: 0, stagger: 0.1 });
 
 const newsTl = gsap.timeline({
 	scrollTrigger: {
@@ -42,6 +56,7 @@ commuTl
 	.from('.community-content2', { y: -50, opacity: 0, duration: 0.5 })
 	.from('.community-content3', { x: 50, opacity: 0, duration: 0.5 });
 
+/*
 gsap.from(bannerTxt, {
 	scale: 1.5,
 	duration: 1,
@@ -53,6 +68,7 @@ gsap.from(bannerTxt, {
 		markers: false,
 	},
 });
+*/
 
 const scienceTl = gsap.timeline({
 	scrollTrigger: {
