@@ -15,13 +15,13 @@ let bannertl = gsap.timeline({
 		trigger: '#banner .inner',
 		start: 'top 50%',
 		end: 'top 0%',
-		markers: true,
+		markers: false,
 		toggleActions: 'restart pause reverse reset',
 		duration: 0.5,
 	},
 });
 
-bannertl.from(split.chars, { scale: 2, opacity: 0, stagger: 0.1 });
+bannertl.from(split.chars, { scale: 2, opacity: 0, stagger: 0.1 }).from('#banner .inner .txtBN h2', { y: 100, opacity: 0, stagger: 0.1 });
 
 const newsTl = gsap.timeline({
 	scrollTrigger: {
@@ -106,7 +106,7 @@ const banner2Tl = gsap.timeline({
 	scrollTrigger: {
 		trigger: '#banner2 .inner',
 		start: 'top center',
-		end: 'bottom 0%',
+		end: 'bottom 40%',
 		markers: false,
 		toggleActions: 'restart reverse restart reverse',
 	},
