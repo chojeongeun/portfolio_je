@@ -252,6 +252,7 @@
 */
 
 .location {
+	background: #fff;
 	.subVisual {
 		width: 100%;
 		height: 250px;
@@ -324,17 +325,14 @@
 						border: 1px solid #ccc;
 						cursor: pointer;
 						padding: 0;
+						transition: 0.5s;
 						&:hover {
 							background: #333;
 							color: #fff;
 						}
 					}
 				}
-				// label {
-				// 	font: bold 14px/1 'Jost';
-				// 	color: #555;
-				// 	margin-bottom: 10px;
-				// }
+
 				textarea {
 					width: 100%;
 					height: 70px;

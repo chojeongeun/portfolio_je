@@ -2623,6 +2623,9 @@ table {
 	}
 }
 */
+.location {
+  background: #fff;
+}
 .location .subVisual {
   width: 100%;
   height: 250px;
@@ -2691,6 +2694,7 @@ table {
   border: 1px solid #ccc;
   cursor: pointer;
   padding: 0;
+  transition: 0.5s;
 }
 .location .inner .txtwrap .contact input:last-child:hover {
   background: #333;
