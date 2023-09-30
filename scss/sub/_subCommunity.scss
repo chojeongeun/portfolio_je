@@ -32,9 +32,10 @@
 				input {
 					border: none;
 					border-bottom: 1px solid #aaa;
+					background: inherit;
 					width: 250px;
 					height: 25px;
-					font: 14px/25px '맑은고딕';
+					font: 12px/25px '맑은고딕';
 					padding: 3px 5px;
 					&:focus {
 						outline: none;
@@ -42,8 +43,8 @@
 				}
 
 				.searchBtn {
-					font-size: 20px;
-					color: #555;
+					font-size: 15px;
+					color: #777;
 				}
 			}
 			table {
