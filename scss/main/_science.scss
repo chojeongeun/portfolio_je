@@ -16,7 +16,6 @@
 		.wrap {
 			display: flex;
 			justify-content: space-between;
-			// flex-wrap: wrap;
 			align-content: center;
 
 			article {
@@ -67,18 +66,9 @@
 
 			.wrap {
 				width: 100%;
-				// flex-direction: column;
 
 				article {
-					// width: 100%;
-					// height: 100%;
-					// margin-bottom: 30px;
-
 					.pic {
-						// width: 55%;
-						// height: 250px;
-						// margin-bottom: 30px;
-
 						img {
 							height: 250px;
 						}

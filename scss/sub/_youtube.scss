@@ -55,14 +55,12 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-content: center;
-			// gap: 10px;
 
 			article {
 				width: calc(100% / 3 - 40px);
 				gap: 20px;
 				border: 1.5px solid #ccc;
 				margin-bottom: 80px;
-				// display: flex;
 				background: #fff;
 				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 

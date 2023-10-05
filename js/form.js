@@ -46,19 +46,6 @@ form.addEventListener('submit', (e) => {
 		gender[0].closest('td').querySelector('.err').style.display = 'none';
 	}
 
-	// //interests인증
-	// const interests = form.querySelectorAll('[name=interests]');
-	// let isInterestsChecked = false;
-	// interests.forEach((el) => {
-	// 	if (el.checked) isInterestsChecked = true;
-	// });
-	// if (!isInterestsChecked) {
-	// 	interests[0].closest('td').querySelector('.err').style.display = 'block';
-	// 	e.preventDefault();
-	// } else {
-	// 	interests[0].closest('td').querySelector('.err').style.display = 'none';
-	// }
-
 	//select 인증
 	const select = form.querySelector('[name=edu]');
 	if (!select.value) {
