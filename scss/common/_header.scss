@@ -24,7 +24,6 @@
 						color: #fff;
 						&:hover {
 							color: #fa4444;
-							// border-bottom: 2px solid rgb(248, 156, 122);
 						}
 					}
 				}
@@ -66,7 +65,7 @@
 		#gnb1 {
 			position: absolute;
 			bottom: 20px;
-			left: 150px;
+			left: 100px;
 
 			li {
 				float: left;
@@ -79,7 +78,6 @@
 
 					&:hover {
 						color: #fa4444;
-						// border-bottom: 2px solid rgb(248, 156, 122);
 					}
 				}
 			}
