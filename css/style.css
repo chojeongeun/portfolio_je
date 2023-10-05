@@ -98,7 +98,7 @@ body {
 #header .inner #gnb1 {
   position: absolute;
   bottom: 20px;
-  left: 150px;
+  left: 100px;
 }
 #header .inner #gnb1 li {
   float: left;
@@ -2140,8 +2140,8 @@ body {
 }
 .members .inner form table th input[type=submit],
 .members .inner form table th input[type=reset] {
-  width: 20%;
-  height: 40px;
+  width: 180px;
+  height: 30px;
   border: 1px solid #333;
   font: bold 14px/40px "Poppins", sans-serif;
   color: #555;
