@@ -7,9 +7,6 @@ const goodsContent = document.querySelectorAll('#goods .inner ul li');
 const banner2Title = document.querySelector('#banner2 .inner h1');
 const banner2Txt = document.querySelector('#banner2 .inner .right');
 
-let split = new SplitText('.banner-text');
-console.log(split);
-
 let bannertl = gsap.timeline({
 	scrollTrigger: {
 		trigger: '#banner .inner',
@@ -21,7 +18,7 @@ let bannertl = gsap.timeline({
 	},
 });
 
-bannertl.from(split.chars, { scale: 2, opacity: 0, stagger: 0.1 }).from('#banner .inner .txtBN h2', { y: 100, opacity: 0, stagger: 0.1 });
+bannertl.from(bannerTxt, { y: -300, opacity: 0, duration: 0.7 }).from('.banner_pic', { x: 300, opacity: 0, duration: 0.5 });
 
 const newsTl = gsap.timeline({
 	scrollTrigger: {
