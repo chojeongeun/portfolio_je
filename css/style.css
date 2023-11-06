@@ -2141,13 +2141,13 @@ body {
 .members .inner form table th input[type=submit],
 .members .inner form table th input[type=reset] {
   width: 180px;
-  height: 30px;
-  border: 1px solid #333;
+  height: 40px;
   font: bold 14px/40px "Poppins", sans-serif;
   color: #555;
   cursor: pointer;
   transition: 0.5s;
   border-radius: 50px;
+  border: 1px solid #bbb;
 }
 .members .inner form table th input[type=submit]:hover,
 .members .inner form table th input[type=reset]:hover {
@@ -2223,8 +2223,8 @@ body {
   }
   .members .inner form table th input[type=submit],
   .members .inner form table th input[type=reset] {
-    width: 40%;
-    height: 40px;
+    width: 30%;
+    font-size: 13px;
   }
   .members .inner form table td {
     border-left: none;
@@ -2265,17 +2265,8 @@ body {
   }
 }
 @media screen and (max-width: 639px) {
-  .members .inner .join li .step {
-    font: bold 11px/1 "poppins";
-  }
-  .members .inner .join li .num {
-    font: 17px/1 "poppins";
-  }
-  .members .inner .join li i {
-    font-size: 25px;
-  }
-  .members .inner .join li .txt {
-    font: bold 12px/1 "맑은고딕";
+  .members .inner .join {
+    display: none;
   }
   .members .inner form h2 {
     font: bold 15px/1 "맑은고딕";
@@ -2283,6 +2274,11 @@ body {
   }
   .members .inner form .agreement textarea {
     font: 13px/1.5 "poppins";
+  }
+  .members .inner form table th input[type=submit],
+  .members .inner form table th input[type=reset] {
+    width: 40%;
+    font-size: 12px;
   }
   .members .inner form table td {
     padding: 15px 25px;

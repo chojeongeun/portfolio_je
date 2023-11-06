@@ -135,13 +135,13 @@
 					input[type='submit'],
 					input[type='reset'] {
 						width: 180px;
-						height: 30px;
-						border: 1px solid #333;
+						height: 40px;
 						font: bold 14px/40px 'Poppins', sans-serif;
 						color: #555;
 						cursor: pointer;
 						transition: 0.5s;
 						border-radius: 50px;
+						border: 1px solid #bbb;
 						&:hover {
 							background: #333;
 							color: #fff;
@@ -229,8 +229,8 @@
 						}
 						input[type='submit'],
 						input[type='reset'] {
-							width: 40%;
-							height: 40px;
+							width: 30%;
+							font-size: 13px;
 						}
 					}
 
@@ -280,20 +280,7 @@
 	.members {
 		.inner {
 			.join {
-				li {
-					.step {
-						font: bold 11px/1 'poppins';
-					}
-					.num {
-						font: 17px/1 'poppins';
-					}
-					i {
-						font-size: 25px;
-					}
-					.txt {
-						font: bold 12px/1 '맑은고딕';
-					}
-				}
+				display: none;
 			}
 			form {
 				h2 {
@@ -306,6 +293,13 @@
 					}
 				}
 				table {
+					th {
+						input[type='submit'],
+						input[type='reset'] {
+							width: 40%;
+							font-size: 12px;
+						}
+					}
 					td {
 						padding: 15px 25px;
 						textarea {
