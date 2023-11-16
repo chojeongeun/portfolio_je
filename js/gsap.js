@@ -53,20 +53,6 @@ commuTl
 	.from('.community-content2', { y: -50, opacity: 0, duration: 0.5 })
 	.from('.community-content3', { x: 50, opacity: 0, duration: 0.5 });
 
-/*
-gsap.from(bannerTxt, {
-	scale: 1.5,
-	duration: 1,
-	scrollTrigger: {
-		trigger: '#banner .inner',
-		start: 'top 60%',
-		end: 'bottom 20%',
-		scrub: true,
-		markers: false,
-	},
-});
-*/
-
 const scienceTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: '#science .inner',
